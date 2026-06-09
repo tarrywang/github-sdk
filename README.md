@@ -1,4 +1,4 @@
-# GCR-AI-Tour-2026
+# Github-SDK-Workshop
 
 本仓库包含多个可运行 Lab，当前主要内容如下：
 
