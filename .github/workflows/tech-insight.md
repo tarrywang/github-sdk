@@ -8,6 +8,8 @@ permissions:
 tools:
   bash: [":*"]
   edit:
+  github:
+    toolsets: [context]
 engine: copilot
 timeout-minutes: 45
 steps:
@@ -132,10 +134,10 @@ mcp-scripts:
         required: true
       top_k:
         type: number
-        default: 12
+        default: 8
     run: |
       cd "$GITHUB_WORKSPACE"
-      echo "{\"raw_signals_json\": $(echo $INPUT_RAW_SIGNALS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"top_k\": ${INPUT_TOP_K:-12}}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py
+      echo "{\"raw_signals_json\": $(echo $INPUT_RAW_SIGNALS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"top_k\": ${INPUT_TOP_K:-8}}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py
   tech-insight-or-fallback:
     description: "Validate and fallback insight results"
     inputs:
@@ -190,7 +192,7 @@ mcp-scripts:
 - `signals_dir`: `Lab-01-Tech-Insights/output/signals`
 - `output_dir`: `Lab-01-Tech-Insights/output`
 - `time_window_hours`: `24`
-- `top_k`: `12`
+- `top_k`: `8`
 - `max_items_per_source`: `8`
 - `timeout_seconds`: `15`
 - `max_chars`: `200000`
@@ -239,7 +241,7 @@ mcp-scripts:
 {"hotspots": [{"hotspot_id": "H01", "title": "...", "summary": "...", "category": "trend|single", "overall_heat_score": 0, "coverage": {"source_count": 0, "companies": [], "platforms": []}, "should_chase": "yes|no", "chase_rationale": [], "samples": [{"platform": "...", "title": "...", "url": "...", "published_at": "...", "company": "...", "signal_level": "..."}]}]}
 ```
 
-2. 将模型生成的聚类候选结果交给 `tech.cluster_or_fallback(raw_signals_json, clusters_json, top_k=12)` 做校验与兜底，得到最终热点聚类 JSON。
+2. 将模型生成的聚类候选结果交给 `tech.cluster_or_fallback(raw_signals_json, clusters_json, top_k=8)` 做校验与兜底，得到最终热点聚类 JSON。
 3. 用 `edit` 工具将最终热点聚类 JSON 写入 `Lab-01-Tech-Insights/output/clusters/hotspots.json`。
 4. 在输出中区分 `cross_source_trends` 与 `high_signal_singles` 的主要发现。
 5. 如果工具提示使用了兜底逻辑，在输出中注明。

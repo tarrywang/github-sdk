@@ -132,11 +132,14 @@ python3 --version  # 确认 3.10+
 - 确认 Actions permissions 已开启（Allow all actions）。
 
 ### 步骤 2: 设置 Copilot Token（关键步骤）
-- 前往 https://github.com/settings/tokens?type=beta 创建 Fine-grained Personal Access Token。
+- 前往 https://github.com/settings/tokens?type=beta 创建 **Fine-grained Personal Access Token**
+  （必须是 fine-grained PAT，gh-aw 不支持 GitHub App / OAuth token）。
   - Token name: `copilot-token`
   - Expiration: 30 days
   - Repository access: All repositories
-  - Permissions: 勾选 Copilot 相关的访问权限（或使用 Classic Token 并勾选 `copilot` 范围）。
+  - **Permissions → Account permissions**：将 **Copilot Requests** 设为 **Read** access。
+    > ⚠️ 这是关键权限，且位于 **Account permissions** 下 —— 不要错加成 Repository permissions 里的
+    > 「Copilot agent settings」。权限加错位置会导致 `Authentication failed ... (HTTP 401)`。
 - 回到你的 Fork 仓库 → **Settings** → **Secrets and variables** → **Actions**。
 - 点击 **New repository secret**。
   - Name: `COPILOT_GITHUB_TOKEN`
