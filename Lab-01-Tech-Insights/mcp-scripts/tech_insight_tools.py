@@ -629,7 +629,7 @@ def tech_load_articles_from_disk(
                     url=link,
                     published_at=published_at,
                     published_ts=published_ts,
-                    summary=_safe_excerpt(summary, max_len=160),
+                    summary=_safe_excerpt(summary, max_len=100),
                     company=company,
                     signal_level=signal_level,
                     include_keywords=include_keywords,
