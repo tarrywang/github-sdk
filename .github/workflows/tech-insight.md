@@ -137,7 +137,17 @@ mcp-scripts:
         default: 8
     run: |
       cd "$GITHUB_WORKSPACE"
-      echo "{\"raw_signals_json\": $(echo $INPUT_RAW_SIGNALS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"top_k\": ${INPUT_TOP_K:-8}}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py
+      python3 -c "
+      import os, json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from tech_insight_tools import tech_cluster_or_fallback
+      result = tech_cluster_or_fallback(
+          raw_signals_json=os.environ.get('INPUT_RAW_SIGNALS_JSON', ''),
+          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
+          top_k=int(os.environ.get('INPUT_TOP_K') or 8),
+      )
+      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
+      "
   tech-insight-or-fallback:
     description: "Validate and fallback insight results"
     inputs:
@@ -149,7 +159,16 @@ mcp-scripts:
         required: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      echo "{\"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"insights_json\": $(echo $INPUT_INSIGHTS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))') }" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_insight_or_fallback.py
+      python3 -c "
+      import os, json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from tech_insight_tools import tech_insight_or_fallback
+      result = tech_insight_or_fallback(
+          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
+          insights_json=os.environ.get('INPUT_INSIGHTS_JSON', ''),
+      )
+      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
+      "
   tech-render-report-or-fallback:
     description: "Validate and fallback report rendering"
     inputs:
@@ -164,7 +183,17 @@ mcp-scripts:
         required: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      echo "{\"clusters_json\": $(echo $INPUT_CLUSTERS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"insights_json\": $(echo $INPUT_INSIGHTS_JSON | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"draft_markdown\": $(echo $INPUT_DRAFT_MARKDOWN | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))')}" | python3 Lab-01-Tech-Insights/mcp-scripts/tech_render_report_or_fallback.py
+      python3 -c "
+      import os, json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from tech_insight_tools import tech_render_report_or_fallback
+      result = tech_render_report_or_fallback(
+          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
+          insights_json=os.environ.get('INPUT_INSIGHTS_JSON', ''),
+          draft_markdown=os.environ.get('INPUT_DRAFT_MARKDOWN', ''),
+      )
+      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
+      "
   write-text-file:
     description: "Write text content to a file"
     inputs:
@@ -179,7 +208,17 @@ mcp-scripts:
         default: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      echo "{\"path\": \"$INPUT_PATH\", \"text\": $(echo $INPUT_TEXT | python3 -c 'import sys,json; print(json.dumps(sys.stdin.read()))'), \"overwrite\": ${INPUT_OVERWRITE:-true}}" | python3 Lab-01-Tech-Insights/mcp-scripts/write_text_file.py
+      python3 -c "
+      import os, json, sys
+      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
+      from file_io_tool import write_text_file
+      result = write_text_file(
+          path=os.environ.get('INPUT_PATH', ''),
+          text=os.environ.get('INPUT_TEXT', ''),
+          overwrite=(os.environ.get('INPUT_OVERWRITE', 'true').lower() != 'false'),
+      )
+      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
+      "
 ---
 
 # Tech Insight 工作流
