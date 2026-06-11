@@ -10,6 +10,15 @@ tools:
   edit:
 engine: copilot
 timeout-minutes: 45
+steps:
+  - name: Set up Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.11'
+  - name: Install Python deps for mcp-scripts
+    run: |
+      python3 -m pip install --upgrade pip
+      python3 -m pip install -r Lab-01-Tech-Insights/mcp-scripts/requirements.txt
 network:
   allowed:
     - defaults
