@@ -1,0 +1,620 @@
+{
+  "window": {
+    "time_window_hours": 24,
+    "cutoff": "2026-06-10T23:20:55.764938Z",
+    "generated_at": "2026-06-11T23:20:55.764938Z"
+  },
+  "sources": [
+    {
+      "platform": "cnevpost",
+      "platform_key": "cnevpost",
+      "source_type": "rss",
+      "url": "https://cnevpost.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/cnevpost.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "china_ev"
+      ]
+    },
+    {
+      "platform": "carnewschina",
+      "platform_key": "carnewschina",
+      "source_type": "rss",
+      "url": "https://carnewschina.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/carnewschina.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "china_ev"
+      ]
+    },
+    {
+      "platform": "pandaily",
+      "platform_key": "pandaily",
+      "source_type": "rss",
+      "url": "https://pandaily.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/pandaily.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "china_ev"
+      ]
+    },
+    {
+      "platform": "electrek",
+      "platform_key": "electrek",
+      "source_type": "rss",
+      "url": "https://electrek.co/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/electrek.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "global_ev"
+      ]
+    },
+    {
+      "platform": "insideevs",
+      "platform_key": "insideevs",
+      "source_type": "rss",
+      "url": "https://insideevs.com/rss/articles/all/",
+      "file": "Lab-01-Tech-Insights/output/signals/insideevs.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "global_ev"
+      ]
+    },
+    {
+      "platform": "cleantechnica",
+      "platform_key": "cleantechnica",
+      "source_type": "rss",
+      "url": "https://cleantechnica.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/cleantechnica.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "global_ev"
+      ]
+    },
+    {
+      "platform": "thedriven",
+      "platform_key": "thedriven",
+      "source_type": "rss",
+      "url": "https://thedriven.io/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/thedriven.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "global_ev"
+      ]
+    },
+    {
+      "platform": "theverge-transport",
+      "platform_key": "theverge-transport",
+      "source_type": "rss",
+      "url": "https://www.theverge.com/rss/transportation/index.xml",
+      "file": "Lab-01-Tech-Insights/output/signals/theverge-transport.xml",
+      "parsed": 3,
+      "kept": 2,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "auto_news"
+      ]
+    },
+    {
+      "platform": "techcrunch-transport",
+      "platform_key": "techcrunch-transport",
+      "source_type": "rss",
+      "url": "https://techcrunch.com/category/transportation/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/techcrunch-transport.xml",
+      "parsed": 3,
+      "kept": 1,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "auto_news"
+      ]
+    },
+    {
+      "platform": "chargedevs",
+      "platform_key": "chargedevs",
+      "source_type": "rss",
+      "url": "https://chargedevs.com/feed/",
+      "file": "Lab-01-Tech-Insights/output/signals/chargedevs.xml",
+      "parsed": 3,
+      "kept": 3,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "B",
+      "tracks": [
+        "global_ev"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "platform": "cnevpost",
+      "platform_key": "cnevpost",
+      "source_type": "rss",
+      "title": "Smart launches #6 EHD hybrid sedan in China with prices starting at $26,250",
+      "title_norm": "smart launches 6 ehd hybrid sedan in china with prices starting at 26 250",
+      "url": "https://cnevpost.com/2026/06/11/smart-launches-6-ehd-hybrid-sedan-china/",
+      "published_at": "2026-06-11T14:13:51Z",
+      "summary": "<p><img alt=\"\" src=\"https://cnevpost.com/wp-content/uploads/2026/06/2026061114102548.jpg\" style=\"he…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cnevpost",
+      "platform_key": "cnevpost",
+      "source_type": "rss",
+      "title": "Nio Onvo launches updated L60 SUV with in-house chip at lower starting price",
+      "title_norm": "nio onvo launches updated l60 suv with in house chip at lower starting price",
+      "url": "https://cnevpost.com/2026/06/11/nio-onvo-launches-updated-l60/",
+      "published_at": "2026-06-11T13:25:29Z",
+      "summary": "<p><img alt=\"\" src=\"https://cnevpost.com/wp-content/uploads/2026/06/2026061113225447.jpg\" style=\"he…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cnevpost",
+      "platform_key": "cnevpost",
+      "source_type": "rss",
+      "title": "Chinese regulators summon automakers over suspected 'irrational competition'",
+      "title_norm": "chinese regulators summon automakers over suspected irrational competition",
+      "url": "https://cnevpost.com/2026/06/11/china-summon-automakers-irrational-competition/",
+      "published_at": "2026-06-11T11:36:45Z",
+      "summary": "<p><img alt=\"\" src=\"https://cnevpost.com/wp-content/uploads/2026/06/2026061111351479.jpg\" style=\"he…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "carnewschina",
+      "platform_key": "carnewschina",
+      "source_type": "rss",
+      "title": "Controversy surrounds Huawei-Chery collaborated Luxeed RX’s “Ferrari designer” claims",
+      "title_norm": "controversy surrounds huawei chery collaborated luxeed rx s ferrari designer claims",
+      "url": "https://carnewschina.com/2026/06/11/controversy-surrounds-huawei-chery-collaborated-luxeed-rxs-ferrari-designer-claims/",
+      "published_at": "2026-06-11T11:20:51Z",
+      "summary": "<p>Here comes another car looks similiar to Ferrari Purosangue.</p> <p>The post <a href=\"https://ca…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "carnewschina",
+      "platform_key": "carnewschina",
+      "source_type": "rss",
+      "title": "Geely EX5 electric SUV adds 114 hp and the LiDAR sensor in China",
+      "title_norm": "geely ex5 electric suv adds 114 hp and the lidar sensor in china",
+      "url": "https://carnewschina.com/2026/06/11/geely-ex5-electric-suv-adds-114-hp-and-the-lidar-sensor-in-china/",
+      "published_at": "2026-06-11T10:55:02Z",
+      "summary": "<p>The Geely EX5 electric crossover adds 114 hp and the LiDAR sensor in China as the updated versio…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cleantechnica",
+      "platform_key": "cleantechnica",
+      "source_type": "rss",
+      "title": "Lynk & Co Introduces Model Year 2027 Update for the 02",
+      "title_norm": "lynk co introduces model year 2027 update for the 02",
+      "url": "https://cleantechnica.com/2026/06/11/lynk-co-introduces-model-year-2027-update-for-the-02/",
+      "published_at": "2026-06-11T21:53:49Z",
+      "summary": "<p>Lynk &#38; Co is introducing the Model Year 2027 (MY27) update for the Lynk &#38; Co 02, bringin…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "carnewschina",
+      "platform_key": "carnewschina",
+      "source_type": "rss",
+      "title": "GWM Haval H6L gains plug-in hybrid variant with lidar in China filing",
+      "title_norm": "gwm haval h6l gains plug in hybrid variant with lidar in china filing",
+      "url": "https://carnewschina.com/2026/06/11/haval-h6l-gains-plug-in-hybrid-variant-with-lidar-in-china-filing/",
+      "published_at": "2026-06-11T09:51:28Z",
+      "summary": "<p>Great Wall Motor revealed the Haval H6L PHEV in China's latest MIIT filing. The SUV features opt…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "electrek",
+      "platform_key": "electrek",
+      "source_type": "rss",
+      "title": "The Chevy Equinox EV is suddenly way more expensive to lease at over $500 a month",
+      "title_norm": "the chevy equinox ev is suddenly way more expensive to lease at over 500 a month",
+      "url": "https://electrek.co/2026/06/11/chevy-equinox-ev-more-expensive-to-lease-over-500-mo/",
+      "published_at": "2026-06-11T21:13:03Z",
+      "summary": "<div class=\"feat-image\"><img src=\"https://electrek.co/wp-content/uploads/sites/3/2026/06/Chevy-Equi…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cleantechnica",
+      "platform_key": "cleantechnica",
+      "source_type": "rss",
+      "title": "Elon Musk’s Extremely Confusing Comments On “Universal HIGH INCOME”",
+      "title_norm": "elon musk s extremely confusing comments on universal high income",
+      "url": "https://cleantechnica.com/2026/06/11/elon-musks-extremely-confusing-comments-on-universal-high-income/",
+      "published_at": "2026-06-11T21:08:29Z",
+      "summary": "<p>In an article a couple of days ago about AI and the government&#8217;s role in its ownership and…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "electrek",
+      "platform_key": "electrek",
+      "source_type": "rss",
+      "title": "Gummys go green as HARIBO turns to electric semi trucks",
+      "title_norm": "gummys go green as haribo turns to electric semi trucks",
+      "url": "https://electrek.co/2026/06/11/gummys-go-green-as-haribo-turns-to-electric-semi-trucks/",
+      "published_at": "2026-06-11T21:04:01Z",
+      "summary": "<div class=\"feat-image\"><img src=\"https://electrek.co/wp-content/uploads/sites/3/2026/06/gummy.jpg?…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "electrek",
+      "platform_key": "electrek",
+      "source_type": "rss",
+      "title": "Georgia is about to have the biggest solar cell factory in US history",
+      "title_norm": "georgia is about to have the biggest solar cell factory in us history",
+      "url": "https://electrek.co/2026/06/11/georgia-is-about-to-have-the-biggest-solar-cell-factory-in-us-history/",
+      "published_at": "2026-06-11T20:54:01Z",
+      "summary": "<div class=\"feat-image\"><img src=\"https://electrek.co/wp-content/uploads/sites/3/2026/06/Qcells.jpg…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "insideevs",
+      "platform_key": "insideevs",
+      "source_type": "rss",
+      "title": "I Drove The Revived Chevy Bolt. Here Are 4 Pros And 2 Cons",
+      "title_norm": "i drove the revived chevy bolt here are 4 pros and 2 cons",
+      "url": "https://insideevs.com/reviews/798504/chevy-bolt-2027-review-pros-cons/",
+      "published_at": "2026-06-11T20:32:32Z",
+      "summary": "The 2027 Chevy Bolt has punchy acceleration, a great infotainment system, and a surprisingly spacio…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "cleantechnica",
+      "platform_key": "cleantechnica",
+      "source_type": "rss",
+      "title": "17,000 New EV Chargers Coming To The UK",
+      "title_norm": "17 000 new ev chargers coming to the uk",
+      "url": "https://cleantechnica.com/2026/06/11/17000-new-ev-chargers-coming-to-the-uk/",
+      "published_at": "2026-06-11T20:15:19Z",
+      "summary": "<p>When it was announced in February of this year that there would be 10,000 new public EV chargers…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "insideevs",
+      "platform_key": "insideevs",
+      "source_type": "rss",
+      "title": "This Dodge Charger EV Prototype Packs An Experimental Semi-Solid-State Battery",
+      "title_norm": "this dodge charger ev prototype packs an experimental semi solid state battery",
+      "url": "https://insideevs.com/news/798496/dodge-charger-daytona-ev-solid-state-battery/",
+      "published_at": "2026-06-11T19:35:49Z",
+      "summary": "Dodge parent Stellantis is exploring the viability of semi-solid-state batteries with real-world te…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "insideevs",
+      "platform_key": "insideevs",
+      "source_type": "rss",
+      "title": "China Loves This Cheap Battery Tech. Here's Why General Motors Might Not Stick With It",
+      "title_norm": "china loves this cheap battery tech here s why general motors might not stick with it",
+      "url": "https://insideevs.com/news/798481/gm-lmr-not-lpf-batteries/",
+      "published_at": "2026-06-11T16:47:47Z",
+      "summary": "LFP is the industry’s go-to cheap EV battery tech, but GM says another chemistry could offer simila…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "pandaily",
+      "platform_key": "pandaily",
+      "source_type": "rss",
+      "title": "Xiaomi's Next-Gen Xuanjie O3 Chip Expected to Go Head-to-Head with Qualcomm Snapdragon 8E5",
+      "title_norm": "xiaomi s next gen xuanjie o3 chip expected to go head to head with qualcomm snapdragon 8e5",
+      "url": "https://pandaily.com/xiaomi-xuanjie-o3-chip-snapdragon-8e5-jun2026",
+      "published_at": "2026-06-11T08:15:05Z",
+      "summary": "Xiaomi's Next-Gen Xuanjie O3 Chip Expected to Go Head-to-Head with Qualcomm Snapdragon 8E5 Xiaomi i…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "pandaily",
+      "platform_key": "pandaily",
+      "source_type": "rss",
+      "title": "Taiwan Moves to Criminalize Unauthorized AI Chip Exports to Mainland China in Major Policy Shift",
+      "title_norm": "taiwan moves to criminalize unauthorized ai chip exports to mainland china in major policy shift",
+      "url": "https://pandaily.com/taiwan-criminalize-ai-chip-exports-china-jun2026",
+      "published_at": "2026-06-11T08:09:59Z",
+      "summary": "Taiwan Moves to Criminalize Unauthorized AI Chip Exports to Mainland China in Major Policy Shift Ta…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "pandaily",
+      "platform_key": "pandaily",
+      "source_type": "rss",
+      "title": "Huawei and Lenovo to Raise Prices in July as Chip Cost Pressures Roil Supply Chain",
+      "title_norm": "huawei and lenovo to raise prices in july as chip cost pressures roil supply chain",
+      "url": "https://pandaily.com/huawei-lenovo-july-price-hike-chip-cost-jun2026",
+      "published_at": "2026-06-11T08:08:53Z",
+      "summary": "Huawei and Lenovo to Raise Prices in July as Chip Cost Pressures Roil Consumer Electronics Supply C…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [],
+      "tracks": [
+        "china_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "chargedevs",
+      "platform_key": "chargedevs",
+      "source_type": "rss",
+      "title": "Engineering the connection point for long-term EV charging reliability",
+      "title_norm": "engineering the connection point for long term ev charging reliability",
+      "url": "https://chargedevs.com/whitepapers/engineering-the-connection-point-for-long-term-ev-charging-reliability/",
+      "published_at": "2026-06-11T16:18:16Z",
+      "summary": "<a href=\"https://chargedevs.com/whitepapers/engineering-the-connection-point-for-long-term-ev-charg…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "techcrunch-transport",
+      "platform_key": "techcrunch-transport",
+      "source_type": "rss",
+      "title": "Waymo launches a loyalty program with 10% cash back and free cancellations",
+      "title_norm": "waymo launches a loyalty program with 10 cash back and free cancellations",
+      "url": "https://techcrunch.com/2026/06/11/waymo-launches-a-loyalty-program-with-10-cash-back-and-free-cancellations/",
+      "published_at": "2026-06-11T16:00:23Z",
+      "summary": "Members of the program, called \"Waymo Premier,\" will have to pony up $29.99 per month.",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "auto_news"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge-transport",
+      "platform_key": "theverge-transport",
+      "source_type": "rss",
+      "title": "Waymo introduces $30-a-month premium tier for riders who want faster pickups",
+      "title_norm": "waymo introduces 30 a month premium tier for riders who want faster pickups",
+      "url": "https://www.theverge.com/transportation/947974/waymo-premier-monthly-membership-perks-priority-cash-back",
+      "published_at": "2026-06-11T16:00:00Z",
+      "summary": "Uber One, meet Waymo Premier. The robotaxi operator announced a new $29.99-a-month premium tier for…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "auto_news"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "chargedevs",
+      "platform_key": "chargedevs",
+      "source_type": "rss",
+      "title": "Webinar: Sustaining high-temperature DC-link film for 800 V+ SiC inverters",
+      "title_norm": "webinar sustaining high temperature dc link film for 800 v sic inverters",
+      "url": "https://chargedevs.com/newswire/webinar-sustaining-high-temperature-dc-link-film-for-800v-sic-inverters/",
+      "published_at": "2026-06-11T15:54:07Z",
+      "summary": "<a href=\"https://chargedevs.com/newswire/webinar-sustaining-high-temperature-dc-link-film-for-800v-…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "chargedevs",
+      "platform_key": "chargedevs",
+      "source_type": "rss",
+      "title": "Scania sells 105 electric trucks to Swedish chemical firm",
+      "title_norm": "scania sells 105 electric trucks to swedish chemical firm",
+      "url": "https://chargedevs.com/newswire/scania-sells-105-electric-trucks-to-swedish-chemical-firm/",
+      "published_at": "2026-06-11T15:37:10Z",
+      "summary": "<a href=\"https://chargedevs.com/newswire/scania-sells-105-electric-trucks-to-swedish-chemical-firm/…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "theverge-transport",
+      "platform_key": "theverge-transport",
+      "source_type": "rss",
+      "title": "Ryanair is under investigation over charging parents to sit with their kids",
+      "title_norm": "ryanair is under investigation over charging parents to sit with their kids",
+      "url": "https://www.theverge.com/transportation/948244/ryanair-cma-probe-parents-child-seating-fee",
+      "published_at": "2026-06-11T08:59:16Z",
+      "summary": "European economy airline Ryanair is under investigation in the UK for charging parents mandatory fe…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "auto_news"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "thedriven",
+      "platform_key": "thedriven",
+      "source_type": "rss",
+      "title": "Motoring group to trial mobile DC fast charger for stranded EV drivers",
+      "title_norm": "motoring group to trial mobile dc fast charger for stranded ev drivers",
+      "url": "https://thedriven.io/2026/06/11/motoring-group-to-trial-mobile-dc-fast-charger-for-stranded-ev-drivers/",
+      "published_at": "2026-06-11T05:47:01Z",
+      "summary": "<a href=\"https://thedriven.io/2026/06/11/motoring-group-to-trial-mobile-dc-fast-charger-for-strande…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "thedriven",
+      "platform_key": "thedriven",
+      "source_type": "rss",
+      "title": "GWM Ora 5 small electric SUV arrives in Australia with near 3,000 interested buyers",
+      "title_norm": "gwm ora 5 small electric suv arrives in australia with near 3 000 interested buyers",
+      "url": "https://thedriven.io/2026/06/11/gwm-ora-5-small-electric-suv-arrives-in-australia-with-near-3000-interested-buyers/",
+      "published_at": "2026-06-11T05:44:49Z",
+      "summary": "<a href=\"https://thedriven.io/2026/06/11/gwm-ora-5-small-electric-suv-arrives-in-australia-with-nea…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    },
+    {
+      "platform": "thedriven",
+      "platform_key": "thedriven",
+      "source_type": "rss",
+      "title": "Zeekr reaches major milestone in the premium EV market",
+      "title_norm": "zeekr reaches major milestone in the premium ev market",
+      "url": "https://thedriven.io/2026/06/11/zeekr-reaches-major-milestone-in-the-premium-ev-market/",
+      "published_at": "2026-06-11T00:38:23Z",
+      "summary": "<a href=\"https://thedriven.io/2026/06/11/zeekr-reaches-major-milestone-in-the-premium-ev-market/\" r…",
+      "company": null,
+      "signal_level": "B",
+      "include_keywords": [],
+      "tracks": [
+        "global_ev"
+      ],
+      "language": "en"
+    }
+  ]
+}

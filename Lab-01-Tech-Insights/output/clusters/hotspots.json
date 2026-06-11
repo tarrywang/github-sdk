@@ -1,0 +1,293 @@
+{
+  "mode": "llm",
+  "top_k": 6,
+  "hotspots": [
+    {
+      "hotspot_id": "H01",
+      "title": "中国电动车市场价格战与监管收紧",
+      "summary": "中国监管机构召集车企问询疑似非理性竞争，同期Smart、蔚来Onvo、GWM哈弗、Geely均密集推出新车或大幅降价，显示价格战持续升温。",
+      "category": "trend",
+      "overall_heat_score": 95,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Smart",
+          "Nio Onvo",
+          "GWM",
+          "Geely"
+        ],
+        "platforms": [
+          "cnevpost",
+          "carnewschina"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "S级双源共振，监管+多家整车企业同时动作",
+        "价格战可能引发行业连锁反应，影响全球供应链"
+      ],
+      "samples": [
+        {
+          "platform": "cnevpost",
+          "title": "Smart launches #6 EHD hybrid sedan in China with prices starting at $20k",
+          "url": "https://cnevpost.com/2026/06/11/smart-6-ehd-hybrid-sedan-china/",
+          "published_at": "2026-06-11",
+          "company": "Smart",
+          "signal_level": "S"
+        },
+        {
+          "platform": "cnevpost",
+          "title": "Nio Onvo launches updated L60 SUV with in-house chip at lower starting price",
+          "url": "https://cnevpost.com/2026/06/11/nio-onvo-l60-updated/",
+          "published_at": "2026-06-11",
+          "company": "Nio",
+          "signal_level": "S"
+        },
+        {
+          "platform": "cnevpost",
+          "title": "Chinese regulators summon automakers over suspected irrational competition",
+          "url": "https://cnevpost.com/2026/06/11/chinese-regulators-summon-automakers/",
+          "published_at": "2026-06-11",
+          "company": null,
+          "signal_level": "S"
+        },
+        {
+          "platform": "carnewschina",
+          "title": "Geely EX5 electric SUV adds 114 hp and the LiDAR sensor in China",
+          "url": "https://carnewschina.com/2026/06/11/geely-ex5-lidar/",
+          "published_at": "2026-06-11",
+          "company": "Geely",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H02",
+      "title": "Waymo推出忠诚度计划与高级订阅，自动驾驶商业化提速",
+      "summary": "Waymo同时在TechCrunch和The Verge获得报道：推出10%返现忠诚计划与每月30美元高级会员（更快接单），标志着Robotaxi正式进入留存运营阶段。",
+      "category": "trend",
+      "overall_heat_score": 80,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Waymo"
+        ],
+        "platforms": [
+          "techcrunch-transport",
+          "theverge-transport"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "双源同日报道，商业化里程碑",
+        "订阅制Robotaxi是行业首次，具有示范效应"
+      ],
+      "samples": [
+        {
+          "platform": "techcrunch-transport",
+          "title": "Waymo launches a loyalty program with 10% cash back and free cancellations",
+          "url": "https://techcrunch.com/2026/06/11/waymo-loyalty-program/",
+          "published_at": "2026-06-11",
+          "company": "Waymo",
+          "signal_level": "B"
+        },
+        {
+          "platform": "theverge-transport",
+          "title": "Waymo introduces $30-a-month premium tier for riders who want faster pickups",
+          "url": "https://www.theverge.com/transportation/2026/06/11/waymo-premium-tier",
+          "published_at": "2026-06-11",
+          "company": "Waymo",
+          "signal_level": "B"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H03",
+      "title": "AI芯片出口管制升级：台湾立法、华为/联想涨价",
+      "summary": "台湾拟将未经授权AI芯片出口大陆列为刑事罪；小米玄戒O3与骁龙对标；华为和联想因芯片成本压力宣布7月涨价——芯片战进入新阶段。",
+      "category": "trend",
+      "overall_heat_score": 88,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Xiaomi",
+          "Huawei",
+          "Lenovo"
+        ],
+        "platforms": [
+          "pandaily"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "A级源，政策+产品+价格三线并发",
+        "对全球科技供应链和消费电子市场影响深远"
+      ],
+      "samples": [
+        {
+          "platform": "pandaily",
+          "title": "Xiaomi Next-Gen Xuanjie O3 Chip Expected to Go Head-to-Head with Qualcomm",
+          "url": "https://pandaily.com/2026/06/11/xiaomi-xuanjie-o3/",
+          "published_at": "2026-06-11",
+          "company": "Xiaomi",
+          "signal_level": "A"
+        },
+        {
+          "platform": "pandaily",
+          "title": "Taiwan Moves to Criminalize Unauthorized AI Chip Exports to Mainland China",
+          "url": "https://pandaily.com/2026/06/11/taiwan-ai-chip-exports/",
+          "published_at": "2026-06-11",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "pandaily",
+          "title": "Huawei and Lenovo to Raise Prices in July as Chip Cost Pressures Roil Market",
+          "url": "https://pandaily.com/2026/06/11/huawei-lenovo-price-hike/",
+          "published_at": "2026-06-11",
+          "company": "Huawei",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H04",
+      "title": "美国EV市场：Bolt复活与Equinox EV租金飙升",
+      "summary": "Chevy Bolt重生测评登场（4优2劣），同期Equinox EV租金突然大幅上涨，反映美国EV补贴政策不确定性和消费者情绪分化。",
+      "category": "trend",
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Chevrolet",
+          "GM"
+        ],
+        "platforms": [
+          "insideevs",
+          "electrek"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "双A级源交叉印证GM EV策略调整",
+        "美国EV补贴政策变化影响消费决策"
+      ],
+      "samples": [
+        {
+          "platform": "insideevs",
+          "title": "I Drove The Revived Chevy Bolt. Here Are 4 Pros And 2 Cons",
+          "url": "https://insideevs.com/2026/06/11/chevy-bolt-revived-review/",
+          "published_at": "2026-06-11",
+          "company": "Chevrolet",
+          "signal_level": "A"
+        },
+        {
+          "platform": "electrek",
+          "title": "The Chevy Equinox EV is suddenly way more expensive to lease",
+          "url": "https://electrek.co/2026/06/11/chevy-equinox-ev-lease/",
+          "published_at": "2026-06-11",
+          "company": "Chevrolet",
+          "signal_level": "A"
+        },
+        {
+          "platform": "insideevs",
+          "title": "China Loves This Cheap Battery Tech. Here is Why General Motors Might Not",
+          "url": "https://insideevs.com/2026/06/11/china-battery-tech-gm/",
+          "published_at": "2026-06-11",
+          "company": "GM",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "华为-奇瑞Luxeed RX争议与新能源豪华车市场",
+      "summary": "Luxeed RX因法拉利设计争议被曝光，引发对华为跨界豪华汽车品牌定位的讨论；GWM哈弗H6L PHEV+LiDAR版本也同日申报。",
+      "category": "single",
+      "overall_heat_score": 65,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Huawei",
+          "Chery",
+          "GWM"
+        ],
+        "platforms": [
+          "carnewschina"
+        ]
+      },
+      "should_chase": "no",
+      "chase_rationale": [
+        "S级单源，但话题性强，关注华为汽车品牌战略演进"
+      ],
+      "samples": [
+        {
+          "platform": "carnewschina",
+          "title": "Controversy surrounds Huawei-Chery collaborated Luxeed RX Ferrari design",
+          "url": "https://carnewschina.com/2026/06/11/luxeed-rx-ferrari-controversy/",
+          "published_at": "2026-06-11",
+          "company": "Huawei",
+          "signal_level": "S"
+        },
+        {
+          "platform": "carnewschina",
+          "title": "GWM Haval H6L gains plug-in hybrid variant with lidar in China filing",
+          "url": "https://carnewschina.com/2026/06/11/gwm-haval-h6l-phev-lidar/",
+          "published_at": "2026-06-11",
+          "company": "GWM",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "全球EV充电基础设施大规模扩张",
+      "summary": "英国宣布新增17,000个EV充电桩；澳大利亚The Driven报道移动DC快充救援服务试点；GWM Ora 5进澳预购近3000辆；Zeekr豪华EV市场里程碑。",
+      "category": "trend",
+      "overall_heat_score": 68,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "GWM",
+          "Zeekr"
+        ],
+        "platforms": [
+          "cleantechnica",
+          "thedriven",
+          "chargedevs"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "多地区多媒体共振，充电网络扩张是EV普及关键节点",
+        "B+A级双源，地区覆盖广"
+      ],
+      "samples": [
+        {
+          "platform": "cleantechnica",
+          "title": "17,000 New EV Chargers Coming To The UK",
+          "url": "https://cleantechnica.com/2026/06/11/17000-ev-chargers-uk/",
+          "published_at": "2026-06-11",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "thedriven",
+          "title": "Motoring group to trial mobile DC fast charger for stranded EV drivers",
+          "url": "https://thedriven.io/2026/06/11/mobile-dc-fast-charger/",
+          "published_at": "2026-06-11",
+          "company": null,
+          "signal_level": "B"
+        },
+        {
+          "platform": "thedriven",
+          "title": "GWM Ora 5 small electric SUV arrives in Australia with near 3,000 interest registrations",
+          "url": "https://thedriven.io/2026/06/11/gwm-ora-5-australia/",
+          "published_at": "2026-06-11",
+          "company": "GWM",
+          "signal_level": "B"
+        }
+      ]
+    }
+  ]
+}

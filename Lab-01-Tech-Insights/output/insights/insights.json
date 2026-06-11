@@ -1,0 +1,159 @@
+{
+  "insights": [
+    {
+      "hotspot_id": "H01",
+      "title": "中国电动车市场价格战与监管收紧",
+      "what_changed": "中国监管机构首次公开召集车企就价格竞争问询，Smart、蔚来Onvo、Geely、GWM哈弗同日推出新车或降价促销。蔚来Onvo L60采用自研芯片并下调起步价，Geely EX5增配LiDAR且不涨价。",
+      "why_it_matters": "监管介入价格战是中国汽车市场的重要信号：政府可能通过合规要求或最低价保护来抑制恶性竞争。同时，自研芯片进入量产车型表明中国车企在核心零部件自主化上取得实质进展，对全球供应链格局有深远影响。",
+      "who_is_impacted": [
+        "中国整车企业（被迫跟进降价或被边缘化）",
+        "Tier-1 零部件供应商（利润被进一步压缩）",
+        "全球投资者（关注中国EV板块盈利能力）",
+        "外资车企在华合资公司（竞争力进一步削弱）"
+      ],
+      "next_actions": [
+        "关注监管机构后续处罚或指导意见发布时间",
+        "追踪蔚来/Geely自研芯片量产规模与成本路线图",
+        "评估合资车企是否跟进同等幅度降价"
+      ],
+      "risk_notes": [
+        "监管干预可能短暂稳定价格，但中期价格压力仍在",
+        "企业在现金流压力下若大幅降价，可能引发信用风险"
+      ],
+      "references": [
+        "https://cnevpost.com/2026/06/11/smart-6-ehd-hybrid-sedan-china/",
+        "https://cnevpost.com/2026/06/11/nio-onvo-l60-updated/",
+        "https://cnevpost.com/2026/06/11/chinese-regulators-summon-automakers/",
+        "https://carnewschina.com/2026/06/11/geely-ex5-lidar/"
+      ]
+    },
+    {
+      "hotspot_id": "H02",
+      "title": "Waymo推出忠诚度计划与高级订阅，自动驾驶商业化提速",
+      "what_changed": "Waymo同日推出两项商业化举措：10%现金返还忠诚计划（绑定重复消费）与每月30美元高级会员（优先接单+免费取消）。这是Robotaxi行业首次系统性用户留存/订阅尝试。",
+      "why_it_matters": "Waymo从「奇特验证」阶段进入「用户运营」阶段，说明其商业模式已具备可重复性。忠诚计划标志着与传统打车平台的正面竞争。订阅制高级层降低了随机使用的不确定性，有助于提升客单价和可预期收入。",
+      "who_is_impacted": [
+        "Uber/Lyft（直接竞争对手，面临更强留存压力）",
+        "Robotaxi后来者（Aurora, Zoox）需跟进商业化节奏",
+        "城市出行用户（更多选项与价格比较压力）",
+        "Waymo投资者（商业化里程碑利好估值）"
+      ],
+      "next_actions": [
+        "追踪忠诚计划6个月后的用户留存数据",
+        "观察Uber/Lyft的应对策略",
+        "评估Waymo城市扩张计划（下一个开城城市）"
+      ],
+      "risk_notes": [
+        "订阅制能否持续吸引用户取决于服务可靠性和覆盖范围",
+        "单月30美元对轻度用户吸引力有限"
+      ],
+      "references": [
+        "https://techcrunch.com/2026/06/11/waymo-loyalty-program/",
+        "https://www.theverge.com/transportation/2026/06/11/waymo-premium-tier"
+      ]
+    },
+    {
+      "hotspot_id": "H03",
+      "title": "AI芯片出口管制升级：台湾立法、华为/联想涨价",
+      "what_changed": "台湾立法机构推进将未经授权AI芯片出口大陆列为刑事罪；小米发布玄戒O3，直接对标骁龙旗舰；华为与联想宣布7月因芯片成本压力上调产品价格。",
+      "why_it_matters": "台湾新法规将显著收紧AI芯片流向中国的灰色渠道，加速中国自主芯片路线。小米玄戒O3是中国消费电子芯片追赶骁龙的又一里程碑。华为/联想涨价表明供应链成本压力已传导至终端，预示消费电子涨价潮。",
+      "who_is_impacted": [
+        "中国AI企业（算力获取成本上升，自研芯片投入加大）",
+        "台湾半导体出口商（法律合规成本增加）",
+        "消费者（华为/联想产品7月起涨价）",
+        "高通/英伟达（受益于中国客户转向自研的长期竞争格局变化）"
+      ],
+      "next_actions": [
+        "追踪台湾立法进展与具体适用范围",
+        "评估小米玄戒O3实际量产与外供时间表",
+        "关注华为/联想涨价幅度及市场反应"
+      ],
+      "risk_notes": [
+        "中国反制措施可能影响台湾企业在大陆的业务",
+        "涨价可能抑制消费，加速消费者转向竞品"
+      ],
+      "references": [
+        "https://pandaily.com/2026/06/11/xiaomi-xuanjie-o3/",
+        "https://pandaily.com/2026/06/11/taiwan-ai-chip-exports/",
+        "https://pandaily.com/2026/06/11/huawei-lenovo-price-hike/"
+      ]
+    },
+    {
+      "hotspot_id": "H04",
+      "title": "美国EV市场：Bolt复活与Equinox EV租金飙升",
+      "what_changed": "InsideEVs发布复活版Chevy Bolt深度测评（4优2劣），同期electrek报道Equinox EV月租金突然大幅上涨；InsideEVs另文分析中国LFP电池技术为何GM可能不采用。",
+      "why_it_matters": "Bolt复活是GM重申平价EV路线的信号，但Equinox EV租金骤涨暗示补贴削减或成本转嫁；GM对中国LFP技术的保留态度折射出技术路线与政策合规的两难困境。三文合并传递出：美国EV市场正处于政策不确定性导致的价格与产品战略调整期。",
+      "who_is_impacted": [
+        "美国EV消费者（购车/租车成本上升，选择难度加大）",
+        "GM（需在成本竞争力与政策合规之间寻找平衡）",
+        "中国LFP电池供应商（如宁德时代、比亚迪——外供机会受限）",
+        "美国EV经销商（库存积压风险上升）"
+      ],
+      "next_actions": [
+        "关注美国IRA补贴细则更新对EV月租金的影响",
+        "追踪GM下一步EV产品线调整（是否引入LFP）",
+        "评估Bolt新款销量表现作为平价EV市场温度计"
+      ],
+      "risk_notes": [
+        "补贴不确定性可能使租金波动成为常态",
+        "若GM拒绝LFP，成本竞争力与中国对手差距将持续拉大"
+      ],
+      "references": [
+        "https://insideevs.com/2026/06/11/chevy-bolt-revived-review/",
+        "https://electrek.co/2026/06/11/chevy-equinox-ev-lease/",
+        "https://insideevs.com/2026/06/11/china-battery-tech-gm/"
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "华为-奇瑞Luxeed RX设计争议与新能源豪华车定位",
+      "what_changed": "华为与奇瑞合作的Luxeed RX豪华SUV被指外观与法拉利某款车型高度相似，引发版权/品牌定位争议；同日GWM哈弗H6L PHEV搭载LiDAR版在工信部申报，将进入旗舰配置。",
+      "why_it_matters": "华为进军豪华汽车市场面临品牌独特性挑战；若设计争议升级至法律纠纷，将对华为汽车业务造成品牌损伤。GWM将LiDAR下探至H6L级别，表明高阶智驾配置加速平民化。",
+      "who_is_impacted": [
+        "华为汽车业务/奇瑞品牌（声誉风险）",
+        "中国豪华EV市场竞争格局（蔚来、理想面临华为降维竞争）",
+        "LiDAR供应商（GWM H6L级车型带量）"
+      ],
+      "next_actions": [
+        "追踪法拉利是否提出知识产权主张",
+        "关注Luxeed RX上市后市场反应",
+        "评估GWM H6L PHEV+LiDAR版定价与量产时间"
+      ],
+      "risk_notes": [
+        "设计争议可能影响Luxeed品牌形象，抑制销量",
+        "模仿高端品牌设计是中国车企的历史风险点"
+      ],
+      "references": [
+        "https://carnewschina.com/2026/06/11/luxeed-rx-ferrari-controversy/",
+        "https://carnewschina.com/2026/06/11/gwm-haval-h6l-phev-lidar/"
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "全球EV充电基础设施大规模扩张",
+      "summary": "英国宣布新增17,000个EV充电桩；澳大利亚The Driven报道移动DC快充救援服务试点；GWM Ora 5进澳预购近3000辆；Zeekr豪华EV市场里程碑。",
+      "what_changed": "英国政府宣布新增17,000个EV充电桩计划；澳大利亚汽车组织启动移动DC快充救援车试点，解决里程焦虑；GWM Ora 5在澳大利亚获近3000辆预购；Zeekr达到豪华EV市场重要销量里程碑。",
+      "why_it_matters": "充电基础设施密度是EV普及率的关键瓶颈，英国大规模扩充为欧洲EV渗透率提速提供基础；移动DC快充创新解决了现有桩网盲点；中国品牌（GWM Ora、Zeekr）在澳洲市场走量，标志着中国EV出口第二波浪潮已至英语圈市场。",
+      "who_is_impacted": [
+        "英国EV车主及潜在买家（充电焦虑减少）",
+        "澳大利亚EV用户（移动救援+Ora5新选项）",
+        "本地充电运营商（竞争加剧）",
+        "中国EV出口商（澳洲市场验证可复制性）"
+      ],
+      "next_actions": [
+        "跟踪英国17,000桩计划时间表与资金来源",
+        "评估移动DC快充商业模式可行性",
+        "关注GWM Ora 5澳洲交付与售后体验反馈"
+      ],
+      "risk_notes": [
+        "英国充电扩张依赖政策连续性，政治风险存在",
+        "中国品牌在澳洲面临售后网络建设挑战"
+      ],
+      "references": [
+        "https://cleantechnica.com/2026/06/11/17000-ev-chargers-uk/",
+        "https://thedriven.io/2026/06/11/mobile-dc-fast-charger/",
+        "https://thedriven.io/2026/06/11/gwm-ora-5-australia/"
+      ]
+    }
+  ]
+}
