@@ -688,7 +688,24 @@ def tech_load_articles_from_disk(
     }
 
 
+def _read_if_path(s: Any) -> Any:
+    """If the value looks like a path to an existing file (rather than inline
+    JSON), return the file's contents. Makes the tools tolerant of the agent
+    passing a file path instead of the actual JSON content."""
+    if isinstance(s, str):
+        t = s.strip()
+        if t and t[0] not in "{[" and "\n" not in t and len(t) <= 1024:
+            try:
+                p = Path(t)
+                if p.is_file():
+                    return p.read_text(encoding="utf-8")
+            except OSError:
+                pass
+    return s
+
+
 def _extract_json(text: str) -> Any:
+    text = _read_if_path(text)
     t = (text or "").strip()
     t = re.sub(r"^```(?:json)?\s*", "", t, flags=re.IGNORECASE)
     t = re.sub(r"```\s*$", "", t)
@@ -707,6 +724,7 @@ def _extract_json(text: str) -> Any:
 
 
 def _coerce_raw_signals(raw_signals_json: str) -> dict[str, Any]:
+    raw_signals_json = _read_if_path(raw_signals_json)
     obj = (
         json.loads(raw_signals_json)
         if isinstance(raw_signals_json, str)

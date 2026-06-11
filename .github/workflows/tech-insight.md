@@ -135,17 +135,7 @@ mcp-scripts:
         default: 6
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "
-      import os, json, sys
-      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
-      from tech_insight_tools import tech_cluster_or_fallback
-      result = tech_cluster_or_fallback(
-          raw_signals_json=os.environ.get('INPUT_RAW_SIGNALS_JSON', ''),
-          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
-          top_k=int(os.environ.get('INPUT_TOP_K') or 6),
-      )
-      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
-      "
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'raw_signals_json': os.environ.get('INPUT_RAW_SIGNALS_JSON', ''), 'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'top_k': int(os.environ.get('INPUT_TOP_K') or 6)}); sys.exit(subprocess.run([sys.executable, 'Lab-01-Tech-Insights/mcp-scripts/tech_cluster_or_fallback.py'], input=payload, text=True).returncode)"
   tech-insight-or-fallback:
     description: "Validate and fallback insight results"
     inputs:
@@ -157,16 +147,7 @@ mcp-scripts:
         required: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "
-      import os, json, sys
-      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
-      from tech_insight_tools import tech_insight_or_fallback
-      result = tech_insight_or_fallback(
-          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
-          insights_json=os.environ.get('INPUT_INSIGHTS_JSON', ''),
-      )
-      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
-      "
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-01-Tech-Insights/mcp-scripts/tech_insight_or_fallback.py'], input=payload, text=True).returncode)"
   tech-render-report-or-fallback:
     description: "Validate and fallback report rendering"
     inputs:
@@ -181,17 +162,7 @@ mcp-scripts:
         required: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "
-      import os, json, sys
-      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
-      from tech_insight_tools import tech_render_report_or_fallback
-      result = tech_render_report_or_fallback(
-          clusters_json=os.environ.get('INPUT_CLUSTERS_JSON', ''),
-          insights_json=os.environ.get('INPUT_INSIGHTS_JSON', ''),
-          draft_markdown=os.environ.get('INPUT_DRAFT_MARKDOWN', ''),
-      )
-      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
-      "
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'draft_markdown': os.environ.get('INPUT_DRAFT_MARKDOWN', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-01-Tech-Insights/mcp-scripts/tech_render_report_or_fallback.py'], input=payload, text=True).returncode)"
   write-text-file:
     description: "Write text content to a file"
     inputs:
@@ -206,17 +177,7 @@ mcp-scripts:
         default: true
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "
-      import os, json, sys
-      sys.path.insert(0, 'Lab-01-Tech-Insights/mcp-scripts')
-      from file_io_tool import write_text_file
-      result = write_text_file(
-          path=os.environ.get('INPUT_PATH', ''),
-          text=os.environ.get('INPUT_TEXT', ''),
-          overwrite=(os.environ.get('INPUT_OVERWRITE', 'true').lower() != 'false'),
-      )
-      print(result if isinstance(result, str) else json.dumps(result, ensure_ascii=False))
-      "
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'path': os.environ.get('INPUT_PATH', ''), 'text': os.environ.get('INPUT_TEXT', ''), 'overwrite': os.environ.get('INPUT_OVERWRITE', 'true').strip().lower() not in ('false', '0', 'no')}); sys.exit(subprocess.run([sys.executable, 'Lab-01-Tech-Insights/mcp-scripts/write_text_file.py'], input=payload, text=True).returncode)"
 ---
 
 # Tech Insight 工作流
