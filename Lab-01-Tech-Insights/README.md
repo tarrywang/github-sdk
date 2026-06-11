@@ -1,15 +1,15 @@
-# Lab-01：Tech Insights — GitHub Agentic Workflows 动手实验
+# Lab-01：EV 市场洞察与竞争雷达 — GitHub Agentic Workflows 动手实验
 
-本实验带你从零跑通一个基于 GitHub Agentic Workflows 的技术洞察流水线。
+本实验带你从零跑通一个基于 GitHub Agentic Workflows 的 EV（电动车）行业市场洞察与竞争雷达流水线。
 
-实验时长：90 分钟
+实验时长：60 分钟
 
-你将收获：Fork 仓库 → 配置 gh-aw → 手动触发工作流 → 查看 AI 生成的技术周报 → 自定义数据源和提示词 → 部署到 GitHub Pages。
+你将收获：Fork 仓库 → 配置 gh-aw → 手动触发工作流 → 查看 AI 生成的 EV 市场洞察报告 → 部署到 GitHub Pages。
 
 ### 架构图
 
 ```text
-RSS 源 (20 个精选)
+RSS 源 (10 个 EV 精选)
     ↓ 阶段1: 信号抓取
 MCP Scripts (Python 工具)
     ↓ raw_signals.json
@@ -41,14 +41,14 @@ GitHub Pages (在线查看)
 ### 步骤
 
 1. Fork 本仓库
-   - 打开课程仓库页面
+   - 打开 `https://github.com/GitHub-GCR-Cloud-Solution-Architect/GCR-AI-Tour-2026`
    - 点击右上角 **Fork** 按钮
    - 保留默认设置，点击 **Create fork**
    - 等待 Fork 完成
 
 2. Clone 到本地
 ```bash
-git clone <你的仓库地址>
+git clone https://github.com/<你的用户名>/GCR-AI-Tour-2026.git
 cd GCR-AI-Tour-2026
 ```
 
@@ -112,7 +112,7 @@ python3 --version  # 确认 3.10+
 | write_text_file.py | 文件写入工具 |
 
 3. 查看数据源：`Lab-01-Tech-Insights/input/api/rss_list.json`
-   - 包含 20 个精选 RSS 源（10 家科技公司 + 10 个前沿社区/媒体）。
+   - 包含 10 个精选 EV 行业 RSS 源（以中国新能源车市为主，兼顾全球 EV 媒体）。
    - 每个源有 `signal_level`（S/A/B）字段，权重分别为 30/20/10，影响热点排序。
 
 4. 查看前端：`Lab-01-Tech-Insights/frontend/`
@@ -162,11 +162,11 @@ git push origin main
 ### 步骤 5: 手动触发工作流
 - **方法 A（推荐）**：在 GitHub UI 页面。
   - 打开仓库 → **Actions** 标签页。
-  - 左侧选择 **Tech Insight Workflow**。
+  - 左侧选择 **EV Insight Workflow**。
   - 点击 **Run workflow** → **Run workflow**。
 - **方法 B（CLI）**：
 ```bash
-gh workflow run "Tech Insight Workflow"
+gh workflow run "EV Insight Workflow"
 ```
 
 ### 步骤 6: 观察运行
@@ -175,7 +175,7 @@ gh workflow run "Tech Insight Workflow"
 - 工作流一般需要 **15-20 分钟**完成（其中 agent 步骤约 10-15 分钟）。
 
 ### 步骤 7: 合并 PR 并检查输出
-- 运行成功后，工作流会通过 safe-outputs 机制**自动创建一个 PR**（标题以 `[tech-insight]` 开头）。
+- 运行成功后，工作流会通过 safe-outputs 机制**自动创建一个 PR**（标题以 `[ev-insight]` 开头）。
 - 在仓库 **Pull requests** 标签页找到该 PR，Review 后点击 **Merge**。
 - 合并后拉取最新代码：
 ```bash
@@ -195,7 +195,7 @@ git pull origin main
 ```bash
 code Lab-01-Tech-Insights/output/report.md
 ```
-- 观察报告结构：24h 摘要 → Cross-source Trends（跨源趋势） → High-signal Singles（重要单条更新） → Company Radar（公司雷达） → DevTools Releases（工具链更新） → Research Watch（研究趋势）。
+- 观察报告结构：市场摘要 → 跨源趋势 → 重要单条更新 → 车企竞争雷达 → 新车型与产品发布 → 政策与销量 → 技术与电池研究。
 
 2. 本地预览前端：
 ```bash
@@ -212,84 +212,7 @@ python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend
 
 ---
 
-## Lab 4: 实验 — 自定义数据源（15 分钟）
-
-目标：添加你关注的技术博客作为新数据源。
-
-1. 编辑 `Lab-01-Tech-Insights/input/api/rss_list.json`。
-
-2. 在 JSON 数组末尾添加一个新源：
-```json
-{
-  "id": 21,
-  "name": "阮一峰的网络日志",
-  "platform": "ruanyifeng",
-  "source": "rss",
-  "url": "https://www.ruanyifeng.com/blog/atom.xml",
-  "signal_level": "B"
-}
-```
-
-> 💡 `signal_level` 影响热点排序权重：`S`（30）> `A`（20）> `B`（10）。新源建议先设为 `B`。
-
-推荐的中文技术源：
-- InfoQ 中文: `https://www.infoq.cn/feed`
-- 36氪: `https://36kr.com/feed`
-
-3. **关键步骤：更新网络白名单**
-   - 打开 `.github/workflows/tech-insight.md`。
-   - 在 `network: allowed:` 数组中添加新源的域名：
-   ```yaml
-   - "www.ruanyifeng.com"
-   ```
-   - ⚠️ 如果跳过这一步，sandbox 防火墙会阻断对新源的访问（返回 403）。
-
-4. 重新编译并推送
-```bash
-gh aw compile .github/workflows/tech-insight.md
-git add Lab-01-Tech-Insights/input/api/rss_list.json .github/workflows/
-git commit -m "feat: add custom RSS source"
-git push origin main
-```
-
-5. 再次手动触发工作流
-```bash
-gh workflow run "Tech Insight Workflow"
-```
-
-6. 等待运行完成后合并 PR、拉取代码，查看新报告是否包含了新源的内容。
-
----
-
-## Lab 5: 实验 — 修改工作流提示词（15 分钟）
-
-目标：通过修改自然语言指令，改变 AI 的行为。
-
-1. 打开 `.github/workflows/tech-insight.md`。
-
-2. **实验 A: 修改参数**
-   - 将 `time_window_hours` 从 `24` 改为 `72`。
-   - 将 `top_k` 从 `12` 改为 `5`。
-
-3. **实验 B: 修改报告结构**
-   - 在阶段 4 的报告提示词中添加新的要求，例如在 "结构包含" 列表中添加：
-     ```
-     - 学习资源推荐（每个热点附带 1-2 个学习链接）
-     ```
-
-4. 重新编译并推送
-```bash
-gh aw compile .github/workflows/tech-insight.md
-git add .github/workflows/
-git commit -m "feat: customize workflow prompts"
-git push origin main
-```
-
-5. 触发运行并对比结果。
-
----
-
-## Lab 6: 实验 — 定时触发与 GitHub Pages（10 分钟）
+## Lab 4: 实验 — 定时触发与 GitHub Pages（10 分钟）
 
 ### 实验 A: 添加定时触发
 
@@ -308,14 +231,14 @@ on:
 1. 打开仓库 → **Settings** → 左侧 **Pages**。
 2. Source 选择 **GitHub Actions**。
 3. GitHub Pages 会在以下情况自动部署：
-   - 当 `Lab-01-Tech-Insights/frontend/` 目录有文件变更被推送到 `main` 分支时（例如合并 Tech Insight PR 后）。
+   - 当 `Lab-01-Tech-Insights/frontend/` 目录有文件变更被推送到 `main` 分支时（例如合并 EV Insight PR 后）。
    - 也可以手动触发：
 ```bash
 gh workflow run "Deploy GitHub Pages"
 ```
 4. 访问 `https://<你的用户名>.github.io/GCR-AI-Tour-2026/` 查看在线版报告。
 
-> 💡 完整发布链路：Tech Insight 工作流完成 → safe-outputs 创建 PR → 合并 PR → `frontend/report.md` 变更触发 deploy-pages → GitHub Pages 自动更新。
+> 💡 完整发布链路：EV Insight 工作流完成 → safe-outputs 创建 PR → 合并 PR → `frontend/report.md` 变更触发 deploy-pages → GitHub Pages 自动更新。
 
 ---
 
@@ -324,7 +247,6 @@ gh workflow run "Deploy GitHub Pages"
 你在本实验中学到了：
 - ✅ gh-aw 的核心概念：Markdown 工作流 + MCP Scripts + AI Engine。
 - ✅ 如何安装、编译和运行 Agentic Workflows。
-- ✅ 如何自定义数据源和 AI 提示词。
 - ✅ 如何设置定时触发和 GitHub Pages 部署。
 
 延伸探索：
@@ -343,7 +265,7 @@ GCR-AI-Tour-2026/
 │   └── deploy-pages.yml          # Pages 部署工作流
 ├── Lab-01-Tech-Insights/
 │   ├── mcp-scripts/              # MCP Script 工具
-│   ├── input/api/rss_list.json   # 数据源（20 个精选 RSS）
+│   ├── input/api/rss_list.json   # 数据源（10 个 EV 精选 RSS）
 │   ├── frontend/                 # 展示前端
 │   └── output/                   # 运行时输出
 ```

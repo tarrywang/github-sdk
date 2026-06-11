@@ -1,172 +1,82 @@
 [
   {
     "id": 1,
-    "name": "OpenAI News",
-    "platform": "openai",
+    "name": "CnEVPost",
+    "platform": "cnevpost",
     "source": "rss",
-    "url": "https://openai.com/news/rss.xml",
-    "signal_level": "S",
-    "company": "OpenAI"
+    "url": "https://cnevpost.com/feed/",
+    "signal_level": "S"
   },
   {
     "id": 2,
-    "name": "GitHub Blog",
-    "platform": "github-blog",
+    "name": "CarNewsChina",
+    "platform": "carnewschina",
     "source": "rss",
-    "url": "https://github.blog/feed/",
-    "signal_level": "S",
-    "company": "GitHub"
+    "url": "https://carnewschina.com/feed/",
+    "signal_level": "S"
   },
   {
     "id": 3,
-    "name": "Microsoft DevBlogs",
-    "platform": "microsoft-devblogs",
+    "name": "Pandaily",
+    "platform": "pandaily",
     "source": "rss",
-    "url": "https://devblogs.microsoft.com/feed",
-    "signal_level": "S",
-    "company": "Microsoft"
+    "url": "https://pandaily.com/feed/",
+    "signal_level": "A"
   },
   {
     "id": 4,
-    "name": "Google AI Blog",
-    "platform": "google-ai",
+    "name": "Electrek",
+    "platform": "electrek",
     "source": "rss",
-    "url": "https://blog.google/technology/ai/rss/",
-    "signal_level": "S",
-    "company": "Google"
+    "url": "https://electrek.co/feed/",
+    "signal_level": "A"
   },
   {
     "id": 5,
-    "name": "AWS News Blog",
-    "platform": "aws-news",
+    "name": "InsideEVs",
+    "platform": "insideevs",
     "source": "rss",
-    "url": "https://aws.amazon.com/blogs/aws/feed/",
-    "signal_level": "A",
-    "company": "Amazon"
+    "url": "https://insideevs.com/rss/articles/all/",
+    "signal_level": "A"
   },
   {
     "id": 6,
-    "name": "NVIDIA Blog",
-    "platform": "nvidia",
+    "name": "CleanTechnica",
+    "platform": "cleantechnica",
     "source": "rss",
-    "url": "https://blogs.nvidia.com/feed/",
-    "signal_level": "A",
-    "company": "NVIDIA"
+    "url": "https://cleantechnica.com/feed/",
+    "signal_level": "A"
   },
   {
     "id": 7,
-    "name": "Apple Developer News",
-    "platform": "apple-developer",
+    "name": "The Driven",
+    "platform": "thedriven",
     "source": "rss",
-    "url": "https://developer.apple.com/news/rss/news.rss",
-    "signal_level": "A",
-    "company": "Apple"
+    "url": "https://thedriven.io/feed/",
+    "signal_level": "B"
   },
   {
     "id": 8,
-    "name": "Cloudflare Blog",
-    "platform": "cloudflare",
+    "name": "The Verge Transportation",
+    "platform": "theverge-transport",
     "source": "rss",
-    "url": "https://blog.cloudflare.com/rss/",
-    "signal_level": "A",
-    "company": "Cloudflare"
+    "url": "https://www.theverge.com/rss/transportation/index.xml",
+    "signal_level": "B"
   },
   {
     "id": 9,
-    "name": "DeepMind Blog",
-    "platform": "deepmind",
+    "name": "TechCrunch Transportation",
+    "platform": "techcrunch-transport",
     "source": "rss",
-    "url": "https://deepmind.google/blog/rss.xml",
-    "signal_level": "A",
-    "company": "Google DeepMind"
+    "url": "https://techcrunch.com/category/transportation/feed/",
+    "signal_level": "B"
   },
   {
     "id": 10,
-    "name": "Hugging Face Blog",
-    "platform": "huggingface",
+    "name": "Charged EVs",
+    "platform": "chargedevs",
     "source": "rss",
-    "url": "https://huggingface.co/blog/feed.xml",
-    "signal_level": "A",
-    "company": "Hugging Face"
-  },
-  {
-    "id": 11,
-    "name": "Hacker News",
-    "platform": "hackernews",
-    "source": "rss",
-    "url": "https://news.ycombinator.com/rss",
-    "signal_level": "A"
-  },
-  {
-    "id": 12,
-    "name": "Product Hunt",
-    "platform": "producthunt",
-    "source": "rss",
-    "url": "https://www.producthunt.com/feed",
-    "signal_level": "A"
-  },
-  {
-    "id": 13,
-    "name": "TechCrunch",
-    "platform": "techcrunch",
-    "source": "rss",
-    "url": "https://techcrunch.com/feed/",
-    "signal_level": "A"
-  },
-  {
-    "id": 14,
-    "name": "The Verge",
-    "platform": "theverge",
-    "source": "rss",
-    "url": "https://www.theverge.com/rss/index.xml",
-    "signal_level": "B"
-  },
-  {
-    "id": 15,
-    "name": "Ars Technica",
-    "platform": "arstechnica",
-    "source": "rss",
-    "url": "https://feeds.arstechnica.com/arstechnica/index",
-    "signal_level": "B"
-  },
-  {
-    "id": 16,
-    "name": "Wired",
-    "platform": "wired",
-    "source": "rss",
-    "url": "https://www.wired.com/feed/rss",
-    "signal_level": "B"
-  },
-  {
-    "id": 17,
-    "name": "MIT Technology Review",
-    "platform": "mit-technology-review",
-    "source": "rss",
-    "url": "https://www.technologyreview.com/feed/",
-    "signal_level": "B"
-  },
-  {
-    "id": 18,
-    "name": "InfoQ",
-    "platform": "infoq",
-    "source": "rss",
-    "url": "https://feed.infoq.com/",
-    "signal_level": "B"
-  },
-  {
-    "id": 19,
-    "name": "Lobsters",
-    "platform": "lobsters",
-    "source": "rss",
-    "url": "https://lobste.rs/rss",
-    "signal_level": "B"
-  },
-  {
-    "id": 20,
-    "name": "Dev.to",
-    "platform": "devto",
-    "source": "rss",
-    "url": "https://dev.to/feed",
+    "url": "https://chargedevs.com/feed/",
     "signal_level": "B"
   }
 ]

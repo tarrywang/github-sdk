@@ -111,55 +111,61 @@ def _derive_tracks(source: dict[str, Any]) -> list[str]:
             if isinstance(k, str) and k.strip():
                 keys.append(k.strip().lower())
 
-    # Coarse buckets from keywords.
+    # Coarse buckets from keywords (EV themes).
     joined = " ".join(keys)
     tracks: list[str] = []
     if any(
         x in joined
         for x in [
-            "copilot",
-            "code assist",
-            "code assistant",
-            "codex",
-            "cursor",
-            "aider",
-            "cline",
-            "continue",
-            "q developer",
-            "amazon q",
-            "codewhisperer",
-            "duet",
-            "gemini",
+            "battery",
+            "电池",
+            "charging",
+            "充电",
+            "solid-state",
+            "固态",
+            "autonomous",
+            "自动驾驶",
+            "adas",
+            "智能驾驶",
         ]
     ):
-        tracks.append("ai_coding")
-    if any(x in joined for x in ["release", "releases", "changelog", "cli"]):
-        tracks.append("devtools_release")
+        tracks.append("tech_battery")
     if any(
-        x in joined for x in ["arxiv", "paper", "research", "mit", "berkeley", "bair"]
+        x in joined
+        for x in [
+            "sales",
+            "销量",
+            "delivery",
+            "交付",
+            "policy",
+            "政策",
+            "subsidy",
+            "补贴",
+            "tariff",
+            "关税",
+        ]
     ):
-        tracks.append("research")
+        tracks.append("market_policy")
+    if any(
+        x in joined for x in ["launch", "新车", "model", "车型", "release", "发布"]
+    ):
+        tracks.append("new_model")
     if not tracks:
         # fallback by domain / platform
         platform = str(source.get("platform") or "").lower()
         dom = _domain(str(source.get("url") or ""))
-        if "arxiv" in platform or "arxiv" in dom:
-            tracks.append("research")
-        elif "github" in platform or "github" in dom:
-            tracks.append("devtools_release")
-        elif any(
-            x in dom
-            for x in [
-                "openai.com",
-                "anthropic.com",
-                "deepmind.google",
-                "blog.google",
-                "blogs.microsoft.com",
-            ]
+        if any(
+            x in dom or x in platform
+            for x in ["cnevpost", "carnewschina", "pandaily"]
         ):
-            tracks.append("company_official")
+            tracks.append("china_ev")
+        elif any(
+            x in dom or x in platform
+            for x in ["electrek", "insideevs", "cleantechnica", "thedriven", "chargedevs"]
+        ):
+            tracks.append("global_ev")
         else:
-            tracks.append("general")
+            tracks.append("auto_news")
     return sorted(set(tracks))
 
 
@@ -956,19 +962,19 @@ def tech_insight_or_fallback(
 
         what_changed = "".join(
             [
-                f"过去 24 小时出现了与“{title}”相关的更新/讨论。",
+                f"过去 24 小时出现了与“{title}”相关的 EV 行业动态。",
                 f"来源覆盖 {len(platforms)} 个源" if platforms else "",
             ]
         ).strip()
         why = "趋势" if category == "trend" else "重要更新"
-        why_it_matters = f"这是一条{why}信号，可能影响工程决策、工具链选择或研究方向。"
-        who = ["开发者", "技术管理者", "产品/平台团队"]
+        why_it_matters = f"这是一条 EV 市场{why}信号，可能影响车企竞争格局、产品策略或采购/投资决策。"
+        who = ["车企与产品团队", "供应链与电池厂商", "投资者与分析师"]
         if companies:
-            who.append("关注相关公司动态的人群")
+            who.append("关注相关车企动态的人群")
         next_actions = [
             "查看引用链接确认原文",
-            "判断是否需要在团队内同步",
-            "如果涉及工具更新，评估升级/迁移成本",
+            "评估对自身产品/市场策略的影响",
+            "如涉及竞品新车型或降价，跟进竞争分析",
         ]
         risk_notes = []
         insights.append(
@@ -1047,19 +1053,19 @@ def tech_render_report_or_fallback(
         lines: list[str] = []
         lines.append(f"### {hid} · {title}")
         if score:
-            lines.append(f"- Heat: {score}")
+            lines.append(f"- 热度：{score}")
         if companies:
-            lines.append(f"- Companies: {', '.join([str(x) for x in companies[:6]])}")
+            lines.append(f"- 涉及车企：{', '.join([str(x) for x in companies[:6]])}")
         if platforms:
-            lines.append(f"- Sources: {', '.join([str(x) for x in platforms[:8]])}")
+            lines.append(f"- 来源：{', '.join([str(x) for x in platforms[:8]])}")
         what_changed = str(insight.get("what_changed") or "").strip()
         why_it_matters = str(insight.get("why_it_matters") or "").strip()
         if what_changed:
-            lines.append(f"- What changed: {what_changed}")
+            lines.append(f"- 发生了什么：{what_changed}")
         if why_it_matters:
-            lines.append(f"- Why it matters: {why_it_matters}")
+            lines.append(f"- 为什么重要：{why_it_matters}")
         if samples:
-            lines.append("- References:")
+            lines.append("- 参考链接：")
             for s in samples[:5]:
                 if not isinstance(s, dict):
                     continue
@@ -1085,28 +1091,28 @@ def tech_render_report_or_fallback(
             company_radar.setdefault(c2, []).append(h)
 
     lines: list[str] = []
-    lines.append("# Tech Insight Report (fallback)\n")
-    lines.append(f"- Generated at: {_to_iso(_utc_now())}")
-    lines.append("- Window: last 24h")
+    lines.append("# EV 市场洞察报告（兜底版）\n")
+    lines.append(f"- 生成时间：{_to_iso(_utc_now())}")
+    lines.append("- 时间窗：过去 24 小时")
     lines.append("")
 
-    lines.append("## Cross-source Trends\n")
+    lines.append("## 跨源趋势\n")
     if not trends:
-        lines.append("(no trends extracted)\n")
+        lines.append("（未提取到趋势）\n")
     else:
         for h in trends:
             lines.append(_render_hotspot(h))
 
-    lines.append("## High-signal Singles\n")
+    lines.append("## 重要单条更新\n")
     if not singles:
-        lines.append("(no singles extracted)\n")
+        lines.append("（未提取到重要单条更新）\n")
     else:
         for h in singles:
             lines.append(_render_hotspot(h))
 
-    lines.append("## Company Radar\n")
+    lines.append("## 车企竞争雷达\n")
     if not company_radar:
-        lines.append("(no company-labeled items)\n")
+        lines.append("（暂无可归类到车企的条目）\n")
     else:
         for c, hs in sorted(company_radar.items(), key=lambda kv: (-len(kv[1]), kv[0])):
             lines.append(f"### {c}")
