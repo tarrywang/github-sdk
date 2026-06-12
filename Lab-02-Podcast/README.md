@@ -41,7 +41,7 @@ WorkflowBuilder 顺序工作流：
 1. 克隆仓库：
 ```bash
 git clone <你的仓库地址>
-cd GCR-AI-Tour-2026/Lab-02-Podcast
+cd github-sdk/Lab-02-Podcast
 ```
 
 2. 安装依赖：
