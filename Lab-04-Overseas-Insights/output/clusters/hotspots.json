@@ -1,0 +1,307 @@
+{
+  "mode": "llm",
+  "top_k": 6,
+  "hotspots": [
+    {
+      "hotspot_id": "H01",
+      "title": "临床护肤投资热潮：Remedy完成$20M A轮融资",
+      "summary": "TikTok皮肤科医生Dr. Muneeb Shah旗下护肤品牌Remedy获L Catterton和Norwest领投2000万美元A轮融资。品牌以平价($15-$45)临床效果护肤为核心，同期Capsum收购KKT Labs加码北美市场。资本持续押注有科学背书的平价护肤赛道。",
+      "category": "trend",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 92,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "Remedy",
+          "Capsum",
+          "KKT Labs"
+        ],
+        "platforms": [
+          "beautyindependent",
+          "glossy",
+          "wwd"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "顶级PE L Catterton背书，品牌即将进入主流渠道",
+        "TikTok DermDoctor流量变现路径清晰可复制",
+        "平价临床护肤价格带($15-45)竞争空白"
+      ],
+      "samples": [
+        {
+          "platform": "beautyindependent",
+          "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
+          "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
+          "published_at": "2026-06-12T02:40:05Z",
+          "company": "Remedy",
+          "signal_level": "S"
+        },
+        {
+          "platform": "beautyindependent",
+          "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead US Operations",
+          "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
+          "published_at": "2026-06-11T21:25:28Z",
+          "company": "Capsum/KKT Labs",
+          "signal_level": "A"
+        },
+        {
+          "platform": "beautyindependent",
+          "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
+          "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
+          "published_at": "2026-06-11T11:55:19Z",
+          "company": "More Than Nine",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H02",
+      "title": "Gen Alpha护肤消费崛起：Bubble跨代际战略揭示新蓝海",
+      "summary": "Bubble护肤创始人披露Gen Alpha(12岁以下)正成为美国护肤市场新驱动力。品牌以$13-$22平价定位，在Sephora/Walmart/Target全渠道铺货，跨代际吸引从青少年到成年消费者群体。",
+      "category": "trend",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 85,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Bubble",
+          "More Than Nine"
+        ],
+        "platforms": [
+          "beautyindependent",
+          "glossy"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "Gen Alpha市场尚未饱和，先发优势窗口期",
+        "多渠道覆盖不同客群，低价高复购适合TikTok营销",
+        "皮肤科医生背书是关键差异化因子"
+      ],
+      "samples": [
+        {
+          "platform": "beautyindependent",
+          "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling",
+          "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
+          "published_at": "2026-06-11T04:01:16Z",
+          "company": "Bubble",
+          "signal_level": "A"
+        },
+        {
+          "platform": "beautyindependent",
+          "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
+          "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
+          "published_at": "2026-06-11T11:55:19Z",
+          "company": "More Than Nine",
+          "signal_level": "A"
+        },
+        {
+          "platform": "glossy",
+          "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands next steps",
+          "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
+          "published_at": "2026-06-12T04:00:00Z",
+          "company": null,
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H03",
+      "title": "Saie彩妆教育营销：线下大师班打造品牌超级粉丝",
+      "summary": "清洁彩妆品牌Saie推出The Makeup Class线下大师班，在纽约、多伦多等城市巡回，通过消费者教育将顾客转化为超级粉丝。品牌在Sephora美国销售，体验营销成为清洁美妆差异化核心战略。",
+      "category": "single",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 78,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Saie"
+        ],
+        "platforms": [
+          "glossy"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "体验营销低成本高黏性，适合DTC/Sephora品牌复制",
+        "教育内容天然适合短视频二次传播",
+        "Clean beauty加教育内容是北美最有效品牌建立路径"
+      ],
+      "samples": [
+        {
+          "platform": "glossy",
+          "title": "Saie bets on education with The Makeup Class to create brand superfans",
+          "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
+          "published_at": "2026-06-11T04:00:00Z",
+          "company": "Saie",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H04",
+      "title": "独立香水崛起：Heretic以流行文化联名占领北美小众香水赛道",
+      "summary": "LA独立香水品牌Heretic通过与流行文化B面(乐队、亚文化)联名，在北美$80-$200小众香水赛道走出差异化路径。独立香水在北美增速明显，消费者追求独特性超越品牌知名度。",
+      "category": "single",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 74,
+      "coverage": {
+        "source_count": 1,
+        "companies": [
+          "Heretic"
+        ],
+        "platforms": [
+          "glossy"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "小众香水是北美美妆增速最快的子品类之一",
+        "联名策略可低成本撬动垂直社群流量",
+        "高毛利DTC模式适合出海品牌尝试"
+      ],
+      "samples": [
+        {
+          "platform": "glossy",
+          "title": "Perfume brand Heretic is leaning into the B-side of pop culture, one unexpected collab at a time",
+          "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
+          "published_at": "2026-06-12T04:00:00Z",
+          "company": "Heretic",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "关税收紧：美国海关打击跨境美妆电商逃税，出海成本上升",
+      "summary": "特朗普政府加强对小额跨境包裹(de minimis)的海关监管，打击伪报货值规避关税行为。依赖低价跨境直邮的亚洲美妆卖家将面临成本上升压力，Walmart同步推进本地化潮品采购，影响跨境美妆选品策略。",
+      "category": "trend",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 80,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "Walmart"
+        ],
+        "platforms": [
+          "modernretail",
+          "glossy",
+          "beautyindependent"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "直接影响中国出海美妆品牌成本结构和定价策略",
+        "合规本地化仓储优势凸显，FBA/海外仓机会增加",
+        "需提前规划MoCRA合规，避免海关拦截"
+      ],
+      "samples": [
+        {
+          "platform": "modernretail",
+          "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid tariff evasion pitches",
+          "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
+          "published_at": "2026-06-11T14:00:00Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "modernretail",
+          "title": "Scenes from Walmart annual Associates Week and shareholder meeting",
+          "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
+          "published_at": "2026-06-11T17:00:00Z",
+          "company": "Walmart",
+          "signal_level": "A"
+        },
+        {
+          "platform": "modernretail",
+          "title": "Why the World Cup is a make or break moment for retail this summer",
+          "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
+          "published_at": "2026-06-13T04:00:00Z",
+          "company": null,
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "北美DTC美妆渠道转型：Glossy峰会揭示品牌六大战略抉择",
+      "summary": "Glossy迈阿密电商峰会汇聚美妆零售商与品牌高管，讨论投资渠道、定价、与零售商边界等六大关键战略。Quince完成100亿美元估值后扩品类，Mytheresa用AI锁定奢侈品VIP。DTC加全渠道融合是北美美妆必选路径。",
+      "category": "trend",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 3,
+        "companies": [
+          "Quince",
+          "Mytheresa"
+        ],
+        "platforms": [
+          "glossy",
+          "modernretail"
+        ]
+      },
+      "should_chase": "no",
+      "chase_rationale": [
+        "行业宏观趋势，无明确单品机会",
+        "对已进北美市场品牌渠道策略有参考价值"
+      ],
+      "samples": [
+        {
+          "platform": "glossy",
+          "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands next steps",
+          "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
+          "published_at": "2026-06-12T04:00:00Z",
+          "company": null,
+          "signal_level": "S"
+        },
+        {
+          "platform": "glossy",
+          "title": "Glossy Podcast: Quince on capitalizing on $10B valuation",
+          "url": "https://www.glossy.co/podcasts/glossy-podcast-quince-head-of-brand-strategy-dakota-kate-isaacs-on-how-the-brand-is-capitalizing-on-its-10b-valuation/",
+          "published_at": "2026-06-12T04:00:00Z",
+          "company": "Quince",
+          "signal_level": "S"
+        },
+        {
+          "platform": "glossy",
+          "title": "Luxury Briefing: Mytheresa is using AI to find future VIPs",
+          "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-mytheresa-is-using-ai-to-find-future-vips/",
+          "published_at": "2026-06-12T04:00:00Z",
+          "company": "Mytheresa",
+          "signal_level": "S"
+        }
+      ]
+    }
+  ]
+}
