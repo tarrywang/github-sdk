@@ -1,5 +1,5 @@
-# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"d5cb1514834971977e5636e787c064ddbc6ff6eace1da1ebe91cd856992e4370","body_hash":"58958a3716789d781cb50eae4e54d991856574c49413f8c0e762c9ff05009f74","compiler_version":"v0.77.5","agent_id":"copilot"}
-# gh-aw-manifest: {"version":1,"secrets":["COPILOT_GITHUB_TOKEN","GH_AW_CI_TRIGGER_TOKEN","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN"],"actions":[{"repo":"actions/checkout","sha":"de0fac2e4500dabe0009e67214ff5f5447ce83dd","version":"v6.0.2"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e","version":"v6.4.0"},{"repo":"actions/setup-python","sha":"a26af69be951a213d495a4c3e4e4022e16d87065","version":"v5"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"3ea13c02d765410340d533515cb31a7eef2baaf0","version":"v0.77.5"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.25.58"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.25.58"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.25.58"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.3.22"},{"image":"ghcr.io/github/github-mcp-server:v1.1.0"},{"image":"node:lts-alpine","digest":"sha256:2bdb65ed1dab192432bc31c95f94155ca5ad7fc1392fb7eb7526ab682fa5bf14","pinned_image":"node:lts-alpine@sha256:2bdb65ed1dab192432bc31c95f94155ca5ad7fc1392fb7eb7526ab682fa5bf14"}]}
+# gh-aw-metadata: {"schema_version":"v4","frontmatter_hash":"28cf4892112edf7cf13afc2980fe78f6c425437f9989cd2c3722725f092285e3","body_hash":"0ec77035b10440b482cee2e36f4d3f522789b23a962f037c7f7ce719c4081fcc","compiler_version":"v0.77.5","agent_id":"copilot"}
+# gh-aw-manifest: {"version":1,"secrets":["COPILOT_GITHUB_TOKEN","GH_AW_CI_TRIGGER_TOKEN","GH_AW_GITHUB_MCP_SERVER_TOKEN","GH_AW_GITHUB_TOKEN","GITHUB_TOKEN","SCRAPER_API_KEY"],"actions":[{"repo":"actions/checkout","sha":"de0fac2e4500dabe0009e67214ff5f5447ce83dd","version":"v6.0.2"},{"repo":"actions/download-artifact","sha":"3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c","version":"v8.0.1"},{"repo":"actions/github-script","sha":"3a2844b7e9c422d3c10d287c895573f7108da1b3","version":"v9.0.0"},{"repo":"actions/setup-node","sha":"48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e","version":"v6.4.0"},{"repo":"actions/setup-python","sha":"a26af69be951a213d495a4c3e4e4022e16d87065","version":"v5"},{"repo":"actions/upload-artifact","sha":"043fb46d1a93c77aae656e7c1c64a875d1fc6a0a","version":"v7.0.1"},{"repo":"github/gh-aw-actions/setup","sha":"3ea13c02d765410340d533515cb31a7eef2baaf0","version":"v0.77.5"}],"containers":[{"image":"ghcr.io/github/gh-aw-firewall/agent:0.25.58"},{"image":"ghcr.io/github/gh-aw-firewall/api-proxy:0.25.58"},{"image":"ghcr.io/github/gh-aw-firewall/squid:0.25.58"},{"image":"ghcr.io/github/gh-aw-mcpg:v0.3.22"},{"image":"ghcr.io/github/github-mcp-server:v1.1.0"},{"image":"node:lts-alpine","digest":"sha256:2bdb65ed1dab192432bc31c95f94155ca5ad7fc1392fb7eb7526ab682fa5bf14","pinned_image":"node:lts-alpine@sha256:2bdb65ed1dab192432bc31c95f94155ca5ad7fc1392fb7eb7526ab682fa5bf14"}]}
 #    ___                   _   _      
 #   / _ \                 | | (_)     
 #  | |_| | __ _  ___ _ __ | |_ _  ___ 
@@ -29,6 +29,7 @@
 #   - GH_AW_GITHUB_MCP_SERVER_TOKEN
 #   - GH_AW_GITHUB_TOKEN
 #   - GITHUB_TOKEN
+#   - SCRAPER_API_KEY
 #
 # Custom actions used:
 #   - actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
@@ -188,23 +189,23 @@ jobs:
         run: |
           bash "${RUNNER_TEMP}/gh-aw/actions/create_prompt_first.sh"
           {
-          cat << 'GH_AW_PROMPT_094cfa407b1b732b_EOF'
+          cat << 'GH_AW_PROMPT_4ede5441fd2a21ae_EOF'
           <system>
-          GH_AW_PROMPT_094cfa407b1b732b_EOF
+          GH_AW_PROMPT_4ede5441fd2a21ae_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/xpia.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/temp_folder_prompt.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/markdown.md"
           cat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_prompt.md"
-          cat << 'GH_AW_PROMPT_094cfa407b1b732b_EOF'
+          cat << 'GH_AW_PROMPT_4ede5441fd2a21ae_EOF'
           <safe-output-tools>
           Tools: create_pull_request, missing_tool, missing_data, noop
-          GH_AW_PROMPT_094cfa407b1b732b_EOF
+          GH_AW_PROMPT_4ede5441fd2a21ae_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/safe_outputs_create_pull_request.md"
-          cat << 'GH_AW_PROMPT_094cfa407b1b732b_EOF'
+          cat << 'GH_AW_PROMPT_4ede5441fd2a21ae_EOF'
           </safe-output-tools>
-          GH_AW_PROMPT_094cfa407b1b732b_EOF
+          GH_AW_PROMPT_4ede5441fd2a21ae_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/mcp_cli_tools_prompt.md"
-          cat << 'GH_AW_PROMPT_094cfa407b1b732b_EOF'
+          cat << 'GH_AW_PROMPT_4ede5441fd2a21ae_EOF'
           <github-context>
           The following GitHub context information is available for this workflow:
           {{#if github.actor}}
@@ -233,12 +234,12 @@ jobs:
           {{/if}}
           </github-context>
           
-          GH_AW_PROMPT_094cfa407b1b732b_EOF
+          GH_AW_PROMPT_4ede5441fd2a21ae_EOF
           cat "${RUNNER_TEMP}/gh-aw/prompts/github_mcp_tools_with_safeoutputs_prompt.md"
-          cat << 'GH_AW_PROMPT_094cfa407b1b732b_EOF'
+          cat << 'GH_AW_PROMPT_4ede5441fd2a21ae_EOF'
           </system>
           {{#runtime-import .github/workflows/overseas-insight.md}}
-          GH_AW_PROMPT_094cfa407b1b732b_EOF
+          GH_AW_PROMPT_4ede5441fd2a21ae_EOF
           } > "$GH_AW_PROMPT"
       - name: Interpolate variables and render templates
         uses: actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3 # v9.0.0
@@ -383,9 +384,13 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install Python deps for mcp-scripts
-        run: |-
+        run: |
           python3 -m pip install --upgrade pip
           python3 -m pip install -r Lab-04-Overseas-Insights/mcp-scripts/requirements.txt
+      - env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
+        name: Fetch e-commerce bestsellers via ScraperAPI (pre-step, key isolated from agent)
+        run: "# Best-effort: renders the 5 bestseller pages via proxy and writes compact\n# extracts to output/signals/bestsellers/ for the agent to read. The API key\n# stays in this step only — it never enters the agent/LLM sandbox. Never fails\n# the build on scrape gaps (no key / blocked sites are recorded as gaps).\npython3 Lab-04-Overseas-Insights/mcp-scripts/overseas_fetch_bestsellers.py || true\n"
 
       - name: Configure Git credentials
         env:
@@ -457,9 +462,9 @@ jobs:
           mkdir -p "${RUNNER_TEMP}/gh-aw/safeoutputs"
           mkdir -p /tmp/gh-aw/safeoutputs
           mkdir -p /tmp/gh-aw/mcp-logs/safeoutputs
-          cat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_6cfba8512dc6b3bc_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/safeoutputs/config.json" << 'GH_AW_SAFE_OUTPUTS_CONFIG_1c4d1e4b14442a40_EOF'
           {"create_pull_request":{"labels":["automation","overseas-insight"],"max":1,"max_patch_files":100,"max_patch_size":1024,"protect_top_level_dot_folders":true,"protected_files":["package.json","bun.lockb","bunfig.toml","deno.json","deno.jsonc","deno.lock","global.json","NuGet.Config","Directory.Packages.props","mix.exs","mix.lock","go.mod","go.sum","stack.yaml","stack.yaml.lock","pom.xml","build.gradle","build.gradle.kts","settings.gradle","settings.gradle.kts","gradle.properties","package-lock.json","yarn.lock","pnpm-lock.yaml","npm-shrinkwrap.json","requirements.txt","Pipfile","Pipfile.lock","pyproject.toml","setup.py","setup.cfg","Gemfile","Gemfile.lock","uv.lock","CODEOWNERS","DESIGN.md","README.md","CONTRIBUTING.md","CHANGELOG.md","SECURITY.md","CODE_OF_CONDUCT.md","AGENTS.md","CLAUDE.md","GEMINI.md"],"protected_files_policy":"request_review","title_prefix":"[overseas-insight] "},"create_report_incomplete_issue":{},"missing_data":{},"missing_tool":{},"noop":{"max":1,"report-as-issue":"true"},"report_incomplete":{}}
-          GH_AW_SAFE_OUTPUTS_CONFIG_6cfba8512dc6b3bc_EOF
+          GH_AW_SAFE_OUTPUTS_CONFIG_1c4d1e4b14442a40_EOF
       - name: Generate Safe Outputs Tools
         env:
           GH_AW_TOOLS_META_JSON: |
@@ -637,7 +642,7 @@ jobs:
       - name: Write MCP Scripts Config
         run: |
           mkdir -p "${RUNNER_TEMP}/gh-aw/mcp-scripts/logs"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/tools.json" << 'GH_AW_MCP_SCRIPTS_TOOLS_1547c3dc1d3c72f3_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/tools.json" << 'GH_AW_MCP_SCRIPTS_TOOLS_b6733307d81890bf_EOF'
           {
             "serverName": "mcpscripts",
             "version": "1.0.0",
@@ -904,8 +909,8 @@ jobs:
               }
             ]
           }
-          GH_AW_MCP_SCRIPTS_TOOLS_1547c3dc1d3c72f3_EOF
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/mcp-server.cjs" << 'GH_AW_MCP_SCRIPTS_SERVER_a01ece560b3d3b1b_EOF'
+          GH_AW_MCP_SCRIPTS_TOOLS_b6733307d81890bf_EOF
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/mcp-server.cjs" << 'GH_AW_MCP_SCRIPTS_SERVER_588481323c303402_EOF'
             const path = require("path");
             const { startHttpServer } = require("./mcp_scripts_mcp_server_http.cjs");
             const configPath = path.join(__dirname, "tools.json");
@@ -919,12 +924,12 @@ jobs:
               console.error("Failed to start mcp-scripts HTTP server:", error);
               process.exit(1);
             });
-          GH_AW_MCP_SCRIPTS_SERVER_a01ece560b3d3b1b_EOF
+          GH_AW_MCP_SCRIPTS_SERVER_588481323c303402_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/mcp-server.cjs"
           
       - name: Write MCP Scripts Tool Files
         run: |
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-cluster-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-CLUSTER-OR-FALLBACK_7c6340ed739330e3_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-cluster-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-CLUSTER-OR-FALLBACK_c1ef95d80e508c47_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-cluster-or-fallback
           # 校验+兜底聚类结果。强烈建议用文件路径参数（raw_signals_path / clusters_candidate_path / out_path），避免把大 JSON 作为字符串参数传入（网关对单参数有 10KB 上限）。工具会把最终热点写入 out_path。
@@ -936,9 +941,9 @@ jobs:
           python3 -c "import os, json, sys, subprocess; payload = json.dumps({'raw_signals_json': os.environ.get('INPUT_RAW_SIGNALS_JSON', ''), 'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'top_k': int(os.environ.get('INPUT_TOP_K') or 9), 'raw_signals_path': os.environ.get('INPUT_RAW_SIGNALS_PATH', ''), 'clusters_candidate_path': os.environ.get('INPUT_CLUSTERS_CANDIDATE_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_cluster_or_fallback.py'], input=payload, text=True).returncode)"
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-CLUSTER-OR-FALLBACK_7c6340ed739330e3_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-CLUSTER-OR-FALLBACK_c1ef95d80e508c47_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-cluster-or-fallback.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-fetch-all-to-disk.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-FETCH-ALL-TO-DISK_e5a3bdfa9556856c_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-fetch-all-to-disk.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-FETCH-ALL-TO-DISK_9be5382e8e215adf_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-fetch-all-to-disk
           # Fetch all baseline (RSS) sources to disk; research-only sources are skipped
@@ -962,9 +967,9 @@ jobs:
           "
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-FETCH-ALL-TO-DISK_e5a3bdfa9556856c_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-FETCH-ALL-TO-DISK_9be5382e8e215adf_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-fetch-all-to-disk.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-insight-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-INSIGHT-OR-FALLBACK_4f90ce21ac8fce1d_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-insight-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-INSIGHT-OR-FALLBACK_64469c70c30a0998_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-insight-or-fallback
           # 校验+兜底洞察结果。强烈建议用文件路径参数（clusters_path / insights_candidate_path / out_path），避免把大 JSON 作为字符串参数传入（单参数 10KB 上限）。工具会把最终洞察写入 out_path。
@@ -976,9 +981,9 @@ jobs:
           python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'clusters_path': os.environ.get('INPUT_CLUSTERS_PATH', ''), 'insights_candidate_path': os.environ.get('INPUT_INSIGHTS_CANDIDATE_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_insight_or_fallback.py'], input=payload, text=True).returncode)"
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-INSIGHT-OR-FALLBACK_4f90ce21ac8fce1d_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-INSIGHT-OR-FALLBACK_64469c70c30a0998_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-insight-or-fallback.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-load-articles-from-disk.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-LOAD-ARTICLES-FROM-DISK_8691524af4459b54_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-load-articles-from-disk.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-LOAD-ARTICLES-FROM-DISK_552da7bf431af359_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-load-articles-from-disk
           # Load and filter valid articles from disk
@@ -1001,9 +1006,9 @@ jobs:
           "
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-LOAD-ARTICLES-FROM-DISK_8691524af4459b54_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-LOAD-ARTICLES-FROM-DISK_552da7bf431af359_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-load-articles-from-disk.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-products-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-PRODUCTS-OR-FALLBACK_05233b1aa320e8e3_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-products-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-PRODUCTS-OR-FALLBACK_3a9a9790b387d6cc_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-products-or-fallback
           # 校验+兜底「北美热销 TOP5 产品」清单（排名/评分/评价数/趋势为销量代理，无精确件数/GMV）。用路径参数 products_candidate_path / out_path；工具会把最终 TOP5 写入 out_path，候选不可用时回退为空清单并附缺口说明（绝不编造销量）。
@@ -1015,9 +1020,9 @@ jobs:
           python3 -c "import os, json, sys, subprocess; payload = json.dumps({'products_json': os.environ.get('INPUT_PRODUCTS_JSON', ''), 'products_candidate_path': os.environ.get('INPUT_PRODUCTS_CANDIDATE_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', ''), 'top_n': int(os.environ.get('INPUT_TOP_N') or 5)}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_products_or_fallback.py'], input=payload, text=True).returncode)"
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-PRODUCTS-OR-FALLBACK_05233b1aa320e8e3_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-PRODUCTS-OR-FALLBACK_3a9a9790b387d6cc_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-products-or-fallback.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-read-source-list.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-READ-SOURCE-LIST_a5311b839bb9b480_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-read-source-list.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-READ-SOURCE-LIST_7b2f710d40e6be86_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-read-source-list
           # Read overseas source list configuration
@@ -1029,9 +1034,9 @@ jobs:
           echo "{\"source_list_path\": \"$INPUT_SOURCE_LIST_PATH\"}" | python3 Lab-04-Overseas-Insights/mcp-scripts/overseas_read_source_list.py
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-READ-SOURCE-LIST_a5311b839bb9b480_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-READ-SOURCE-LIST_7b2f710d40e6be86_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-read-source-list.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-render-report-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-RENDER-REPORT-OR-FALLBACK_8707a2ba839f51de_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-render-report-or-fallback.sh" << 'GH_AW_MCP_SCRIPTS_SH_OVERSEAS-RENDER-REPORT-OR-FALLBACK_81e1e374b0d439a9_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: overseas-render-report-or-fallback
           # 校验+兜底报告渲染。强烈建议用文件路径参数（clusters_path / insights_path / products_path / draft_path / out_path / frontend_out_path）。工具会把最终 Markdown 同时写入 out_path 与 frontend_out_path，返回精简状态（无需再用 edit 写文件）。
@@ -1043,9 +1048,9 @@ jobs:
           python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'draft_markdown': os.environ.get('INPUT_DRAFT_MARKDOWN', ''), 'clusters_path': os.environ.get('INPUT_CLUSTERS_PATH', ''), 'insights_path': os.environ.get('INPUT_INSIGHTS_PATH', ''), 'products_path': os.environ.get('INPUT_PRODUCTS_PATH', ''), 'draft_path': os.environ.get('INPUT_DRAFT_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', ''), 'frontend_out_path': os.environ.get('INPUT_FRONTEND_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_render_report_or_fallback.py'], input=payload, text=True).returncode)"
           
           
-          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-RENDER-REPORT-OR-FALLBACK_8707a2ba839f51de_EOF
+          GH_AW_MCP_SCRIPTS_SH_OVERSEAS-RENDER-REPORT-OR-FALLBACK_81e1e374b0d439a9_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/overseas-render-report-or-fallback.sh"
-          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/write-text-file.sh" << 'GH_AW_MCP_SCRIPTS_SH_WRITE-TEXT-FILE_1605da6daee56e38_EOF'
+          cat > "${RUNNER_TEMP}/gh-aw/mcp-scripts/write-text-file.sh" << 'GH_AW_MCP_SCRIPTS_SH_WRITE-TEXT-FILE_78b25651e06eabf9_EOF'
           #!/bin/bash
           # Auto-generated mcp-script tool: write-text-file
           # Write text content to a file
@@ -1057,7 +1062,7 @@ jobs:
           python3 -c "import os, json, sys, subprocess; payload = json.dumps({'path': os.environ.get('INPUT_PATH', ''), 'text': os.environ.get('INPUT_TEXT', ''), 'overwrite': os.environ.get('INPUT_OVERWRITE', 'true').strip().lower() not in ('false', '0', 'no')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/write_text_file.py'], input=payload, text=True).returncode)"
           
           
-          GH_AW_MCP_SCRIPTS_SH_WRITE-TEXT-FILE_1605da6daee56e38_EOF
+          GH_AW_MCP_SCRIPTS_SH_WRITE-TEXT-FILE_78b25651e06eabf9_EOF
           chmod +x "${RUNNER_TEMP}/gh-aw/mcp-scripts/write-text-file.sh"
           
       - name: Generate MCP Scripts Server Config
@@ -1132,7 +1137,7 @@ jobs:
           
           mkdir -p /home/runner/.copilot
           GH_AW_NODE=$(which node 2>/dev/null || command -v node 2>/dev/null || echo node)
-          cat << GH_AW_MCP_CONFIG_46735f0a4553e36d_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
+          cat << GH_AW_MCP_CONFIG_141805bb24e662e3_EOF | "$GH_AW_NODE" "${RUNNER_TEMP}/gh-aw/actions/start_mcp_gateway.cjs"
           {
             "mcpServers": {
               "github": {
@@ -1187,7 +1192,7 @@ jobs:
               "payloadDir": "${MCP_GATEWAY_PAYLOAD_DIR}"
             }
           }
-          GH_AW_MCP_CONFIG_46735f0a4553e36d_EOF
+          GH_AW_MCP_CONFIG_141805bb24e662e3_EOF
       - name: Mount MCP servers as CLIs
         id: mount-mcp-clis
         continue-on-error: true
@@ -1307,11 +1312,12 @@ jobs:
             const { main } = require('${{ runner.temp }}/gh-aw/actions/redact_secrets.cjs');
             await main();
         env:
-          GH_AW_SECRET_NAMES: 'COPILOT_GITHUB_TOKEN,GH_AW_GITHUB_MCP_SERVER_TOKEN,GH_AW_GITHUB_TOKEN,GITHUB_TOKEN'
+          GH_AW_SECRET_NAMES: 'COPILOT_GITHUB_TOKEN,GH_AW_GITHUB_MCP_SERVER_TOKEN,GH_AW_GITHUB_TOKEN,GITHUB_TOKEN,SCRAPER_API_KEY'
           SECRET_COPILOT_GITHUB_TOKEN: ${{ secrets.COPILOT_GITHUB_TOKEN }}
           SECRET_GH_AW_GITHUB_MCP_SERVER_TOKEN: ${{ secrets.GH_AW_GITHUB_MCP_SERVER_TOKEN }}
           SECRET_GH_AW_GITHUB_TOKEN: ${{ secrets.GH_AW_GITHUB_TOKEN }}
           SECRET_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SECRET_SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
       - name: Append agent step summary
         if: always()
         run: bash "${RUNNER_TEMP}/gh-aw/actions/append_agent_step_summary.sh"

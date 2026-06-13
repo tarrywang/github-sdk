@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html as _htmlmod
 import json
 import math
 import re
@@ -465,6 +466,189 @@ def overseas_fetch_all_to_disk(
         "research_only_skipped": skipped,
         "results": results,
     }
+
+
+def _clean_visible_text(html: str) -> str:
+    """Strip script/style/etc, drop tags, decode entities, collapse whitespace."""
+    html = re.sub(
+        r"<(script|style|noscript|svg|template)[^>]*>.*?</\1>",
+        " ",
+        html,
+        flags=re.DOTALL | re.IGNORECASE,
+    )
+    t = re.sub(r"<[^>]+>", " ", html)
+    t = _htmlmod.unescape(t)
+    return re.sub(r"\s+", " ", t).strip()
+
+
+def _extract_bestseller_snippet(
+    html: str, *, max_chars: int = 2800
+) -> dict[str, Any]:
+    """Pull a compact, model-friendly extract from a rendered bestseller page:
+    product-name candidates (from img alt), ratings, review-count-ish numbers,
+    prices, and an ordered text window anchored on the product list. No data is
+    invented — empty lists mean the page did not expose it."""
+    text = _clean_visible_text(html)
+
+    alts = [_htmlmod.unescape(a) for a in re.findall(r'alt="([^"]{12,140})"', html)]
+    bad = re.compile(
+        r"logo|icon|sprite|sign in|banner|advertis|prime\b|^\s*$|^image$|placeholder",
+        re.IGNORECASE,
+    )
+    names: list[str] = []
+    seen: set[str] = set()
+    for a in alts:
+        a = a.strip()
+        if not a or bad.search(a):
+            continue
+        if a not in seen:
+            seen.add(a)
+            names.append(a)
+        if len(names) >= 20:
+            break
+
+    ratings = re.findall(r"(\d\.\d)\s*out of 5", text)[:25]
+    prices = re.findall(r"\$\d[\d,]*(?:\.\d{2})?", text)[:25]
+
+    anchor = text.find("out of 5")
+    if anchor == -1:
+        anchor = text.lower().find("best seller")
+    if anchor == -1:
+        anchor = 0
+    start = max(0, anchor - 300)
+    window = text[start : start + max_chars]
+
+    return {
+        "name_candidates": names,
+        "ratings": ratings,
+        "prices": prices,
+        "text_window": window,
+    }
+
+
+def overseas_fetch_bestsellers_to_disk(
+    *,
+    api_key: str,
+    source_list_path: str = "input/api/source_list.json",
+    out_dir: str = "./output/signals/bestsellers",
+    render: bool = True,
+    country: str = "us",
+    timeout_seconds: int = 70,
+    max_chars: int = 2800,
+) -> dict[str, Any]:
+    """Fetch the 5 e-commerce bestseller pages through a ScraperAPI-style proxy
+    (renders JS + rotates proxies) and write a compact per-site extract to disk.
+
+    Designed to run as a pre-step with the API key from a GitHub secret, so the
+    key never enters the agent/LLM sandbox. Protected domains that the current
+    proxy plan cannot reach (e.g. Sephora/TikTok on the free tier) are recorded
+    as gaps — never fabricated. Returns a small summary (no raw HTML)."""
+    out = Path(out_dir)
+    out.mkdir(parents=True, exist_ok=True)
+
+    api_key = (api_key or "").strip()
+    src = overseas_read_source_list(source_list_path)
+    raw_sources = _as_list_of_sources(_read_json(source_list_path))
+    # keep declaration order; pick bestseller research targets
+    targets = [
+        s
+        for s in raw_sources
+        if isinstance(s, dict)
+        and str(s.get("research_kind") or "").strip().lower() == "bestseller"
+    ]
+    del src
+
+    summary: dict[str, Any] = {
+        "provider": "scraperapi",
+        "fetched_at": _to_iso(_utc_now()),
+        "out_dir": str(out),
+        "have_key": bool(api_key),
+        "results": [],
+    }
+
+    if not api_key:
+        summary["note"] = (
+            "未配置 SCRAPER_API_KEY，跳过电商榜单抓取；TOP5 将由新闻信号兜底。"
+        )
+        (out / "_summary.json").write_text(
+            json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+        )
+        print("[bestsellers] no SCRAPER_API_KEY -> skipped all targets", flush=True)
+        return summary
+
+    with httpx.Client(timeout=timeout_seconds, follow_redirects=True) as client:
+        for s in targets:
+            platform = str(s.get("platform") or "site").strip()
+            key = _safe_key(platform)
+            url = str(s.get("url") or "").strip()
+            entry: dict[str, Any] = {
+                "platform": platform,
+                "url": url,
+                "status": None,
+                "ok": False,
+                "names": 0,
+                "ratings": 0,
+                "note": None,
+                "file": None,
+            }
+            if not url:
+                entry["note"] = "no url"
+                summary["results"].append(entry)
+                continue
+
+            params: dict[str, str] = {"api_key": api_key, "url": url, "country_code": country}
+            if render:
+                params["render"] = "true"
+            print(f"[bestsellers] {platform} ...", end=" ", flush=True)
+            try:
+                r = client.get("https://api.scraperapi.com/", params=params)
+                entry["status"] = int(r.status_code)
+                body = r.text or ""
+                if r.status_code == 200 and "Protected domains may require" not in body:
+                    ext = _extract_bestseller_snippet(body, max_chars=max_chars)
+                    entry["names"] = len(ext["name_candidates"])
+                    entry["ratings"] = len(ext["ratings"])
+                    entry["ok"] = bool(ext["name_candidates"] or ext["ratings"])
+                    fpath = out / f"{key}.txt"
+                    lines = [
+                        f"PLATFORM: {platform}",
+                        f"URL: {url}",
+                        f"STATUS: {r.status_code}",
+                        "NAME_CANDIDATES:",
+                        *[f"  - {n}" for n in ext["name_candidates"]],
+                        f"RATINGS: {', '.join(ext['ratings'])}",
+                        f"PRICES: {', '.join(ext['prices'])}",
+                        "TEXT_WINDOW:",
+                        ext["text_window"],
+                    ]
+                    fpath.write_text("\n".join(lines) + "\n", encoding="utf-8")
+                    entry["file"] = str(fpath)
+                    print(
+                        f"OK ({r.status_code}, names={entry['names']}, ratings={entry['ratings']})",
+                        flush=True,
+                    )
+                elif "Protected domains may require" in body or r.status_code in (403, 500):
+                    entry["note"] = "protected-domain / 当前代理套餐不可达（需付费 premium 代理）"
+                    print(f"BLOCKED ({r.status_code}, premium required)", flush=True)
+                else:
+                    entry["note"] = f"unexpected status {r.status_code}"
+                    print(f"FAIL ({r.status_code})", flush=True)
+            except Exception as exc:  # noqa: BLE001
+                entry["note"] = f"error: {str(exc)[:120]}"
+                print(f"ERROR ({str(exc)[:60]})", flush=True)
+            summary["results"].append(entry)
+            time.sleep(0.2)
+
+    ok_n = sum(1 for e in summary["results"] if e.get("ok"))
+    summary["ok_count"] = ok_n
+    summary["target_count"] = len(targets)
+    (out / "_summary.json").write_text(
+        json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
+    print(
+        f"[bestsellers] done: {ok_n}/{len(targets)} sites yielded data.", flush=True
+    )
+    return summary
 
 
 def _parse_rss_items(raw: str, *, max_items: int) -> list[dict[str, Any]]:

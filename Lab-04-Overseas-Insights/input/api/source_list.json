@@ -75,10 +75,10 @@
   },
   {
     "id": 7,
-    "name": "Ulta Best Sellers",
+    "name": "Ulta Skincare (热门类目)",
     "platform": "ulta-bestsellers",
     "source": "html",
-    "url": "https://www.ulta.com/promotion/best-sellers",
+    "url": "https://www.ulta.com/shop/skin-care",
     "signal_level": "S",
     "category": "beauty",
     "markets": ["na"],
