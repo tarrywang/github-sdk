@@ -35,8 +35,8 @@ from overseas_insight_tools import (  # noqa: E402
 SOURCE_LIST_PATH = "Lab-04-Overseas-Insights/input/api/source_list.json"
 SIGNALS_DIR = "Lab-04-Overseas-Insights/output/signals"
 OUTPUT_DIR = "Lab-04-Overseas-Insights/output"
-TIME_WINDOW_HOURS = 48
-TOP_K = 9
+TIME_WINDOW_HOURS = 72
+TOP_K = 6
 MAX_ITEMS_PER_SOURCE = 5
 TIMEOUT_SECONDS = 15
 MAX_CHARS = 200000

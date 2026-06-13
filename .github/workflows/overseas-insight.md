@@ -27,33 +27,13 @@ network:
   allowed:
     - defaults
     - python
-    # 美妆护肤
+    # 美妆护肤（北美）基线源
     - "www.glossy.co"
     - "wwd.com"
-    - "www.cosmeticsbusiness.com"
-    - "www.premiumbeautynews.com"
-    # 3C 电子
-    - "www.theverge.com"
-    - "www.engadget.com"
-    - "www.gsmarena.com"
-    - "www.androidauthority.com"
-    - "www.notebookcheck.net"
-    # 饰品配饰
-    - "www.jckonline.com"
-    - "www.professionaljeweller.com"
-    - "www.nationaljeweler.com"
-    - "rapaport.com"
-    # 跨境电商 / 东南亚 / 榜单趋势贸易媒体
-    - "www.techinasia.com"
     - "www.modernretail.co"
-    - "www.retaildive.com"
-    - "www.practicalecommerce.com"
-    - "www.marketplacepulse.com"
-    - "www.emarketer.com"
+    - "www.beautyindependent.com"
     # research-only 目标（尽力而为，常被反爬拦截）
     - "www.amazon.com"
-    - "seller-us.tiktok.com"
-    - "trends.google.com"
 safe-outputs:
   create-pull-request:
     title-prefix: "[overseas-insight] "
@@ -192,20 +172,20 @@ mcp-scripts:
 
 # Overseas Insight 工作流（出海市场洞察）
 
-目标：每天生成一份**跨境电商出海市场调查报告**，聚焦三大品类——**美妆护肤 / 3C电子 / 饰品配饰**，覆盖
-**北美 / 欧洲 / 东南亚 / 全球** 市场，产出热点话题、热门产品/潜力爆品与可执行的选品与营销洞察。
+目标：每天生成一份**跨境电商出海市场调查报告**，**当前阶段仅聚焦单一品类「美妆护肤」、单一市场「北美」**，产出
+该品类在北美市场的热点话题、热门产品/潜力爆品与可执行的选品与营销洞察。（3C、饰品及其他市场暂不纳入，待本工作流稳定后再扩展。）
 
 数据策略：**RSS 基线为主 + 有限深度研究增强**。RSS 种子源提供可靠且低成本的基线信号；在此基础上，在网络白名单内进行
-**严格受限**的联网研究，补充少量高价值「热产品/爆品」证据。⚠️ 运行环境对累计「毛 token」有 **25M 硬上限**（不可调），
-若深度研究不受限会在进入聚类前耗尽预算、导致整轮失败 —— 因此必须严格遵守下方 token 预算约束。
+**严格受限**的联网研究，补充少量高价值「美妆北美热产品/爆品」证据。⚠️ 运行环境对累计「毛 token」有 **25M 硬上限**（不可调），
+若深度研究不受限会在进入聚类前耗尽预算、导致整轮失败 —— 因此必须严格遵守下方 token 预算约束，并保持范围聚焦（仅美妆·北美）。
 
 默认配置如下：
 
 - `source_list_path`: `Lab-04-Overseas-Insights/input/api/source_list.json`
 - `signals_dir`: `Lab-04-Overseas-Insights/output/signals`
 - `output_dir`: `Lab-04-Overseas-Insights/output`
-- `time_window_hours`: `48`
-- `top_k`: `9`（约每品类 3 个）
+- `time_window_hours`: `72`（美妆资讯更新较慢，窗口放宽以确保有内容）
+- `top_k`: `6`（仅美妆·北美）
 - `max_items_per_source`: `5`
 - `timeout_seconds`: `15`
 - `max_chars`: `200000`
@@ -228,42 +208,42 @@ mcp-scripts:
 
 ## 阶段 0：深度研究规划
 
-1. 调用 `overseas.read_source_list(source_list_path)` 读取种子源，按 `category`（beauty/3c/jewelry）× `markets`（na/eu/sea/global）分组。
-2. 规划 **至多 6 个**最高价值的定向抓取目标（覆盖三品类的热点/爆品即可），例如「美妆 北美 爆品」「3C gadget trending Europe」
-   「饰品 跨境 热销」。只选信息密度最高的少量目标，**不要逐一枚举所有品类×市场组合**。
-3. 标记 `fetchable: research-only` 的源（Amazon/TikTok/Google Trends）为「尽力而为」目标，不可达时直接跳过，不重试。
+1. 调用 `overseas.read_source_list(source_list_path)` 读取种子源（均为 `category=beauty` / `markets=[na]`）。
+2. 规划 **至多 4 个**最高价值的定向抓取目标，**仅围绕「美妆护肤 × 北美」的热点/爆品**，例如「美妆护肤 北美 爆品」
+   「skincare bestseller US」「TikTok/Amazon 美妆 热销 美国」。只选信息密度最高的少量目标。
+3. 标记 `fetchable: research-only` 的源（Amazon 美妆榜单）为「尽力而为」目标，不可达时直接跳过，不重试。
 
 ## 阶段 1：基线抓取并装载原始信号
 
 1. 调用 `overseas.fetch_all_to_disk(source_list_path, signals_dir, timeout_seconds=15, max_chars=200000, max_items_per_source=5)`
    抓取所有 RSS 基线源并落盘到 `signals_dir`（research-only 源会被自动跳过）。
-2. 调用 `overseas.load_articles_from_disk(signals_dir, source_list_path, max_items_per_source=5, time_window_hours=48)` 生成原始信号 JSON。
+2. 调用 `overseas.load_articles_from_disk(signals_dir, source_list_path, max_items_per_source=5, time_window_hours=72)` 生成原始信号 JSON。
 3. 用 `edit` 工具将原始信号 JSON 写入 `Lab-04-Overseas-Insights/output/raw_signals.json`。
 4. 简要汇报源数量、抓取成功数、纳入时间窗与原始信号保存位置。如使用了兜底逻辑请注明。
 
 ## 阶段 1.5：深度联网研究与信号增强
 
-1. **单轮、至多 6 次抓取**。对每个目标必须先用 shell 提取纯文本摘要再阅读，例如：
+1. **单轮、至多 4 次抓取**，仅围绕「美妆护肤 × 北美」。对每个目标必须先用 shell 提取纯文本摘要再阅读，例如：
    `curl -sL --max-time 15 "<url>" | python3 -c "import sys,re; t=re.sub(r'<[^>]+>',' ',sys.stdin.read()); print(re.sub(r'\s+',' ',t)[:1500])"`
    **只把这 ≤1500 字符的摘要纳入推理**，严禁读入整页 HTML 或原始响应。
-2. 从摘要中提炼「热门产品 / 潜力爆品」要点：品类、目标市场、价格带、核心卖点、为什么火（尽量带可引用链接）。
+2. 从摘要中提炼「美妆护肤热门产品 / 潜力爆品（北美）」要点：子类（护肤/彩妆/香水等）、价格带、核心卖点、为什么火（尽量带可引用链接）。
 3. 将提炼出的少量高价值信号并入工作信号集，与 `raw_signals.json` 一并进入聚类。
 4. 任一目标不可达或为 research-only 时，**直接跳过、不重试**，并在报告「数据来源」注明缺口，以 RSS 基线继续。
 5. 完成本阶段后**立即进入阶段 2**，不要继续扩大抓取范围或反复抓取。
 
-## 阶段 2：聚类热点（分品类 / 分市场）
+## 阶段 2：聚类热点（美妆护肤 · 北美）
 
 1. 基于阶段 1 / 1.5 的信号，按下面这段中文提示原文构造聚类请求；保留原文语义与结构，仅把占位符替换成实际值与实际 JSON：
 
 ```text
 你是 Overseas Market Clustering Agent。
-任务：把过去 {Local.TimeWindowHours} 小时内、关于跨境电商出海（美妆护肤/3C/饰品）的信号聚合成可行动的热点主题/重要更新。
+任务：把过去 {Local.TimeWindowHours} 小时内、关于「美妆护肤」品类在「北美」市场出海的信号聚合成可行动的热点主题/重要更新。
 
 ## 输入（严格 JSON）
 {MessageText(Local.RawSignals)}
 
 ## 聚类原则（混合）
-- 先按结构化标签分桶：category(beauty|3c|jewelry) / markets(na|eu|sea|global) / signal_level / 品牌
+- 先按结构化标签分桶：美妆子类（护肤/彩妆/香水/个护等）/ signal_level / 品牌
 - 再在桶内按主题合并（标题 + 摘要 + 链接域名 + 产品/品牌）
 - 同时保留两类输出：
   1) 跨源趋势：多来源共振的趋势主题（coverage 高）
@@ -271,7 +251,7 @@ mcp-scripts:
 
 ## 强约束
 - 必须输出严格 JSON（不要代码块，不要解释）
-- 每个热点必须带 categories（beauty|3c|jewelry 子集）与 markets（na|eu|sea|global 子集）
+- 每个热点固定 categories=["beauty"]、markets=["na"]
 - 每个热点给出 samples（至少 3 条，single 允许 1-2 条）
 - 总数最多 {Local.TopK}
 
@@ -279,7 +259,7 @@ mcp-scripts:
 {"hotspots": [{"hotspot_id": "H01", "title": "...", "summary": "...", "category": "trend|single", "categories": ["beauty"], "markets": ["na"], "overall_heat_score": 0, "coverage": {"source_count": 0, "companies": [], "platforms": []}, "should_chase": "yes|no", "chase_rationale": [], "samples": [{"platform": "...", "title": "...", "url": "...", "published_at": "...", "company": "...", "signal_level": "..."}]}]}
 ```
 
-2. 将模型生成的聚类候选结果交给 `overseas.cluster_or_fallback(raw_signals_json, clusters_json, top_k=9)` 做校验与兜底，得到最终热点聚类 JSON。
+2. 将模型生成的聚类候选结果交给 `overseas.cluster_or_fallback(raw_signals_json, clusters_json, top_k=6)` 做校验与兜底，得到最终热点聚类 JSON。
 3. 用 `edit` 工具将最终热点聚类 JSON 写入 `Lab-04-Overseas-Insights/output/clusters/hotspots.json`。
 4. 输出时区分「跨源趋势」与「高信号单条」的主要发现。如使用了兜底逻辑请注明。
 
@@ -308,13 +288,12 @@ mcp-scripts:
 
 ```text
 你是 Overseas Market Report Writer。
-请基于聚类与洞察生成一份中文 Markdown 出海市场洞察日报，结构包含：
-- 今日摘要（3-5 条跨品类 TL;DR）
-- 热点话题（分品类：美妆护肤 / 3C电子 / 饰品配饰）
-- 热门产品 / 潜力爆品（分品类表格：主题/产品 | 市场 | 价格带 | 核心卖点 | 来源）
-- 分市场速览（北美 / 欧洲 / 东南亚 / 全球，各 3-5 条要点）
-- 选品与营销行动建议（选品方向 / 内容营销角度 / 投放建议）
-- 风险与合规提示（关税 / 认证 / 平台政策 / 侵权 / 物流）
+请基于聚类与洞察生成一份中文 Markdown 报告，主题固定为「美妆护肤 · 北美市场 出海洞察日报」，结构包含：
+- 今日摘要（3-5 条 TL;DR）
+- 热点话题（美妆护肤 · 北美）
+- 热门产品 / 潜力爆品（表格：产品/主题 | 子类 | 价格带 | 核心卖点 | 来源）
+- 选品与营销行动建议（选品方向 / 内容营销角度 / 投放建议，针对北美美妆）
+- 风险与合规提示（美妆重点：FDA / MoCRA 注册与备案、成分与标签合规、平台类目政策、知识产权）
 - 数据来源（引用链接，并标注 RSS基线 vs 深度研究；注明被拦截/不可达的缺口）
 
 ## 输入：聚类（JSON）
