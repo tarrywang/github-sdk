@@ -796,6 +796,32 @@ def _read_if_path(s: Any) -> Any:
     return s
 
 
+def _read_text_file(path: str) -> str:
+    """Read a UTF-8 text file. Used when the agent passes a *path* instead of
+    inline JSON content — this keeps large payloads out of the model context and
+    out of MCP tool string arguments (which the gh-aw gateway caps at 10 KB)."""
+    return Path(path).read_text(encoding="utf-8")
+
+
+def _write_json_file(path: str, obj: Any) -> str:
+    p = Path(path)
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return str(path)
+
+
+def _write_text_files(text: str, paths: Iterable[str | None]) -> list[str]:
+    written: list[str] = []
+    for path in paths:
+        if not path:
+            continue
+        p = Path(path)
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(text, encoding="utf-8")
+        written.append(str(path))
+    return written
+
+
 def _extract_json(text: str) -> Any:
     text = _read_if_path(text)
     t = (text or "").strip()
@@ -1011,8 +1037,20 @@ def _fallback_cluster(items: list[dict[str, Any]], *, top_k: int) -> dict[str, A
 
 
 def overseas_cluster_or_fallback(
-    *, raw_signals_json: str, clusters_json: str, top_k: int = 9
+    *,
+    raw_signals_json: str = "",
+    clusters_json: str = "",
+    top_k: int = 9,
+    raw_signals_path: str | None = None,
+    clusters_candidate_path: str | None = None,
+    out_path: str | None = None,
 ) -> dict[str, Any]:
+    # Prefer file paths when provided: keeps large JSON out of the model context
+    # and out of MCP tool arguments (gh-aw gateway caps string args at 10 KB).
+    if raw_signals_path:
+        raw_signals_json = _read_text_file(raw_signals_path)
+    if clusters_candidate_path:
+        clusters_json = _read_text_file(clusters_candidate_path)
     raw = _coerce_raw_signals(raw_signals_json)
     items = raw.get("items")
     if not isinstance(items, list):
@@ -1073,23 +1111,44 @@ def overseas_cluster_or_fallback(
             )
             if len(sanitized) >= int(top_k or 9):
                 break
-        return {"mode": "llm", "top_k": int(top_k or 9), "hotspots": sanitized}
+        result: dict[str, Any] = {
+            "mode": "llm",
+            "top_k": int(top_k or 9),
+            "hotspots": sanitized,
+        }
+    else:
+        result = _fallback_cluster(
+            [x for x in items if isinstance(x, dict)], top_k=int(top_k or 9)
+        )
 
-    return _fallback_cluster(
-        [x for x in items if isinstance(x, dict)], top_k=int(top_k or 9)
-    )
+    if out_path:
+        _write_json_file(out_path, result)
+    return result
 
 
 def overseas_insight_or_fallback(
-    *, clusters_json: str, insights_json: str
+    *,
+    clusters_json: str = "",
+    insights_json: str = "",
+    clusters_path: str | None = None,
+    insights_candidate_path: str | None = None,
+    out_path: str | None = None,
 ) -> dict[str, Any]:
+    if clusters_path:
+        clusters_json = _read_text_file(clusters_path)
+    if insights_candidate_path:
+        insights_json = _read_text_file(insights_candidate_path)
+
     # Try LLM insights.
     try:
         llm_obj = _extract_json(insights_json)
         if isinstance(llm_obj, list):
             llm_obj = {"insights": llm_obj}
         if isinstance(llm_obj, dict) and isinstance(llm_obj.get("insights"), list):
-            return {"mode": "llm", "insights": llm_obj.get("insights")}
+            result = {"mode": "llm", "insights": llm_obj.get("insights")}
+            if out_path:
+                _write_json_file(out_path, result)
+            return result
     except Exception:
         pass
 
@@ -1150,19 +1209,40 @@ def overseas_insight_or_fallback(
             }
         )
 
-    return {"mode": "fallback", "insights": insights}
+    result = {"mode": "fallback", "insights": insights}
+    if out_path:
+        _write_json_file(out_path, result)
+    return result
 
 
 def overseas_render_report_or_fallback(
     *,
-    clusters_json: str,
-    insights_json: str,
-    draft_markdown: str,
-) -> str:
+    clusters_json: str = "",
+    insights_json: str = "",
+    draft_markdown: str = "",
+    clusters_path: str | None = None,
+    insights_path: str | None = None,
+    draft_path: str | None = None,
+    out_path: str | None = None,
+    frontend_out_path: str | None = None,
+) -> str | dict[str, Any]:
+    if clusters_path:
+        clusters_json = _read_text_file(clusters_path)
+    if insights_path:
+        insights_json = _read_text_file(insights_path)
+    if draft_path:
+        draft_markdown = _read_text_file(draft_path)
+
+    def _emit(final_md: str, mode: str) -> str | dict[str, Any]:
+        written = _write_text_files(final_md, [out_path, frontend_out_path])
+        if written:
+            return {"mode": mode, "chars": len(final_md), "out_paths": written}
+        return final_md
+
     md = (draft_markdown or "").strip()
     # If LLM produced a plausible markdown, keep it.
     if md and "(mock" not in md.lower() and len(md) > 120:
-        return md.strip() + "\n"
+        return _emit(md.strip() + "\n", "llm")
 
     clusters = _extract_json(clusters_json)
     if isinstance(clusters, list):
@@ -1381,7 +1461,7 @@ def overseas_render_report_or_fallback(
 
     lines.append("---\n")
     lines.append("说明：本报告在无 LLM 或 LLM 输出不可解析时，由确定性兜底逻辑生成。\n")
-    return "\n".join(lines).strip() + "\n"
+    return _emit("\n".join(lines).strip() + "\n", "fallback")
 
 
 def register_tools(registry: object) -> None:

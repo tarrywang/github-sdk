@@ -112,47 +112,80 @@ mcp-scripts:
       print(json.dumps(result, ensure_ascii=False, default=str))
       "
   overseas-cluster-or-fallback:
-    description: "Validate and fallback clustering results"
+    description: "校验+兜底聚类结果。强烈建议用文件路径参数（raw_signals_path / clusters_candidate_path / out_path），避免把大 JSON 作为字符串参数传入（网关对单参数有 10KB 上限）。工具会把最终热点写入 out_path。"
     inputs:
+      raw_signals_path:
+        type: string
+        required: false
+      clusters_candidate_path:
+        type: string
+        required: false
+      out_path:
+        type: string
+        required: false
       raw_signals_json:
         type: string
-        required: true
+        required: false
       clusters_json:
         type: string
-        required: true
+        required: false
       top_k:
         type: number
         default: 9
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'raw_signals_json': os.environ.get('INPUT_RAW_SIGNALS_JSON', ''), 'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'top_k': int(os.environ.get('INPUT_TOP_K') or 9)}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_cluster_or_fallback.py'], input=payload, text=True).returncode)"
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'raw_signals_json': os.environ.get('INPUT_RAW_SIGNALS_JSON', ''), 'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'top_k': int(os.environ.get('INPUT_TOP_K') or 9), 'raw_signals_path': os.environ.get('INPUT_RAW_SIGNALS_PATH', ''), 'clusters_candidate_path': os.environ.get('INPUT_CLUSTERS_CANDIDATE_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_cluster_or_fallback.py'], input=payload, text=True).returncode)"
   overseas-insight-or-fallback:
-    description: "Validate and fallback insight results"
+    description: "校验+兜底洞察结果。强烈建议用文件路径参数（clusters_path / insights_candidate_path / out_path），避免把大 JSON 作为字符串参数传入（单参数 10KB 上限）。工具会把最终洞察写入 out_path。"
     inputs:
+      clusters_path:
+        type: string
+        required: false
+      insights_candidate_path:
+        type: string
+        required: false
+      out_path:
+        type: string
+        required: false
       clusters_json:
         type: string
-        required: true
+        required: false
       insights_json:
         type: string
-        required: true
+        required: false
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_insight_or_fallback.py'], input=payload, text=True).returncode)"
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'clusters_path': os.environ.get('INPUT_CLUSTERS_PATH', ''), 'insights_candidate_path': os.environ.get('INPUT_INSIGHTS_CANDIDATE_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_insight_or_fallback.py'], input=payload, text=True).returncode)"
   overseas-render-report-or-fallback:
-    description: "Validate and fallback report rendering"
+    description: "校验+兜底报告渲染。强烈建议用文件路径参数（clusters_path / insights_path / draft_path / out_path / frontend_out_path）。工具会把最终 Markdown 同时写入 out_path 与 frontend_out_path，返回精简状态（无需再用 edit 写文件）。"
     inputs:
+      clusters_path:
+        type: string
+        required: false
+      insights_path:
+        type: string
+        required: false
+      draft_path:
+        type: string
+        required: false
+      out_path:
+        type: string
+        required: false
+      frontend_out_path:
+        type: string
+        required: false
       clusters_json:
         type: string
-        required: true
+        required: false
       insights_json:
         type: string
-        required: true
+        required: false
       draft_markdown:
         type: string
-        required: true
+        required: false
     run: |
       cd "$GITHUB_WORKSPACE"
-      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'draft_markdown': os.environ.get('INPUT_DRAFT_MARKDOWN', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_render_report_or_fallback.py'], input=payload, text=True).returncode)"
+      python3 -c "import os, json, sys, subprocess; payload = json.dumps({'clusters_json': os.environ.get('INPUT_CLUSTERS_JSON', ''), 'insights_json': os.environ.get('INPUT_INSIGHTS_JSON', ''), 'draft_markdown': os.environ.get('INPUT_DRAFT_MARKDOWN', ''), 'clusters_path': os.environ.get('INPUT_CLUSTERS_PATH', ''), 'insights_path': os.environ.get('INPUT_INSIGHTS_PATH', ''), 'draft_path': os.environ.get('INPUT_DRAFT_PATH', ''), 'out_path': os.environ.get('INPUT_OUT_PATH', ''), 'frontend_out_path': os.environ.get('INPUT_FRONTEND_OUT_PATH', '')}); sys.exit(subprocess.run([sys.executable, 'Lab-04-Overseas-Insights/mcp-scripts/overseas_render_report_or_fallback.py'], input=payload, text=True).returncode)"
   write-text-file:
     description: "Write text content to a file"
     inputs:
@@ -199,11 +232,19 @@ mcp-scripts:
   `Lab-04-Overseas-Insights/frontend/report.md`，并通过 safe-outputs 的提交机制提交该前端文件。
 - **联网研究只能访问 frontmatter `network.allowed` 白名单内的域名**；遇到被拦截/不可达的目标（如 Amazon、TikTok、Google Trends
   常被反爬），不要反复重试，应记录该缺口并以 RSS 基线兜底继续。
-- **token 预算（硬约束）**：运行环境累计「毛 token」上限 **25M**，超出即整轮失败、无报告产出。为此：
-  (a) 阶段 1.5 的联网研究 **最多抓取 6 个页面、单轮完成**；
+- **token 预算（硬约束）**：运行环境对累计 token 有 **25M「有效 token」上限**（=实际 token × 模型倍率，约 10×，不可调），超出即整轮失败、无报告产出。
+  关键事实：上限不是被数据量撑爆的，而是被**回合数 × 每回合重发的上下文**撑爆的——回合越多、上下文越大，重发成本越高。**控制回合数是第一要务。** 为此：
+  (a) 阶段 1.5 的联网研究 **最多抓取 4 个页面、单轮完成**；
   (b) 每次抓取必须先用 shell 把页面**提取为纯文本并截断到约 1500 字符**再阅读，**严禁把整页 HTML/原始响应读入模型上下文**；
   (c) 不要多轮反复抓取同类页面，不要对失败目标重试；
   (d) 尽快进入阶段 2-4（聚类/洞察/报告），各阶段 LLM 调用务必简洁，避免重复粘贴大段原文。
+- **🚨 MCP 工具调用必须用「文件路径」而非「内联 JSON 内容」（这是上一轮失败的根因）**：
+  - 网关对**单个字符串参数有 10KB 硬上限**。把 `raw_signals.json`（约 23KB）、`insights.json`（约 13KB）等整段 JSON 作为字符串参数传入会被拒绝，并触发反复裁剪/转义/重试，**额外消耗大量回合与上下文，直接撑爆 25M**。
+  - 因此调用 `overseas.cluster_or_fallback` / `overseas.insight_or_fallback` / `overseas.render_report_or_fallback` 时，**一律传文件路径参数**（`raw_signals_path` / `clusters_candidate_path` / `clusters_path` / `insights_candidate_path` / `insights_path` / `draft_path` / `out_path` / `frontend_out_path`），**绝不传 `*_json` / `draft_markdown` 等内联内容参数**。
+  - 工具会自行从路径读取输入、把最终结果**直接写入 `out_path`**（报告还会同时写 `frontend_out_path`），并只返回精简状态（mode/计数/路径）。**因此无需再用 `edit` 重复写这些产物文件。**
+- **🚨 候选 JSON 必须用 Python `json.dump` 写文件，不要手写 heredoc**：各阶段的 LLM 候选结果（聚类/洞察）请在 shell 里构造成 Python dict 后用
+  `json.dump(obj, open(path,'w'), ensure_ascii=False)` 落盘，**严禁用 heredoc 手敲 JSON**（中文引号「」与未转义的 `"` 会反复打断解析、白白浪费回合）。
+- **不要把大文件 `cat` 进上下文**：需要查看产物时只 `tail`/读必要片段；中间产物之间通过**磁盘文件路径**衔接，不要在回合间反复粘贴大段 JSON/Markdown。
 - 不要引入额外的手工 git 流程；提交统一走 safe-outputs。
 
 ## 阶段 0：深度研究规划
@@ -227,20 +268,21 @@ mcp-scripts:
    `curl -sL --max-time 15 "<url>" | python3 -c "import sys,re; t=re.sub(r'<[^>]+>',' ',sys.stdin.read()); print(re.sub(r'\s+',' ',t)[:1500])"`
    **只把这 ≤1500 字符的摘要纳入推理**，严禁读入整页 HTML 或原始响应。
 2. 从摘要中提炼「美妆护肤热门产品 / 潜力爆品（北美）」要点：子类（护肤/彩妆/香水等）、价格带、核心卖点、为什么火（尽量带可引用链接）。
-3. 将提炼出的少量高价值信号并入工作信号集，与 `raw_signals.json` 一并进入聚类。
+3. 把提炼出的少量高价值信号（research-enhanced）用 Python 读出 `Lab-04-Overseas-Insights/output/raw_signals.json`、
+   追加到其 `items` 列表后再 `json.dump(..., ensure_ascii=False)` 写回**同一文件**，使其与 RSS 基线信号一并进入聚类（后续聚类工具按路径读取该文件）。
 4. 任一目标不可达或为 research-only 时，**直接跳过、不重试**，并在报告「数据来源」注明缺口，以 RSS 基线继续。
 5. 完成本阶段后**立即进入阶段 2**，不要继续扩大抓取范围或反复抓取。
 
 ## 阶段 2：聚类热点（美妆护肤 · 北美）
 
-1. 基于阶段 1 / 1.5 的信号，按下面这段中文提示原文构造聚类请求；保留原文语义与结构，仅把占位符替换成实际值与实际 JSON：
+1. 以你**已读取的** `Lab-04-Overseas-Insights/output/raw_signals.json` 内容为输入（**无需再把整段 JSON 粘贴进上下文**），按下面这段中文提示的语义与结构进行聚类推理：
 
 ```text
 你是 Overseas Market Clustering Agent。
-任务：把过去 {Local.TimeWindowHours} 小时内、关于「美妆护肤」品类在「北美」市场出海的信号聚合成可行动的热点主题/重要更新。
+任务：把过去 72 小时内、关于「美妆护肤」品类在「北美」市场出海的信号聚合成可行动的热点主题/重要更新。
 
-## 输入（严格 JSON）
-{MessageText(Local.RawSignals)}
+## 输入
+已落盘的 raw_signals.json（其 items 即待聚类信号）。
 
 ## 聚类原则（混合）
 - 先按结构化标签分桶：美妆子类（护肤/彩妆/香水/个护等）/ signal_level / 品牌
@@ -250,41 +292,49 @@ mcp-scripts:
   2) 高信号单条：单来源但信号强（S/A 或榜单/爆品/官方更新）的重要更新
 
 ## 强约束
-- 必须输出严格 JSON（不要代码块，不要解释）
 - 每个热点固定 categories=["beauty"]、markets=["na"]
 - 每个热点给出 samples（至少 3 条，single 允许 1-2 条）
-- 总数最多 {Local.TopK}
+- 总数最多 6
 
-## 输出格式（严格 JSON）
+## 目标结构（写入候选文件时遵循）
 {"hotspots": [{"hotspot_id": "H01", "title": "...", "summary": "...", "category": "trend|single", "categories": ["beauty"], "markets": ["na"], "overall_heat_score": 0, "coverage": {"source_count": 0, "companies": [], "platforms": []}, "should_chase": "yes|no", "chase_rationale": [], "samples": [{"platform": "...", "title": "...", "url": "...", "published_at": "...", "company": "...", "signal_level": "..."}]}]}
 ```
 
-2. 将模型生成的聚类候选结果交给 `overseas.cluster_or_fallback(raw_signals_json, clusters_json, top_k=6)` 做校验与兜底，得到最终热点聚类 JSON。
-3. 用 `edit` 工具将最终热点聚类 JSON 写入 `Lab-04-Overseas-Insights/output/clusters/hotspots.json`。
+2. 把聚类候选**用 Python `json.dump(obj, open('/tmp/gh-aw/agent/clusters_candidate.json','w'), ensure_ascii=False)` 落盘**（严禁 heredoc 手写 JSON）。
+3. 调用 `overseas.cluster_or_fallback`，**只传文件路径参数**（绝不传内联 JSON）：
+   - `raw_signals_path="Lab-04-Overseas-Insights/output/raw_signals.json"`
+   - `clusters_candidate_path="/tmp/gh-aw/agent/clusters_candidate.json"`
+   - `top_k=6`
+   - `out_path="Lab-04-Overseas-Insights/output/clusters/hotspots.json"`
+   工具会校验/兜底后把最终热点写入 `out_path` 并返回精简状态（mode/热点数/路径）。**不要再用 `edit` 写 hotspots.json。**
 4. 输出时区分「跨源趋势」与「高信号单条」的主要发现。如使用了兜底逻辑请注明。
 
 ## 阶段 3：生成热点洞察
 
-1. 基于阶段 2 的聚类结果，按下面这段中文提示原文构造洞察请求；保留原文语义与结构，仅替换占位符为实际 JSON：
+1. 以阶段 2 的聚类结果（你已从 `cluster_or_fallback` 的返回状态得知，必要时读取 `Lab-04-Overseas-Insights/output/clusters/hotspots.json`）为输入，按下面这段中文提示的语义与结构生成洞察：
 
 ```text
 你是 Overseas Market Insight Agent。任务：针对每个热点输出"发生了什么 / 为什么重要 / 影响谁 / 接下来怎么做"。
 若为热门产品/爆品，补充 price_band（价格带）、selling_points（核心卖点）、target_market（目标市场）。
 
-## 输入：热点聚类结果（严格 JSON）
-{MessageText(Local.HotspotClusters)}
+## 输入：热点聚类结果
+已落盘的 clusters/hotspots.json。
 
-## 输出（严格 JSON）
+## 目标结构（写入候选文件时遵循）
 {"insights": [{"hotspot_id": "H01", "title": "...", "what_changed": "...", "why_it_matters": "...", "who_is_impacted": [], "next_actions": [], "price_band": "...", "selling_points": [], "target_market": [], "risk_notes": [], "references": []}]}
 ```
 
-2. 将模型生成的洞察候选结果交给 `overseas.insight_or_fallback(clusters_json, insights_json)` 做校验与兜底，得到最终洞察 JSON。
-3. 用 `edit` 工具将最终洞察 JSON 写入 `Lab-04-Overseas-Insights/output/insights/insights.json`。
+2. 把洞察候选**用 Python `json.dump(obj, open('/tmp/gh-aw/agent/insights_candidate.json','w'), ensure_ascii=False)` 落盘**（严禁 heredoc 手写 JSON）。
+3. 调用 `overseas.insight_or_fallback`，**只传文件路径参数**：
+   - `clusters_path="Lab-04-Overseas-Insights/output/clusters/hotspots.json"`
+   - `insights_candidate_path="/tmp/gh-aw/agent/insights_candidate.json"`
+   - `out_path="Lab-04-Overseas-Insights/output/insights/insights.json"`
+   工具会校验/兜底后把最终洞察写入 `out_path` 并返回精简状态。**不要再用 `edit` 写 insights.json。**
 4. 输出覆盖四个维度（发生了什么 / 为什么重要 / 影响谁 / 接下来怎么做）。如使用了兜底逻辑请注明。
 
 ## 阶段 4：生成并提交 Markdown 报告
 
-1. 基于阶段 2 聚类与阶段 3 洞察，按下面这段中文提示原文构造报告请求；保留原文语义与结构，仅替换占位符为实际 JSON：
+1. 以阶段 2 聚类与阶段 3 洞察为输入（必要时读取 `clusters/hotspots.json` 与 `insights/insights.json`），按下面这段中文提示的语义与结构撰写报告：
 
 ```text
 你是 Overseas Market Report Writer。
@@ -296,18 +346,20 @@ mcp-scripts:
 - 风险与合规提示（美妆重点：FDA / MoCRA 注册与备案、成分与标签合规、平台类目政策、知识产权）
 - 数据来源（引用链接，并标注 RSS基线 vs 深度研究；注明被拦截/不可达的缺口）
 
-## 输入：聚类（JSON）
-{MessageText(Local.HotspotClusters)}
-
-## 输入：洞察（JSON）
-{MessageText(Local.HotspotInsights)}
+## 输入
+已落盘的 clusters/hotspots.json 与 insights/insights.json。
 
 输出 Markdown，不要代码块。
 ```
 
-2. 将模型生成的 Markdown 草稿交给 `overseas.render_report_or_fallback(clusters_json, insights_json, draft_markdown)` 做校验与兜底，得到最终 Markdown。
-3. 用 `edit` 工具将最终 Markdown 写入 `Lab-04-Overseas-Insights/output/report.md`。
-4. 再用 `edit` 工具将同一份 Markdown 写入 `Lab-04-Overseas-Insights/frontend/report.md`，作为前端展示文件。
-5. 通过 safe-outputs 的 `create-pull-request` 机制提交包含 `Lab-04-Overseas-Insights/output/report.md` 和
+2. 把生成的 Markdown 草稿**写入文件** `/tmp/gh-aw/agent/report_draft.md`（用 `edit` 或 shell 写入均可，只写这一份草稿）。
+3. 调用 `overseas.render_report_or_fallback`，**只传文件路径参数**，让工具一次性完成校验/兜底并落盘两个目标文件：
+   - `clusters_path="Lab-04-Overseas-Insights/output/clusters/hotspots.json"`
+   - `insights_path="Lab-04-Overseas-Insights/output/insights/insights.json"`
+   - `draft_path="/tmp/gh-aw/agent/report_draft.md"`
+   - `out_path="Lab-04-Overseas-Insights/output/report.md"`
+   - `frontend_out_path="Lab-04-Overseas-Insights/frontend/report.md"`
+   工具会把最终 Markdown **同时写入** `out_path` 与 `frontend_out_path`，并返回精简状态（mode/字数/路径）。**不要再用 `edit` 重复写这两个文件。**
+4. 通过 safe-outputs 的 `create-pull-request` 机制提交包含 `Lab-04-Overseas-Insights/output/report.md` 和
    `Lab-04-Overseas-Insights/frontend/report.md` 的 PR。PR 标题应包含日期和报告摘要。
-6. 最终总结需说明报告输出路径、前端同步路径和 PR 编号。如使用了兜底逻辑请注明。
+5. 最终总结需说明报告输出路径、前端同步路径和 PR 编号。如使用了兜底逻辑请注明。
