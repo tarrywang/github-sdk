@@ -1,0 +1,5 @@
+httpx
+feedparser
+beautifulsoup4
+PyYAML
+python-dotenv

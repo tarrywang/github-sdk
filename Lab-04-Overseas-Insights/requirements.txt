@@ -1,0 +1,6 @@
+# Tech Insight pipeline dependencies
+python-dotenv
+PyYAML
+httpx
+feedparser
+beautifulsoup4

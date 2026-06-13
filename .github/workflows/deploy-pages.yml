@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'Lab-01-Tech-Insights/frontend/**'
+      - 'Lab-04-Overseas-Insights/frontend/**'
   workflow_dispatch:
 
 permissions:
@@ -29,10 +30,19 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
+      - name: Assemble combined site
+        run: |
+          rm -rf _site
+          mkdir -p _site/overseas
+          # Lab-01 (EV 洞察) 保持根路径，现有 URL 不变
+          cp -r Lab-01-Tech-Insights/frontend/. _site/
+          # Lab-04 (出海洞察) 发布到 /overseas/
+          cp -r Lab-04-Overseas-Insights/frontend/. _site/overseas/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'Lab-01-Tech-Insights/frontend/'
+          path: '_site/'
 
       - name: Deploy to GitHub Pages
         id: deployment
