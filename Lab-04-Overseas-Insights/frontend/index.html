@@ -3,39 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>出海市场洞察日报</title>
-    <meta name="description" content="跨境电商出海市场洞察：美妆护肤 / 3C / 饰品的热点话题、热门产品与趋势分析" />
-
-    <!-- GitHub-like markdown styling (local) -->
-    <link
-      rel="stylesheet"
-      href="./vendor/github-markdown.css"
+    <title>美妆护肤 · 北美市场 出海洞察日报</title>
+    <meta
+      name="description"
+      content="跨境电商出海市场洞察：美妆护肤 · 北美市场的热点话题、热销 TOP5 产品（真实榜单数据）与 1688/Alibaba 供应链落地（供应商 / 拿货价 / 毛利 / 合规）"
     />
-
+    <link rel="stylesheet" href="./vendor/github-markdown.css" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="topbar__inner">
-        <div class="brand">出海市场洞察日报 · 美妆护肤 / 3C / 饰品</div>
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span>
+            <span class="brand__cn">出海市场洞察</span>
+            <span class="brand__en">Overseas Insight</span>
+          </span>
+        </div>
+        <div class="topbar__meta">
+          <span class="topbar__hide">美妆护肤 · 北美</span>
+          <span id="topbar-date"></span>
+        </div>
       </div>
     </header>
 
-    <main class="container">
-      <div id="status" class="status" hidden></div>
-      <article id="content" class="markdown-body content" aria-live="polite"></article>
+    <section class="hero">
+      <span class="hero__eyebrow">🛫 跨境电商 · 每日洞察</span>
+      <h1 class="hero__title" id="hero-title">美妆护肤 · 北美市场 出海洞察日报</h1>
+      <p class="hero__sub" id="hero-sub">
+        热点话题 · 真实电商榜单热销 TOP5 · 1688/Alibaba 供应链落地（供应商 / 拿货价 / 毛利 / 合规）。
+      </p>
+      <div class="hero__meta" id="hero-meta">
+        <span class="chip chip--accent"><span class="chip__dot"></span>美妆护肤</span>
+        <span class="chip"><span class="chip__dot"></span>北美市场</span>
+        <span class="chip"><span class="chip__dot"></span>每日自动生成</span>
+      </div>
+    </section>
+    <div class="hero__rule"><hr /></div>
+
+    <div id="status" class="status" hidden></div>
+
+    <main class="layout">
+      <nav class="toc" id="toc" aria-label="目录" hidden>
+        <p class="toc__title">目录</p>
+        <ul class="toc__list" id="toc-list"></ul>
+      </nav>
+
+      <article id="content" class="markdown-body content" aria-live="polite">
+        <div class="skeleton" aria-hidden="true">
+          <div></div><div></div><div></div><div></div><div></div>
+        </div>
+      </article>
     </main>
 
     <footer class="footer">
-      <div class="container footer__inner">
-        <span>静态渲染：Markdown → HTML（浏览器端）</span>
+      <div class="footer__inner">
+        <span>数据来源：RSS 基线 + 深度研究 + 电商榜单（ScraperAPI）+ Alibaba 供应链 · 由 GitHub Actions 每日自动生成</span>
+        <span id="footer-updated"></span>
       </div>
     </footer>
 
-    <!-- Markdown + sanitizer (local) -->
     <script src="./vendor/marked.min.js"></script>
     <script src="./vendor/purify.min.js"></script>
-
     <script type="module" src="./main.js"></script>
   </body>
 </html>
