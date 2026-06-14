@@ -1,0 +1,111 @@
+{
+  "mode": "llm",
+  "top_n": 5,
+  "products": [
+    {
+      "rank": 1,
+      "name": "eos Shea Better Body Lotion Vanilla Cashmere",
+      "brand": "eos",
+      "subcategory": "个护/身体护肤",
+      "price": "$9.97",
+      "rating": 4.7,
+      "review_count": 75536,
+      "trend": "长期在榜",
+      "platform": "Amazon",
+      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+      "evidence": "Amazon Beauty & Personal Care 畅销榜 #1（2026-06-13抓取，ScraperAPI代理）",
+      "selling_points": [
+        "24小时保湿",
+        "天然乳木果",
+        "轻盈不油腻",
+        "纯素配方",
+        "大容量16oz"
+      ],
+      "why_hot": "超亲民价格（$10以内）、高口碑（4.7星75K评价），香草奶酪香气受众广；亚马逊Prime免费配送加持，长期稳居榜首。"
+    },
+    {
+      "rank": 2,
+      "name": "medicube Zero Pore Pad 2.0",
+      "brand": "medicube",
+      "subcategory": "护肤/爽肤水垫",
+      "price": "$18.90",
+      "rating": 4.6,
+      "review_count": 25688,
+      "trend": "上升（韩系护肤持续热）",
+      "platform": "Amazon",
+      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+      "evidence": "Amazon Beauty & Personal Care 畅销榜 #2（2026-06-13抓取，ScraperAPI代理）",
+      "selling_points": [
+        "双面设计（去角质+镇静）",
+        "4.5% AHA乳酸 + 0.45% BHA水杨酸",
+        "缩毛孔",
+        "K-beauty背书",
+        "70片"
+      ],
+      "why_hot": "韩国护肤品牌medicube在TikTok/YT爆红，双效AHA+BHA垫片满足北美消费者对有效成分的追求；价格适中，首次购买门槛低。"
+    },
+    {
+      "rank": 3,
+      "name": "Mighty Patch Original (Hero Cosmetics)",
+      "brand": "Hero Cosmetics",
+      "subcategory": "护肤/痘贴",
+      "price": "$12.99",
+      "rating": 4.6,
+      "review_count": 183993,
+      "trend": "长期在榜",
+      "platform": "Amazon",
+      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+      "evidence": "Amazon Beauty & Personal Care 畅销榜 #4（2026-06-13抓取，ScraperAPI代理）",
+      "selling_points": [
+        "水胶体技术",
+        "一夜消痘",
+        "粉刺白头克星",
+        "36片装性价比高",
+        "皮肤科友好"
+      ],
+      "why_hot": "北美痘痘贴品类创造者，拥有近20万条评价，是Amazon美妆品类历久弥新的超级单品；病毒式社媒传播，Gen Z忠实用户群。"
+    },
+    {
+      "rank": 4,
+      "name": "The Ordinary Glycolic Acid 7% Exfoliating Toner",
+      "brand": "The Ordinary (Deciem)",
+      "subcategory": "护肤/去角质爽肤水",
+      "price": "$13.50",
+      "rating": 4.7,
+      "review_count": 53538,
+      "trend": "长期在榜",
+      "platform": "Amazon",
+      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+      "evidence": "Amazon Beauty & Personal Care 畅销榜 #5（2026-06-13抓取，ScraperAPI代理）",
+      "selling_points": [
+        "7%甘醇酸",
+        "提亮肤色",
+        "平滑肌肤",
+        "每日使用",
+        "极致性价比"
+      ],
+      "why_hot": "The Ordinary以科研成分+低价策略颠覆北美护肤市场，甘醇酸爽肤水是经典入门款；KOL持续种草、皮肤科医生背书，长期热销。"
+    },
+    {
+      "rank": 5,
+      "name": "BIODANCE Bio-Collagen Real Deep Mask",
+      "brand": "BIODANCE",
+      "subcategory": "护肤/面膜",
+      "price": "$19.00",
+      "rating": 4.5,
+      "review_count": 45847,
+      "trend": "上升（K-beauty面膜热）",
+      "platform": "Amazon",
+      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+      "evidence": "Amazon Beauty & Personal Care 畅销榜 #8（2026-06-13抓取，ScraperAPI代理）",
+      "selling_points": [
+        "生物胶原蛋白深层补水",
+        "胶状面膜整夜敷用",
+        "缩毛孔",
+        "增弹提拉",
+        "旅行装便携"
+      ],
+      "why_hot": "K-beauty胶原蛋白面膜在TikTok持续走红，BIODANCE凭借独特的胶冻质地和长达数小时的敷用体验吸引大量北美消费者尝鲜。"
+    }
+  ]
+}
