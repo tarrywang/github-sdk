@@ -1,0 +1,312 @@
+{
+  "window": {
+    "time_window_hours": 72,
+    "cutoff": "2026-06-10T23:48:50.878631Z",
+    "generated_at": "2026-06-13T23:48:50.878631Z"
+  },
+  "sources": [
+    {
+      "platform": "glossy",
+      "kept": 5,
+      "signal_level": "S"
+    },
+    {
+      "platform": "wwd",
+      "kept": 5,
+      "signal_level": "A"
+    },
+    {
+      "platform": "modernretail",
+      "kept": 5,
+      "signal_level": "A"
+    },
+    {
+      "platform": "beautyindependent",
+      "kept": 4,
+      "signal_level": "A"
+    }
+  ],
+  "items": [
+    {
+      "platform": "wwd",
+      "title": "Elle Macpherson Knows Her Cashmere",
+      "url": "https://wwd.com/fashion-news/designer-luxury/elle-macpherson-collab-cashmere-lund-1239006003/",
+      "published_at": "2026-06-13T20:49:07Z",
+      "summary": "The model and wellness entrepreneur has done a capsule collection for Linnea Lund, one of her go-to...",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "title": "Ciara Takes Her Clear Shoe Streak From Silver to Icy Blue With Femme LA's Whiskey Slippers",
+      "url": "https://wwd.com/footwear-news/shoe-trends/ciara-femme-la-whiskey-slippers-uber-world-cup-party-1239009912/",
+      "published_at": "2026-06-13T19:46:28Z",
+      "summary": "The singer paired the mules with a sleeveless graphic T-shirt minidress for Uber's World Cup-themed party.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "title": "Katy Perry Makes Waves in Aquazzura's Futuristic Wedges and Silver Fringe at the 2026 FIFA World Cup",
+      "url": "https://wwd.com/footwear-news/shoe-trends/katy-perry-aquazzura-sea-wave-wedges-2026-fifa-world-cup-1239009898/",
+      "published_at": "2026-06-13T18:52:08Z",
+      "summary": "The singer gave Wonder its first live performance in a pair of the label's silver Sea Wave Wedges.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "title": "Lisa Takes All-white Leather to New Heights in Ssimeez Platform Boots at the 2026 FIFA World Cup",
+      "url": "https://wwd.com/footwear-news/shoe-trends/lisa-white-knee-high-ssimeez-boots-2026-fifa-world-cup-1239004684/",
+      "published_at": "2026-06-13T18:21:00Z",
+      "summary": "The Blackpink member paired the knee-high lace-up platforms with custom Zana Bayne leather.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "title": "New Balance's Hit Low-profile Sneaker Was Just Released in a Ton of New Summer Styles",
+      "url": "https://wwd.com/footwear-news/sneaker-news/new-balance-204l-summer-styles-available-1239009879/",
+      "published_at": "2026-06-13T17:46:01Z",
+      "summary": "A total of five new 204L colorways and material options are available now.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "title": "Perfume brand Heretic is leaning into the B-side of pop culture, one unexpected collab at a time",
+      "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
+      "published_at": "2026-06-12T04:00:00Z",
+      "summary": "For Douglas Little, the founder of indie-perfume brand Heretic, the brand's approach to collaboration is unconventional.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "title": "Luxury Briefing: Mytheresa is using AI to find future VIPs",
+      "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-mytheresa-is-using-ai-to-find-future-vips/",
+      "published_at": "2026-06-12T04:00:00Z",
+      "summary": "Mytheresa is using AI to identify and target future VIP customers.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "title": "Glossy Podcast: Quince head of brand strategy on capitalizing on its $10B valuation",
+      "url": "https://www.glossy.co/podcasts/glossy-podcast-quince-head-of-brand-strategy-dakota-kate-isaacs-on-how-the-brand-is-capitalizing-on-its-10b-valuation/",
+      "published_at": "2026-06-12T04:00:00Z",
+      "summary": "DTC manufacturer Quince on a growth trajectory after $10B valuation.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands next steps",
+      "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
+      "published_at": "2026-06-12T04:00:00Z",
+      "summary": "At Glossy E-Commerce Summit in Miami, brand and retail executives discussed investment and channel strategies.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "title": "Why the World Cup is a make or break moment for retail this summer",
+      "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
+      "published_at": "2026-06-13T04:00:00Z",
+      "summary": "Retailers are leveraging the World Cup for marketing and sales opportunities.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "title": "Saie bets on education with 'The Makeup Class' to create brand superfans",
+      "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
+      "published_at": "2026-06-11T04:00:00Z",
+      "summary": "Clean beauty brand Saie debuted an IRL masterclass program expanding to new cities to create loyal customers.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "title": "Open-box marketplace Rebel is now selling better-for-you snacks",
+      "url": "https://www.modernretail.co/operations/open-box-marketplace-rebel-is-now-selling-better-for-you-snacks/",
+      "published_at": "2026-06-12T04:00:00Z",
+      "summary": "Rebel raised $25M Series B and is expanding into new product categories.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
+      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
+      "published_at": "2026-06-12T02:40:05Z",
+      "summary": "Clinical skincare brand Remedy founded by dermatologist Dr. Muneeb Shah has raised $20M Series A. Investors are betting on doctor-founded skincare brands.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
+      "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
+      "published_at": "2026-06-11T21:25:28Z",
+      "summary": "French beauty tech company Capsum acquires KKT Labs to expand US operations in clean beauty formulation.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
+      "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
+      "published_at": "2026-06-11T17:00:00Z",
+      "summary": "Walmart is on a mission to prove trendy assortment at competitive prices.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid tariff evasion pitches",
+      "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
+      "published_at": "2026-06-11T14:00:00Z",
+      "summary": "Online merchants welcome Trump customs fraud crackdown as tariff evasion becomes an industry issue.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
+      "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
+      "published_at": "2026-06-11T11:55:19Z",
+      "summary": "Pregnancy-safe skincare brand More Than Nine founded by dermatologist targets mothers with simplified routines.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
+      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
+      "published_at": "2026-06-11T04:01:16Z",
+      "summary": "Bubble skincare founder discusses winning Gen Z and Gen Alpha customers, clean accessible skincare.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "title": "How meat sticks players are trying to find white space in the red-hot category",
+      "url": "https://www.modernretail.co/operations/how-meat-sticks-players-are-trying-to-find-white-space-in-the-red-hot-category/",
+      "published_at": "2026-06-11T04:00:00Z",
+      "summary": "Growing meat snacks market attracting new brands.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A - Clinical Skincare Investment Surge",
+      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
+      "published_at": "2026-06-12T02:40:05Z",
+      "summary": "Remedy, derm-founded clinical skincare brand by Dr. Muneeb Shah (social media dermatologist), raises $20M Series A led by L Catterton and Norwest Venture Partners. Signals: mass-market clinical skincare backed by doctor credibility is attracting top-tier VC investment. Keywords: doctor-founded, clinical efficacy, mass-market, serums, brightening.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "research_enhanced": true
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "Bubble Skincare Founder on Gen Alpha Strategy - Accessible Youth Skincare Trend",
+      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
+      "published_at": "2026-06-11T04:01:16Z",
+      "summary": "Bubble skincare (founder Shai Eisenman) winning Gen Z and Gen Alpha at mass retailers CVS, Target, Walmart. Product: Cosmic Mist and accessible skincare. Trend: younger consumers experiencing beauty fatigue, prefer simple routines. Brand not selling. Available at major mass retailers. Price: accessible, $15-25.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "research_enhanced": true
+    },
+    {
+      "platform": "glossy",
+      "title": "Saie Clean Makeup Brand Launches Education Program 'The Makeup Class' for Superfan Loyalty",
+      "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
+      "published_at": "2026-06-11T04:00:00Z",
+      "summary": "Clean beauty makeup brand Saie debuts 'The Makeup Class' IRL masterclass program expanding to new cities. Strategy: in-person education converts customers into superfans. Signals: experiential marketing and clean makeup education gaining traction in North American beauty market.",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "research_enhanced": true
+    },
+    {
+      "platform": "beautyindependent",
+      "title": "More Than Nine: Derm-Founded Pregnancy-Safe Skincare for Moms Tackles Decision Fatigue",
+      "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
+      "published_at": "2026-06-11T11:55:19Z",
+      "summary": "Derm brand More Than Nine by Aegean Chan targets moms with simplified pregnancy-safe skincare routines. Addresses 'decision fatigue' in beauty. Niche: maternal skincare, ingredient safety, clean formulations. Growing segment: dermatologist-founded brands targeting specific life stages.",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "research_enhanced": true
+    }
+  ],
+  "research_enhanced_count": 4
+}
