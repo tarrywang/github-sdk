@@ -1,90 +1,102 @@
 {
   "window": {
     "time_window_hours": 72,
-    "generated_at": "2026-06-14T00:49:00Z"
+    "cutoff": "2026-06-14T22:04:21.142302Z",
+    "generated_at": "2026-06-17T22:04:21.142302Z"
   },
-  "source_count": 4,
-  "items_count": 18,
-  "items": [
+  "sources": [
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "url": "https://www.glossy.co/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/glossy.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ]
+    },
     {
       "platform": "wwd",
       "platform_key": "wwd",
       "source_type": "rss",
-      "title": "Nina Dobrev Takes the Bridal Trend Beyond White Satin in a Sheer, Feathered Two-piece at Taormina",
-      "url": "https://wwd.com/pop-culture/celebrity-news/nina-dobrev-one-of-bridal-look-taormina-film-festival-1239009965/",
-      "published_at": "2026-06-14T00:35:57Z",
-      "summary": "The actress paired a made-to-order floral-jacquard corset with a crystal-embroidered tulle skirt.",
+      "url": "https://wwd.com/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/wwd.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
       "signal_level": "A",
       "category": "beauty",
       "markets": [
         "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Perfume brand Heretic is leaning into the 'B-side' of pop culture, one unexpected collab at a time",
-      "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Indie-perfume brand Heretic uses unexpected collaborations with music, art and pop culture to drive DTC growth and brand loyalty in the US fragrance market.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Luxury Briefing: Mytheresa is using AI to find future VIPs",
-      "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-mytheresa-is-using-ai-to-find-future-vips/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Mytheresa leverages AI to identify and nurture future high-value customers, signaling AI adoption in luxury beauty retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Glossy Podcast: Quince head of brand strategy on how the brand is capitalizing on its $10B valuation",
-      "url": "https://www.glossy.co/podcasts/glossy-podcast-quince-head-of-brand-strategy-dakota-kate-isaacs/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Direct-from-manufacturer Quince ($10B valuation) is expanding into beauty and skincare, bypassing traditional retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands' next steps",
-      "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "At Glossy's E-Commerce Summit in Miami, executives outlined 6 strategic truths for beauty brands: DTC resilience, TikTok Shop expansion, and omnichannel investment.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
       ]
     },
     {
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "Why the World Cup is a make or break moment for retail this summer",
-      "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
-      "published_at": "2026-06-13T04:00:00Z",
-      "summary": "Brands including beauty retailers are activating around the 2026 FIFA World Cup in North America as a major cultural commerce moment.",
+      "url": "https://www.modernretail.co/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/modernretail.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
       "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "platform_key": "beautyindependent",
+      "source_type": "rss",
+      "url": "https://www.beautyindependent.com/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/beautyindependent.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ]
+    }
+  ],
+  "items": [
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Fashion is now the largest category on Whatnot as brands flock to the platform",
+      "url": "https://www.glossy.co/fashion/fashion-is-now-the-largest-category-on-whatnot-as-brands-flock-to-the-platform/",
+      "published_at": "2026-06-17T04:00:00Z",
+      "summary": "The live shopping app Whatnot is in the midst of a notable growth period. After a $225 million fundraising round, fashion is now its largest category, with brands flocking to the platform for live commerce opportunities.",
+      "company": null,
+      "signal_level": "S",
       "category": "beauty",
       "markets": [
         "na"
@@ -94,10 +106,11 @@
       "platform": "glossy",
       "platform_key": "glossy",
       "source_type": "rss",
-      "title": "Saie bets on education with 'The Makeup Class' to create brand 'superfans'",
-      "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Clean beauty brand Saie launched 'The Makeup Class' IRL masterclass program in US cities to turn customers into brand superfans and drive DTC loyalty.",
+      "title": "Wellness Briefing: How stem cell therapy innovator Acorn Biolabs is scaling in the US",
+      "url": "https://www.glossy.co/beauty/wellness/wellness-briefing-how-stem-cell-therapy-innovator-acorn-biolabs-is-legally-scaling-in-the-us-plus-news/",
+      "published_at": "2026-06-17T04:00:00Z",
+      "summary": "Acorn Biolabs, a stem cell therapy innovator, is scaling its business in the US market, signaling the growing wellness tech trend in beauty.",
+      "company": null,
       "signal_level": "S",
       "category": "beauty",
       "markets": [
@@ -105,13 +118,44 @@
       ]
     },
     {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
+      "platform": "glossy",
+      "platform_key": "glossy",
       "source_type": "rss",
-      "title": "Open-box marketplace Rebel is now selling better-for-you snacks",
-      "url": "https://www.modernretail.co/operations/open-box-marketplace-rebel-is-now-selling-better-for-you-snacks/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Open-box marketplace Rebel ($25M Series B) expands beyond electronics into wellness and beauty adjacent categories.",
+      "title": "Beauty brands are lining up for the frozen yogurt craze",
+      "url": "https://www.glossy.co/beauty/beauty-brands-are-lining-up-for-the-frozen-yogurt-craze/",
+      "published_at": "2026-06-17T04:00:00Z",
+      "summary": "With its protein- and probiotic-packed bowls, froyo is back as the treat of the summer. Beauty brands are launching froyo-inspired skincare and bodycare products featuring probiotics and yogurt extracts.",
+      "company": null,
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Beauty Briefing: AI-developed fragrance molecules to be put up for auction at the World Perfumery Congress",
+      "url": "https://www.glossy.co/beauty/beauty-briefing-ai-developed-fragrance-molecules-to-be-put-up-for-auction-at-the-world-perfumery-congress/",
+      "published_at": "2026-06-16T09:55:00Z",
+      "summary": "AI-powered fragrance startup Osmo is auctioning its patented AI-developed fragrance molecules at the World Perfumery Congress, signaling AI's growing role in fragrance innovation.",
+      "company": "Osmo",
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "platform_key": "beautyindependent",
+      "source_type": "rss",
+      "title": "Ulta Beauty, Violet Grey And Printemps On Beauty Retail's Human Advantage In The Age Of AI",
+      "url": "https://www.beautyindependent.com/ulta-beauty-violet-grey-printemps-retail-human-advantage-age-ai/",
+      "published_at": "2026-06-17T21:06:50Z",
+      "summary": "Ulta Beauty, Violet Grey and Printemps discuss how personalized human curation remains a competitive advantage in beauty retail even as AI reshapes the industry.",
+      "company": "Ulta Beauty",
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -122,10 +166,11 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T02:40:05Z",
-      "summary": "Dr. Muneeb Shah's clinical skincare brand Remedy closes $20M Series A (L Catterton + Norwest). Investors are doubling down on doctor-founded, evidence-based mass-market skincare brands targeting US consumers.",
+      "title": "Clear Health Launches Topical Isotretinoin As Alternative To Oral Accutane",
+      "url": "https://www.beautyindependent.com/clear-health-topical-isotretinoin-accutane/",
+      "published_at": "2026-06-17T11:55:15Z",
+      "summary": "Clear Health has launched a topical isotretinoin product as a less systemic alternative to oral Accutane, targeting the growing prescription skincare and acne treatment segment in the US.",
+      "company": "Clear Health",
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -136,38 +181,11 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
-      "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
-      "published_at": "2026-06-11T21:25:28Z",
-      "summary": "French beauty tech/biotech company Capsum acquires US-based KKT Labs and appoints Krupa Koestline as US operations lead, signaling expansion of advanced formulation tech into North American market.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
-      "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
-      "published_at": "2026-06-11T17:00:00Z",
-      "summary": "Walmart emphasizes trendiest assortment strategy, signaling continued beauty category expansion as it competes with Target and Amazon.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid wave of tariff evasion pitches",
-      "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
-      "published_at": "2026-06-11T14:00:00Z",
-      "summary": "Tariff crackdown on online merchants: de minimis loophole tightening affects cross-border beauty sellers on Amazon and Temu/Shein, raising compliance costs for Chinese sellers.",
+      "title": "How Two Best Friends Are Bootstrapping Bur Bur To A Projected $20M In 2026 Sales",
+      "url": "https://www.beautyindependent.com/two-best-friends-bootstrapping-bur-bur/",
+      "published_at": "2026-06-17T02:29:03Z",
+      "summary": "Bur Bur, an indie beauty brand, is projected to reach $20M in sales in 2026 through bootstrapping, showing the strength of authentic DTC beauty brands without celebrity backing.",
+      "company": "Bur Bur",
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -178,10 +196,11 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
-      "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
-      "published_at": "2026-06-11T11:55:19Z",
-      "summary": "Derm-founded brand More Than Nine launches simplified skincare for pregnant/new mothers, addressing the growing maternal skincare segment in the US.",
+      "title": "After Ulta Rollout, Unite Hair Deepens Retail Push With Sephora Debut",
+      "url": "https://www.beautyindependent.com/unite-hair-ulta-retail-push-sephora-debut/",
+      "published_at": "2026-06-15T23:00:44Z",
+      "summary": "Unite Hair, after building its business through salons for two decades, is now expanding into major retail with both Ulta Beauty and Sephora, signaling a shift in hair care retail strategy.",
+      "company": "Unite Hair",
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -192,10 +211,11 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T04:01:16Z",
-      "summary": "Bubble skincare brand (available at CVS, Target, Walmart) is winning Gen Alpha and Gen Z customers across mass retail, with founder refusing acquisition offers. Gen Alpha skincare segment is booming in North American mass market.",
+      "title": "Kiuda Group Acquires CGETC To Build One-Stop Infrastructure Platform For K-Beauty",
+      "url": "https://www.beautyindependent.com/kiuda-group-cgetc-build-one-stop-infrastructure-platform-k-beauty/",
+      "published_at": "2026-06-15T22:00:21Z",
+      "summary": "Kiuda Group acquired CGETC to create a comprehensive infrastructure platform for K-beauty, making it easier for Korean beauty brands to enter and scale in the US market.",
+      "company": "Kiuda Group",
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -206,10 +226,11 @@
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "How meat sticks players are trying to find white space",
-      "url": "https://www.modernretail.co/operations/how-meat-sticks-players-are-trying-to-find-white-space-in-the-red-hot-category/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Adjacent wellness category growth; brands finding white space in adjacent lifestyle categories relevant to beauty cross-sell.",
+      "title": "AI forces retailers, brands to rethink their product pages",
+      "url": "https://www.modernretail.co/technology/ai-forces-retailers-brands-to-rethink-their-product-pages/",
+      "published_at": "2026-06-16T04:00:00Z",
+      "summary": "AI-powered search is forcing beauty and retail brands to redesign product pages to be more discoverable, with structured data and clear ingredient descriptions becoming essential.",
+      "company": null,
       "signal_level": "A",
       "category": "beauty",
       "markets": [
@@ -217,13 +238,44 @@
       ]
     },
     {
-      "platform": "research",
-      "platform_key": "research",
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Rising fuel costs push brands to adjust shipping policies",
+      "url": "https://www.modernretail.co/operations/rising-fuel-costs-push-brands-to-adjust-shipping-policies/",
+      "published_at": "2026-06-16T04:00:00Z",
+      "summary": "Rising fuel costs are forcing brands, including beauty DTC brands, to raise free shipping thresholds and add delivery fees, potentially impacting conversion rates.",
+      "company": null,
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "How Fashion Retail Is Talking the AI Talk",
+      "url": "https://wwd.com/business-news/technology/ai-transforming-fashion-retail-and-customer-experience-1239015511/",
+      "published_at": "2026-06-17T20:45:33Z",
+      "summary": "From Walmart to Revolve, AI is transforming retail customer experience, including in beauty, with personalization and AI-powered recommendations becoming key differentiators.",
+      "company": null,
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
       "source_type": "research-enhanced",
-      "title": "Dr. Muneeb Shah's Remedy: Clinical Skincare $20M Series A - Evidence-Based Mass Market Skincare is Hot",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T00:00:00Z",
-      "summary": "Dr. Muneeb Shah (social media dermatologist) brand Remedy raises $20M from L Catterton and Norwest Venture Partners. Clinical/doctor-founded skincare brands addressing everyday skin concerns at mass-market price points are attracting major VC investment. Key message: evidence-based, dermatologist-backed, accessible price, targeting everyday US consumer. Keywords: clinical skincare, dermatologist, mass skincare, L Catterton, North America.",
+      "title": "冻酸奶美容热潮：Kiehl's、Korres等品牌推出益生菌/酸奶护肤品",
+      "url": "https://www.glossy.co/beauty/beauty-brands-are-lining-up-for-the-frozen-yogurt-craze/",
+      "published_at": "2026-06-17T04:00:00Z",
+      "summary": "Kiehl's与Go Greek合作、Korres等品牌推出含益生菌/酸奶成分的护肤&身体护理品，蹭2026夏季冻酸奶热潮。益生菌护肤在北美持续升温，是功效型护肤品新方向。",
+      "company": "Kiehl's, Korres",
       "signal_level": "S",
       "category": "beauty",
       "markets": [
@@ -231,27 +283,44 @@
       ]
     },
     {
-      "platform": "research",
-      "platform_key": "research",
+      "platform": "beautyindependent",
+      "platform_key": "beautyindependent",
       "source_type": "research-enhanced",
-      "title": "Bubble Skincare Gen Alpha Win: Mass-Market Youth Skincare Dominates CVS/Target/Walmart",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T00:00:00Z",
-      "summary": "Bubble skincare brand winning Gen Alpha and Gen Z at CVS, Target, Walmart. Founder Shai Eisenman cites 'skincare fatigue' among younger consumers craving simplicity and clean ingredients. Not selling despite M&A interest - brand valued highly. Hot trend: affordable, clean, simple skincare for ages 8-24 at mass-market retailers. Price point $10-15. North American mass beauty boom.",
-      "signal_level": "S",
+      "title": "K-beauty基础设施整合：Kiuda Group收购CGETC打造一站式韩妆入美平台",
+      "url": "https://www.beautyindependent.com/kiuda-group-cgetc-build-one-stop-infrastructure-platform-k-beauty/",
+      "published_at": "2026-06-15T22:00:21Z",
+      "summary": "Kiuda Group收购CGETC，整合韩国美妆品牌入美通关/仓储/履约基础设施，大幅降低K-beauty出海门槛。结合Amazon榜单韩妆强势（medicube #1、BIODANCE #8），K-beauty供应链效率正在系统性提升。",
+      "company": "Kiuda Group, CGETC",
+      "signal_level": "A",
       "category": "beauty",
       "markets": [
         "na"
       ]
     },
     {
-      "platform": "research",
-      "platform_key": "research",
+      "platform": "beautyindependent",
+      "platform_key": "beautyindependent",
       "source_type": "research-enhanced",
-      "title": "Amazon Beauty Bestsellers TOP10: Korean Skincare, Acne Patches, Exfoliating Toners Dominate",
+      "title": "头皮护理爆品：Bur Bur 2026年预计销售额$2000万，在Revolve热销",
+      "url": "https://www.beautyindependent.com/two-best-friends-bootstrapping-bur-bur/",
+      "published_at": "2026-06-17T02:29:03Z",
+      "summary": "Bur Bur无需明星背书，聚焦头皮护理/生发赛道，通过Revolve平台实现2026年预计$2000万销售额。头皮健康品类在北美高增长，是独立品牌进入美妆零售渠道的新机会。",
+      "company": "Bur Bur",
+      "signal_level": "A",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "amazon-bestsellers-beauty",
+      "platform_key": "amazon-bestsellers-beauty",
+      "source_type": "research-enhanced",
+      "title": "Amazon美妆护肤榜TOP热品：Korean skincare主导，痘贴/酸类护肤/矿物防晒强势",
       "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-      "published_at": "2026-06-14T00:00:00Z",
-      "summary": "Amazon Beauty & Personal Care TOP10 (June 2026): #1 eos Shea Body Lotion ($9.97, 75K reviews), #2 medicube Korean Toner Pads ($18.90, 25K reviews), #4 Mighty Patch Acne Patches ($12.99, 184K reviews), #5 The Ordinary Glycolic Acid Toner ($13.50, 53K reviews), #6 Neutrogena Makeup Remover Wipes ($9.97, 119K reviews), #8 BIODANCE Bio-Collagen Mask ($19, 45K reviews). Trends: Korean skincare, acne care, affordable exfoliation, body care.",
+      "published_at": "2026-06-17T21:45:00Z",
+      "summary": "Amazon美妆个护类目TOP榜：#1 medicube Toner Pads(韩妆/AHA+BHA/$18.90/25878评)；#3 Mighty Patch痘贴(Hero Cosmetics/$12.99/184084评，全榜评价数最高)；#5 The Ordinary Glycolic Acid Toner($13.50/52835评)；#6 Neutrogena卸妆巾($9.97/119653评)；#8 BIODANCE Bio-Collagen Real Deep Mask(韩妆/$19/46094评)；#12 EltaMD UV Clear防晒($45/69056评，皮肤科推荐)。K-beauty、功效护肤、防晒为北美三大热门赛道。",
+      "company": "medicube, Hero Cosmetics, The Ordinary, Neutrogena, BIODANCE, EltaMD",
       "signal_level": "S",
       "category": "beauty",
       "markets": [
