@@ -3,140 +3,150 @@
   "insights": [
     {
       "hotspot_id": "H01",
-      "title": "临床护肤/医生品牌爆发：循证美妆获资本重注，选品机会在平价高功效护肤",
-      "what_changed": "Dr. Muneeb Shah（TikTok/YouTube头部皮肤科KOL）的品牌Remedy完成$20M A轮融资，投资方为L Catterton（全球顶级美妆消费基金）和Norwest。Capsum同步收购美国KKT Labs布局高功效配方技术。",
-      "why_it_matters": "\"医生背书+大众价格\"是北美2026年护肤市场最强增长主题。消费者面对成分过载越来越依赖专业信任背书，临床级产品在$10-25价格带占据主流。资本入场验证了市场规模和可复制性。",
+      "title": "K-beauty功能护肤霸榜Amazon北美TOP10",
+      "what_changed": "2026年6月，韩国美妆品牌medicube（AHA/BHA爽肤棉片，Amazon #2）和BIODANCE（胶原蛋白水凝胶过夜面膜，Amazon #7）在北美Amazon美妆畅销榜持续领跑。K-beauty不再是小众品类，已成北美主流护肤选择，评价数均超2.6万条。",
+      "why_it_matters": "K-beauty在北美的渗透从「潮流」升级为「主流」，代表北美消费者已接受韩国护肤理念（多步骤护肤、功能成分、过夜面膜等）。对出海卖家意味着：韩国产品供应链和OEM模式已可直接复制，市场教育成本大幅降低。",
       "who_is_impacted": [
-        "出海卖家：寻找OEM工厂生产含活性成分（烟酰胺、视黄醇、AHA、肽类）的高功效护肤品",
-        "内容营销团队：皮肤科医生/达人合作是核心获客渠道",
-        "监管合规部门：临床宣称需严格审查FDA MoCRA要求"
+        "中国出海美妆卖家（可OEM类K-beauty功能护肤品）",
+        "供应商（AHA/BHA棉片、水凝胶面膜生产商）",
+        "Amazon平台美妆品类卖家"
       ],
       "next_actions": [
-        "寻找具备ISO22716/GMPC认证的OEM工厂，开发含循证成分的精华液/保湿霜",
-        "与皮肤科医生/认证美容师合作开发内容，建立专业信任背书",
-        "确保产品成分浓度符合FDA化妆品规范（避免滑入OTC药品监管范畴）",
-        "完成MoCRA设施注册和责任人指定"
+        "选品：参考medicube棉片开发OEM AHA/BHA双面爽肤棉片，定价$15-20/包（70片）",
+        "选品：参考BIODANCE开发胶原蛋白/玻尿酸水凝胶过夜面膜，定价$15-22/4-6片",
+        "合规：按MoCRA要求完成FDA设施注册，确保INCI标签（英文）、AHA浓度合规",
+        "营销：联系K-beauty/skincare类TikTok/Instagram KOL进行开箱测评"
       ],
-      "price_band": "$15–$35（精华液/面霜）",
+      "price_band": "$15-20（棉片70片）; $15-22（水凝胶面膜4-6片）",
       "selling_points": [
-        "皮肤科医生配方",
-        "循证活性成分（AHA/烟酰胺/肽类）",
-        "敏感肌友好",
-        "平价高功效"
+        "韩国护肤成分背书",
+        "AHA+BHA双酸去角质",
+        "胶原蛋白补水",
+        "过夜免洗/懒人护肤",
+        "高性价比大包装"
       ],
       "target_market": [
-        "25-40岁北美女性，注重成分功效",
-        "有痘痘/色斑/毛孔等具体肌肤困扰的消费者"
+        "18-35岁北美女性",
+        "K-beauty爱好者",
+        "功能护肤追求者",
+        "Amazon主力购物群体"
       ],
       "risk_notes": [
-        "功效宣称过度可能触发FDA OTC药品监管",
-        "KOL合作需注意FTC广告披露规定"
+        "AHA浓度超阈值可能受FDA额外监管",
+        "模仿K-beauty品牌需避免商标侵权",
+        "供应商认证需核查ISO22716/GMPC"
       ],
       "references": [
-        "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-        "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/"
+        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+        "https://www.beautyindependent.com/when-everything-wellness-how-do-brands-compete/"
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Gen Alpha护肤热潮：$10-15平价清洁护肤品在大众渠道狂卷年轻市场",
-      "what_changed": "Bubble护肤品牌创始人公开披露品牌在Gen Alpha（8-12岁）和Gen Z群体中的强势地位，全渠道布局CVS/Target/Walmart。另有More Than Nine针对孕产妇推出精简护肤解决方案。\"护肤疲劳\"作为北美新现象被广泛报道，促使年轻消费者回归简洁护肤。",
-      "why_it_matters": "Gen Alpha进入护肤启蒙期，预计2030年前将是北美美妆增长最快的人口细分。该群体偏好简洁配方（≤5成分）+清洁标签+$10-15价格带。Walmart/Target/CVS作为渠道入口意味着线上线下联动机会。",
+      "title": "功能成分护肤持续爆发：甘醇酸去角质+水胶体痘痘贴主导平价护肤",
+      "what_changed": "The Ordinary甘醇酸7%爽肤水（Amazon #5，4.7★/54K评价，$13.50）和Mighty Patch痘痘贴（Amazon #4，4.6★/184K评价，$12.99）持续高居榜单。Mighty Patch评价数184,120条为全榜最高，印证水胶体痘痘贴已成北美护肤品类中最成熟的「刚需爆品」。",
+      "why_it_matters": "成分透明度+临床依据是北美消费者购买决策的核心驱动力。「买功效不买品牌」是Z世代和千禧一代主流心态，为无知名品牌的OEM白牌商家提供了切入窗口，前提是需要有足够的评价数积累和可信赖的成分故事。",
       "who_is_impacted": [
-        "出海卖家：适合开发青少年友好护肤品（无香精/低致敏/清洁成分）",
-        "亲子/母婴美妆品牌：孕产期护肤是新兴细分市场",
-        "大众渠道BD团队：沃尔玛/Target选品逻辑以简洁、清洁、性价比为核心"
+        "功能护肤OEM出海卖家",
+        "水胶体材料/痘痘贴供应商",
+        "皮肤科医生/KOL（信任背书关键节点）"
       ],
       "next_actions": [
-        "开发5成分以内的极简护肤产品线（洁面+保湿+防晒三件套）",
-        "获取EWG Verified或Clean Beauty认证，加强信任背书",
-        "布局TikTok Shop和Amazon，针对Gen Z/Gen Alpha投放短视频",
-        "价格策略聚焦$12-18区间，兼顾毛利和大众可及性"
+        "选品：开发甘醇酸系列去角质爽肤水（7%-10% AHA），定价$10-18，主打成分透明/浓度标注",
+        "选品：水胶体痘痘贴（36-72片/包），定价$10-15，可差异化做超薄/带美肤成分款",
+        "信任建设：通过Amazon Vine计划积累初始评价；联系皮肤科医生KOL做背书内容",
+        "合规：AHA产品需标注光敏警告；痘痘贴需确认FDA监管类别（化妆品 vs 器械）"
       ],
-      "price_band": "$10–$18（日常护肤品）",
+      "price_band": "$10-18（AHA爽肤水）; $10-15（痘痘贴36-72片）",
       "selling_points": [
-        "极简清洁成分",
-        "纯素/无残忍测试",
-        "低致敏配方",
-        "青少年友好包装"
+        "科学成分配方透明",
+        "皮肤科验证成分",
+        "高性价比大包装",
+        "素食/无残忍认证",
+        "社媒热议爆品"
       ],
       "target_market": [
-        "Gen Alpha（8-12岁）和Gen Z（13-26岁）",
-        "关注子女护肤的北美父母"
+        "18-30岁痘痘/毛孔困扰人群",
+        "North America护肤成分党",
+        "Amazon FBA购物主力"
       ],
       "risk_notes": [
-        "未成年人护肤品营销需遵守COPPA（儿童隐私保护法）",
-        "成分安全性要求更高，建议皮肤科测试"
+        "痘痘贴FDA监管类别需事先确认",
+        "AHA高浓度需皮肤科测试数据支持",
+        "同质化竞争激烈需差异化定位"
       ],
       "references": [
-        "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-        "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/"
+        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+        "https://www.glossy.co/beauty/inside-revlons-comeback-bet-on-fragrance-with-president-amber-garrison/"
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "K-Beauty北美爆发：韩系多酸棉片+胶原蛋白面膜占据Amazon TOP2/TOP8",
-      "what_changed": "medicube（韩系医学护肤）Toner Pads Zero Pore Pad 2.0以#2排名、25,688条评价主导Amazon爽肤棉片品类；BIODANCE Bio-Collagen Hydrogel Mask以#8、45,847条评价领跑水凝胶面膜品类。两款均为韩国品牌通过Amazon直营渗透北美市场。",
-      "why_it_matters": "K-Beauty在北美的增速（+25% YoY估计）显著超越本土品牌。多酸棉片（AHA+BHA双效）和水凝胶面膜代表韩国品牌在北美找到的两个爆款公式：功效清晰+使用便捷+价格合理+社媒传播友好。",
+      "title": "L'Oreal×OpenAI GenAI内容引擎：美妆AI内容时代到来",
+      "what_changed": "L'Oreal CMO宣布与OpenAI签署新协议，将GenAI大规模应用于产品内容生成和「零点击AI搜索」场景。Shopify同步推出AI流量追踪工具。Ulta Beauty和Violet Grey零售商开始讨论「人工策展 vs AI推荐」的零售模式边界。",
+      "why_it_matters": "AI正在重构美妆消费者的发现路径——ChatGPT、Perplexity等AI会直接推荐产品，绕过传统SEO。不布局AI内容优化的出海卖家将逐渐失去流量入口。同时，AI生成产品描述+A+页面已成为Amazon排名竞争的新战场。",
       "who_is_impacted": [
-        "国内OEM工厂：国内已有大量韩系同款产品供应商（尤其广州/深圳/浙江），可以类似配方开发自有品牌",
-        "出海卖家：AHA/BHA棉片+水凝胶面膜都是成熟爆款公式，可打差异化品牌"
+        "所有在Amazon/Shopify经营的出海美妆卖家",
+        "内容营销团队",
+        "B2B平台（Faire等）的美妆供应商"
       ],
       "next_actions": [
-        "开发AHA（6-8%）+BHA（0.3-0.5%）双效爽肤棉片，参考medicube配方但差异化包装",
-        "开发Bio-Collagen水凝胶面膜OEM产品，重点突出PDRN/肽类/玻尿酸成分",
-        "以Amazon FBA为主渠道，配合TikTok短视频做\"before & after\"对比内容",
-        "确认AHA浓度符合FDA化妆品规范（<10%，pH>3.5）"
+        "立即：使用GenAI（ChatGPT/Claude）批量优化Amazon listing关键词和A+内容",
+        "短期：测试Shopify AI流量追踪工具，了解AI平台带来的流量份额",
+        "中期：建立结构化产品数据（成分/用途/皮肤类型/价格）供AI模型引用",
+        "监测：关注L'Oreal GenAI内容策略，评估自有品牌内容AI化投入ROI"
       ],
-      "price_band": "$15–$25（棉片70片装）；$18–$30（面膜4片装）",
-      "selling_points": [
-        "AHA+BHA双重酸化",
-        "毛孔收缩可见效",
-        "K-Beauty医学品牌背书",
-        "一步懒人护肤"
-      ],
+      "price_band": "N/A（工具/策略类）",
+      "selling_points": [],
       "target_market": [
-        "20-35岁北美女性，对K-Beauty有认知",
-        "有毛孔/痘印/角质问题的消费者"
+        "出海美妆品牌运营团队",
+        "Amazon卖家",
+        "DTC品牌"
       ],
       "risk_notes": [
-        "AHA/BHA产品宣称祛痘功效可能触发OTC药品监管",
-        "韩系品牌视觉需避免直接模仿已有品牌IP"
+        "AI生成内容质量参差需人工审核",
+        "AI推荐算法不透明存在黑箱风险",
+        "过度依赖AI内容可能违反平台政策"
       ],
       "references": [
-        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
+        "https://www.glossy.co/beauty/loreal-accelerates-generative-ai-content-engine-with-fresh-openai-deal/",
+        "https://www.beautyindependent.com/ulta-beauty-violet-grey-printemps-retail-human-advantage-age-ai/",
+        "https://www.modernretail.co/technology/marketplace-briefing-shopify-launches-tools-to-help-merchants-track-sales-and-traffic-from-ai-platforms/"
       ]
     },
     {
       "hotspot_id": "H04",
-      "title": "痘痘贴成北美刚需：Mighty Patch 18万+评价，水胶体技术成全球通用语言",
-      "what_changed": "Mighty Patch Original以183,993条评价（Amazon美妆类最多）保持TOP10榜首位，评分稳定4.6★，$12.99/36片。产品已进入沃尔玛/CVS/Target全渠道，并持续保持TikTok高频曝光。",
-      "why_it_matters": "痘痘贴是北美年轻肌肤护理品类增速最快的单品之一，已从细分品类进入大众刚需。水胶体技术（Hydrocolloid）是经过临床验证的伤口愈合材料，进入护肤场景后大幅降低了消费者的认知门槛。复购率高（36片一包一周用完），意味着稳定现金流。",
+      "title": "矿物防晒夏季需求激增：皮肤科推荐驱动高端矿物防晒增长",
+      "what_changed": "Amazon美妆热销榜#14（Blue Lizard矿物SPF50，$15.94）和#15（EltaMD UV Clear，$45.00）均为矿物防晒。两款产品均强调皮肤科推荐和敏感肌友好。夏季需求叠加消费者对氧苯酮等化学防晒成分的顾虑，矿物防晒在北美快速增长。",
+      "why_it_matters": "矿物防晒代表了北美护肤的「清洁美妆」升级方向。EltaMD定价$45的成功证明皮肤科医生背书可以支撑高溢价。出海卖家若能获得皮肤科认证/推荐并通过FDA OTC防晒专论审查，可切入$20-50中高端矿物防晒细分市场。",
       "who_is_impacted": [
-        "出海选品团队：水胶体痘痘贴是ROI最高的美妆单品之一",
-        "OEM采购：国内（南京/深圳/广州）有大量成熟工厂，价格极低（$0.20-0.30/片）",
-        "合规团队：需确认是化妆品还是医疗器械监管路径"
+        "矿物防晒OEM供应商",
+        "皮肤科医生/KOL合作渠道",
+        "敏感肌/婴幼儿护肤品牌"
       ],
       "next_actions": [
-        "优先评估水胶体痘痘贴OEM产品线，MOQ可低至100袋（Nanjing Vesta）",
-        "差异化：定制形状（星形/心形）+特殊功效（水杨酸+茶树油+烟酰胺浸润版）",
-        "确认供应商的FDA 510(k)豁免状态或是否需要取得医疗器械注册",
-        "TikTok投流：\"before & after overnight\"内容格式ROI最高"
+        "选品评估：研究OTC防晒专论合规要求，评估自建矿物防晒线的可行性",
+        "短期：联系已获FDA OTC认证的矿物防晒代工厂评估合作",
+        "合规重点：防晒在美国是OTC药品，非化妆品，需NDA/ANDA或OTC专论符合性测试",
+        "差异化：定位敏感肌/婴幼儿/户外运动场景，比通用防晒更易建立口碑"
       ],
-      "price_band": "$10–$15（36-50片装）",
+      "price_band": "$15-50（根据皮肤科背书水平定价）",
       "selling_points": [
-        "水胶体科技",
-        "一夜收缩痘痘",
-        "无刺激无痕",
-        "夜间使用便捷"
+        "100%矿物防晒成分（氧化锌/二氧化钛）",
+        "皮肤科推荐",
+        "敏感肌/婴幼儿友好",
+        "无氧苯酮等化学成分"
       ],
       "target_market": [
-        "13-25岁北美青少年和年轻人",
-        "有痘痘困扰的消费者"
+        "敏感肌人群",
+        "婴幼儿家长",
+        "户外运动爱好者",
+        "皮肤科诊所推荐客群"
       ],
       "risk_notes": [
-        "\"一夜收缩粉刺\"等宣称可能被FDA归类为OTC药品宣称",
-        "建议仅使用\"外观改善\"等化妆品安全措辞"
+        "⚠️防晒在美国为OTC药品，合规要求远高于化妆品",
+        "OTC审批周期长，成本高",
+        "白色矿物成分（zinc oxide）可能在深肤色人群中接受度低"
       ],
       "references": [
         "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
@@ -144,68 +154,77 @@
     },
     {
       "hotspot_id": "H05",
-      "title": "双重合规压力：de minimis收紧+MoCRA新规，出海美妆合规刻不容缓",
-      "what_changed": "Trump政府宣布加强关税和海关欺诈执法，de minimis免税门槛（$800）面临收紧，直接影响美妆小包裹直邮模式；FDA MoCRA（Modernization of Cosmetics Regulation Act，2023年12月起实施）要求：(1)化妆品设施注册；(2)不良事件报告；(3)产品安全性论证。",
-      "why_it_matters": "两项政策同步收紧，形成双重合规压力：物流端需从直邮转FBA/海外仓（规避de minimis风险）；产品端需完成MoCRA注册（截止2024年12月，大型企业已逾期）。未完成注册的产品面临进口扣留风险，合规能力正在成为北美美妆市场的门槛性壁垒。",
+      "title": "美妆Wellness化：品牌差异化成关键生存挑战",
+      "what_changed": "Beauty Independent Dealmaker Summit（纽约，2026年6月）显示，全球wellness市场估值$2-6万亿，美妆/护肤已成wellness大范畴一部分。投资人不再问「wellness是不是趋势」，而是问「你的wellness定位是什么」。",
+      "why_it_matters": "Wellness化是北美美妆市场的长期结构性趋势，代表消费者从「好看」向「好看+健康+安全」升级。对出海卖家的产品定位、成分选择、内容营销方式都有直接影响。",
       "who_is_impacted": [
-        "所有通过Amazon/Shopify在美国销售美妆品的中国出海卖家",
-        "依赖小包直邮模式的卖家：转型压力最大",
-        "已有FBA仓储的卖家：相对优势增强"
+        "所有美妆品类出海卖家",
+        "独立美妆品牌运营者",
+        "意欲进入高端美妆渠道（Sephora/Ulta）的品牌"
       ],
       "next_actions": [
-        "立即启动FDA MoCRA设施注册（www.fda.gov/cosmetics/registration），并在美国指定\"Responsible Person\"（责任人）",
-        "更新产品标签，符合INCI成分列表+警示语（AHA光敏、酒精等）",
-        "从直邮模式迁移到美国FBA或第三方仓储（缓冲关税风险）",
-        "咨询美国FDA合规律师，评估产品是否在化妆品/OTC药品边界上"
+        "品牌定位：为产品赋予wellness叙事（如「功能护肤+成分干净+可持续」）",
+        "产品开发：优先考虑天然/清洁成分，规避消费者顾虑成分（如对羟基苯甲酸酯、硫酸盐）",
+        "渠道：wellness定位产品更易进入Ulta/Whole Foods/Target自然护肤区",
+        "内容：开发「成分故事+护肤仪式」类内容，契合wellness生活方式受众"
       ],
-      "price_band": "N/A（监管事件，非选品话题）",
-      "selling_points": [],
+      "price_band": "$15-60（wellness定位产品溢价区间）",
+      "selling_points": [
+        "清洁成分",
+        "功能性护肤",
+        "可持续包装",
+        "心理健康关联"
+      ],
       "target_market": [
-        "出海美妆卖家（B2B洞察）"
+        "25-45岁健康意识强的北美女性",
+        "Yoga/wellness生活方式追求者",
+        "清洁美妆消费者"
       ],
       "risk_notes": [
-        "MoCRA违规：进口扣留、召回、罚款",
-        "de minimis收紧：直邮利润空间压缩",
-        "关税：中国原产地美妆品关税税率变化需实时监控"
+        "wellness声称过度可能引发FTC绿色洗白（greenwashing）指控",
+        "清洁成分认证需第三方背书",
+        "定价偏高可能缩小目标受众"
       ],
       "references": [
-        "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/"
+        "https://www.beautyindependent.com/when-everything-wellness-how-do-brands-compete/",
+        "https://www.beautyindependent.com/ulta-beauty-violet-grey-printemps-retail-human-advantage-age-ai/"
       ]
     },
     {
       "hotspot_id": "H06",
-      "title": "清洁美妆+内容电商：Saie教育营销+TikTok Shop扩张定义2026北美美妆新打法",
-      "what_changed": "清洁美妆品牌Saie推出\"The Makeup Class\"线下大师班，将品牌体验嵌入教育内容；Glossy E-Commerce Summit总结6大品牌趋势：TikTok Shop扩张、DTC韧性、全渠道增长、品牌超级粉丝、可持续性、AI个性化。",
-      "why_it_matters": "TikTok Shop在美国美妆品类GMV快速增长，\"内容即购买\"的消费模式正在改变漏斗。教育型内容（护肤教程、成分解析、\"the class\"式内容）比广告型内容转化率高3-5倍。清洁成分标签（EWG/Clean Beauty认证）是北美消费者触发购买的关键信任信号。",
+      "title": "Revlon香水复出押注平价奢华香水市场",
+      "what_changed": "Revlon总裁Amber Garrison（Glossy播客，2026年6月18日）披露：Revlon破产后以香水作为品牌复出主力，定位「平价奢华香水」（affordable luxury fragrance），针对北美大众消费者，价格带约$15-35。",
+      "why_it_matters": "香水是美妆中「去品牌化」较慢的品类，但TikTok正在颠覆这一逻辑——「平价替代大牌香水」内容在TikTok获得数亿播放。Revlon的入场验证了平价奢华香水细分市场的真实需求，对出海香水卖家是明确信号。",
       "who_is_impacted": [
-        "出海美妆品牌的内容营销团队",
-        "TikTok Shop卖家：美妆品类是平台最高增长品类",
-        "DTC独立站卖家：教育内容+邮件列表是降低CAC的核心杠杆"
+        "香水OEM/ODM出海卖家",
+        "TikTok Shop香水类目运营商",
+        "大众美妆香水供应商"
       ],
       "next_actions": [
-        "开通TikTok Shop US店铺，布局美妆品类（优先爽肤棉片/痘痘贴/面膜等视觉效果好的产品）",
-        "制作\"成分解析\"+\"before & after\"短视频内容，与美妆微达人（1-10万粉）合作",
-        "获取EWG Verified或\"Clean Beauty\"认证，展示在产品主图和详情页",
-        "建立品牌社区（Discord/微信群/邮件列表），将首次购买者转化为复购用户"
+        "选品：开发「大牌平价替代」香水系列，定价$15-35，主打类似知名香调但不侵权",
+        "渠道：优先布局TikTok Shop（美国）香水类目，测试短视频种草效果",
+        "内容：制作香调对比/开箱测评内容，与TikTok香水KOL合作",
+        "合规：香水需符合IFRA成分安全标准；加州Prop 65（VOC成分）需特别注意"
       ],
-      "price_band": "$12–$40（TikTok Shop美妆主流价格带）",
+      "price_band": "$15-35（大众平价香水）；$35-80（中高端礼品香水）",
       "selling_points": [
-        "清洁成分认证",
-        "内容驱动信任",
-        "教育式品牌建设",
-        "社区复购"
+        "平价对标大牌香调",
+        "TikTok社媒爆款",
+        "礼品包装",
+        "长持久度"
       ],
       "target_market": [
-        "18-35岁北美女性，活跃在TikTok/Instagram",
-        "关注可持续和清洁美妆的消费者"
+        "18-35岁北美女性",
+        "TikTok购物用户",
+        "大众美妆香水爱好者"
       ],
       "risk_notes": [
-        "TikTok Shop平台合规（税务/产品资质）需提前准备",
-        "FTC要求达人合作需明确披露广告关系"
+        "香调模仿注意IFRA成分安全和商标/专利风险",
+        "香水含酒精，航运有危险品规定",
+        "加州Prop 65 VOC成分限制"
       ],
       "references": [
-        "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-        "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/"
+        "https://www.glossy.co/beauty/inside-revlons-comeback-bet-on-fragrance-with-president-amber-garrison/"
       ]
     }
   ]
