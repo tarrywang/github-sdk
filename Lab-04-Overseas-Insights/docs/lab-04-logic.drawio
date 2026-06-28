@@ -1,65 +1,204 @@
-<mxfile host="app.diagrams.net" type="device" version="24.7.17"><diagram name="业务逻辑图" id="page-business"><mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
-<mxCell id="t" value="Lab-04 出海市场洞察日报 — 业务逻辑图" style="rounded=0;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="20" width="1140" height="46" as="geometry"/></mxCell>
-<mxCell id="goal" value="目标：每天自动生成「美妆护肤 × 北美」跨境出海洞察日报（聚焦单品类·单市场，稳定后再扩展）" style="rounded=1;fillColor=#0b4f43;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="320" y="86" width="560" height="48" as="geometry"/></mxCell>
-<mxCell id="L1" value="①&#10;信号采集" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="168" width="130" height="96" as="geometry"/></mxCell>
-<mxCell id="c1" value="RSS 行业媒体（基线）&#10;Glossy · WWD · Modern Retail · Beauty Independent" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="170" y="168" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="c2" value="深度联网研究&#10;白名单域名内·严格受限&#10;补充热品/爆品证据" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="412" y="168" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="c3" value="电商畅销榜（销量代理）&#10;Amazon · Sephora · Ulta · Target · TikTok Shop" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="654" y="168" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="c4" value="1688 / Alibaba 供应链&#10;供应商 · 拿货价 · MOQ" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="896" y="168" width="264" height="96" as="geometry"/></mxCell>
-<mxCell id="L2" value="②&#10;加工分析" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="300" width="130" height="96" as="geometry"/></mxCell>
-<mxCell id="a1" value="聚类热点话题&#10;跨源趋势 + 高信号单条" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="170" y="300" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="a2" value="生成洞察&#10;发生了什么 / 为什么重要 /&#10;影响谁 / 接下来怎么做" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="412" y="300" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="a3" value="提炼热销 TOP5&#10;排名·评分·评价数·价格·趋势" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="654" y="300" width="230" height="96" as="geometry"/></mxCell>
-<mxCell id="a4" value="供应商匹配&#10;+ 预估毛利 + 合规要点" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="896" y="300" width="264" height="96" as="geometry"/></mxCell>
-<mxCell id="L3" value="③&#10;产出报告&#10;(中文 Markdown)" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="432" width="130" height="96" as="geometry"/></mxCell>
-<mxCell id="o1" value="A. 热点话题&#10;+ 选品 / 营销洞察 + 风险合规" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="170" y="432" width="315" height="96" as="geometry"/></mxCell>
-<mxCell id="o2" value="B. 北美热销 TOP5 产品&#10;（真实电商榜单·销量代理指标）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="497" y="432" width="315" height="96" as="geometry"/></mxCell>
-<mxCell id="o3" value="C. 供应链落地（逐产品）&#10;供应商 / 拿货价 / 毛利 / 合规 + 链接" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="824" y="432" width="336" height="96" as="geometry"/></mxCell>
-<mxCell id="L4" value="④&#10;发布交付" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="564" width="130" height="96" as="geometry"/></mxCell>
-<mxCell id="p1" value="GitHub Pages 优雅网页&#10;…github.io/github-sdk/overseas/" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="170" y="564" width="315" height="96" as="geometry"/></mxCell>
-<mxCell id="p2" value="PR 存档&#10;（safe-outputs 留痕）" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="497" y="564" width="250" height="96" as="geometry"/></mxCell>
-<mxCell id="p3" value="节奏：每日定时（北京 05:00）自动运行&#10;+ 可手动触发" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="759" y="564" width="401" height="96" as="geometry"/></mxCell>
-<mxCell id="hon" value="诚实口径 / 数据边界（写进报告，不夸大）&#10;• 免费抓取拿不到精确销量(件数/GMV) → 用「排名 + 评分 + 评价数 + 趋势」作销量代理；精确销量需付费工具(Jungle Scout/Helium 10)&#10;• 部分电商为 SPA/强反爬，1688.com 被验证码拦截 → 据实标注缺口，用新闻信号兜底，并附 1688 搜索链接供人工核价&#10;• 预估毛利 = (美国零售价 − 拿货价) / 零售价，为粗估，未计头程物流/关税/平台佣金FBA/广告/退货（净利约为其 30–50%）&#10;• 合规为「入市要求提示」（FDA 注册 + MoCRA + INCI 标签 等），非对供应商资质的背书" style="rounded=1;fillColor=#fbf6ea;strokeColor=#b08a3e;fontColor=#5a4a1f;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="20" y="690" width="1140" height="130" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="goal" target="c3"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="L1" target="L2"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="L2" target="L3"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="L3" target="L4"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="c1" target="a1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="c2" target="a2"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="c3" target="a3"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="c4" target="a4"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="a1" target="o1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="a2" target="o1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="a3" target="o2"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="a4" target="o3"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="o1" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="o2" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="o3" target="p1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_业务逻辑图_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="p1" target="p2"><mxGeometry relative="1" as="geometry"/></mxCell>
-</root></mxGraphModel></diagram><diagram name="技术逻辑图" id="page-technical"><mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0"><root><mxCell id="0"/><mxCell id="1" parent="0"/>
-<mxCell id="t" value="Lab-04 — 技术逻辑图（GitHub Actions + gh-aw 智能工作流 + Copilot Agent）" style="rounded=0;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1"><mxGeometry x="20" y="20" width="1140" height="46" as="geometry"/></mxCell>
-<mxCell id="trig" value="触发&#10;• schedule  cron 0 21 * * * (UTC) = 北京 05:00&#10;• workflow_dispatch（手动）" style="rounded=1;fillColor=#ede7f6;strokeColor=#5e35b1;fontColor=#3b2566;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="20" y="86" width="300" height="70" as="geometry"/></mxCell>
-<mxCell id="job" value="GitHub Actions Job：agent（编译产物 overseas-insight.lock.yml）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1"><mxGeometry x="20" y="180" width="780" height="620" as="geometry"/></mxCell>
-<mxCell id="s1" value="① Setup Python 3.11 + 安装依赖（httpx / feedparser / beautifulsoup4）" style="rounded=1;fillColor=#eef2f6;strokeColor=#5f6f80;fontColor=#27313a;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="48" y="220" width="724" height="42" as="geometry"/></mxCell>
-<mxCell id="s2" value="② 前置抓取步骤  overseas_fetch_bestsellers.py（在 runner 上、防火墙之外）&#10;· ScraperAPI 渲染抓取 5 大电商畅销榜 → output/signals/bestsellers/*.txt&#10;· 解析 Amazon Top 产品 → 派生关键词 → Alibaba.com 搜供应商 → output/signals/sourcing/*.txt&#10;· 密钥 SCRAPER_API_KEY：step 级 secret + 日志脱敏，绝不进入 agent / LLM" style="rounded=1;fillColor=#fde9d9;strokeColor=#cf7a3a;fontColor=#7a3f12;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="48" y="276" width="724" height="120" as="geometry"/></mxCell>
-<mxCell id="s3" value="③ Copilot Agent 执行（engine: copilot · claude-sonnet-4.6 · 防火墙沙箱）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1"><mxGeometry x="48" y="410" width="724" height="268" as="geometry"/></mxCell>
-<mxCell id="ph" value="阶段流水线：0 规划 → 1 RSS基线抓取装载 → 1.5 深度研究 → 1.6 热销TOP5 + 1688/Alibaba供应链 → 2 聚类 → 3 洞察 → 4 渲染报告" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="74" y="448" width="672" height="64" as="geometry"/></mxCell>
-<mxCell id="art" value="中间产物落盘：raw_signals.json · clusters/hotspots.json · insights/insights.json · products/top_products.json · report.md" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="74" y="522" width="672" height="56" as="geometry"/></mxCell>
-<mxCell id="cn" value="全程经 MCP 工具调用（见右）。关键工程：工具一律传【文件路径】而非内联 JSON，结果写入 out_path，仅返回精简状态。" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="74" y="588" width="672" height="70" as="geometry"/></mxCell>
-<mxCell id="s4" value="④ safe-outputs → create-pull-request&#10;提交 output/report.md + frontend/report.md（PR 留痕）" style="rounded=1;fillColor=#eef2f6;strokeColor=#5f6f80;fontColor=#27313a;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="48" y="696" width="724" height="80" as="geometry"/></mxCell>
-<mxCell id="mcp" value="MCP 工具（mcp-scripts · Python · *_or_fallback 兜底）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1"><mxGeometry x="830" y="180" width="330" height="300" as="geometry"/></mxCell>
-<mxCell id="mcpl" value="• read_source_list — 读数据源清单&#10;• fetch_all_to_disk — 抓 RSS 基线落盘&#10;• load_articles_from_disk — 解析装载&#10;• cluster_or_fallback — 聚类校验/兜底&#10;• insight_or_fallback — 洞察校验/兜底&#10;• products_or_fallback — TOP5校验/兜底&#10;• render_report_or_fallback — 渲染报告&#10;• write_text_file — 写文件&#10;（参数走路径 + out_path 落盘，输出小）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="854" y="218" width="282" height="246" as="geometry"/></mxCell>
-<mxCell id="ext" value="外部数据源&#10;• RSS Feeds：Glossy / WWD / Modern Retail / Beauty Independent&#10;• ScraperAPI 代理 → Amazon / Sephora / Ulta / Target / TikTok Shop + Alibaba.com&#10;• 1688.com：验证码拦截 → 仅附搜索链接（人工核价）" style="rounded=1;fillColor=#f6f5f2;strokeColor=#9aa0a6;fontColor=#3c4043;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="830" y="500" width="330" height="140" as="geometry"/></mxCell>
-<mxCell id="tok" value="关键工程 · Token 安全&#10;运行环境 25M「有效 token」硬上限（≈ 实际 token × ~10 倍）。&#10;传路径（网关单参 10KB 上限）+ 落盘 out_path + 精简返回 → 回合数↓、上下文重发↓ → 有效 token ≈ 5M。&#10;反爬 / 解析失败 → *_or_fallback 兜底 + 缺口标注。" style="rounded=1;fillColor=#fbf6ea;strokeColor=#b08a3e;fontColor=#5a4a1f;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1"><mxGeometry x="830" y="660" width="330" height="140" as="geometry"/></mxCell>
-<mxCell id="dep" value="发布：deploy-pages.yml（push frontend/** 触发）→ 组装 _site → GitHub Pages" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="20" y="824" width="520" height="56" as="geometry"/></mxCell>
-<mxCell id="fe" value="前端：index.html + main.js(marked + DOMPurify) + styles.css 渲染 report.md → /overseas/ 优雅网页（Hero·目录·表格·callout）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1"><mxGeometry x="560" y="824" width="600" height="56" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="trig" target="s1"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s1" target="s2"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s2" target="s3"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s3" target="s4"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_5" value="ScraperAPI 抓取" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="s2" target="ext"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_6" value="调用" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="cn" target="mcpl"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_7" value="RSS 抓取" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="mcpl" target="ext"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_8" value="report.md 变更触发" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s4" target="dep"><mxGeometry relative="1" as="geometry"/></mxCell>
-<mxCell id="e_技术逻辑图_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="dep" target="fe"><mxGeometry relative="1" as="geometry"/></mxCell>
-</root></mxGraphModel></diagram></mxfile>
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.1.2 Chrome/138.0.7204.243 Electron/37.4.0 Safari/537.36" version="28.1.2" pages="2">
+  <diagram name="业务逻辑图" id="page-business">
+    <mxGraphModel dx="1665" dy="888" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="Lab-04 出海市场洞察日报 — 业务逻辑图" style="rounded=0;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="20" y="20" width="1140" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="goal" value="目标：每天自动生成「美妆护肤 × 北美」跨境出海洞察日报（聚焦单品类·单市场，稳定后再扩展）" style="rounded=1;fillColor=#0b4f43;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="320" y="86" width="560" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" value="①&#xa;信号采集" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="20" y="168" width="130" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="c1" value="RSS 行业媒体（基线）&#xa;Glossy · WWD · Modern Retail · Beauty Independent" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="168" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" value="深度联网研究&#xa;白名单域名内·严格受限&#xa;补充热品/爆品证据" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="412" y="168" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="电商畅销榜（销量代理）&#xa;Amazon · Sephora · Ulta · Target · TikTok Shop" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="654" y="168" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="1688 / Alibaba 供应链&#xa;供应商 · 拿货价 · MOQ" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="896" y="168" width="264" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" value="②&#xa;加工分析" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="20" y="300" width="130" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" value="聚类热点话题&#xa;跨源趋势 + 高信号单条" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="300" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" value="生成洞察&#xa;发生了什么 / 为什么重要 /&#xa;影响谁 / 接下来怎么做" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="412" y="300" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" value="提炼热销 TOP5&#xa;排名·评分·评价数·价格·趋势" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="654" y="300" width="230" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" value="供应商匹配&#xa;+ 预估毛利 + 合规要点" style="rounded=1;fillColor=#fff3e0;strokeColor=#b08a3e;fontColor=#6b5417;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="896" y="300" width="264" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" value="③&#xa;产出报告&#xa;(中文 Markdown)" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="20" y="432" width="130" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="o1" value="A. 热点话题&#xa;+ 选品 / 营销洞察 + 风险合规" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="432" width="315" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="o2" value="B. 北美热销 TOP5 产品&#xa;（真实电商榜单·销量代理指标）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="497" y="432" width="315" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="o3" value="C. 供应链落地（逐产品）&#xa;供应商 / 拿货价 / 毛利 / 合规 + 链接" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="824" y="432" width="336" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" value="④&#xa;发布交付" style="rounded=1;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="20" y="564" width="130" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" value="GitHub Pages 优雅网页&#xa;…github.io/github-sdk/overseas/" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="564" width="315" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" value="PR 存档&#xa;（safe-outputs 留痕）" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="497" y="564" width="250" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" value="节奏：每日定时（北京 05:00）自动运行&#xa;+ 可手动触发" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="759" y="564" width="401" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="hon" value="诚实口径 / 数据边界（写进报告，不夸大）&#xa;• 免费抓取拿不到精确销量(件数/GMV) → 用「排名 + 评分 + 评价数 + 趋势」作销量代理；精确销量需付费工具(Jungle Scout/Helium 10)&#xa;• 部分电商为 SPA/强反爬，1688.com 被验证码拦截 → 据实标注缺口，用新闻信号兜底，并附 1688 搜索链接供人工核价&#xa;• 预估毛利 = (美国零售价 − 拿货价) / 零售价，为粗估，未计头程物流/关税/平台佣金FBA/广告/退货（净利约为其 30–50%）&#xa;• 合规为「入市要求提示」（FDA 注册 + MoCRA + INCI 标签 等），非对供应商资质的背书" style="rounded=1;fillColor=#fbf6ea;strokeColor=#b08a3e;fontColor=#5a4a1f;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" parent="1" vertex="1">
+          <mxGeometry x="20" y="690" width="1140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" parent="1" source="goal" target="c3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" parent="1" source="L1" target="L2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" parent="1" source="L2" target="L3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" parent="1" source="L3" target="L4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="c1" target="a1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="c2" target="a2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="c3" target="a3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="c4" target="a4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="a1" target="o1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="a2" target="o1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="a3" target="o2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="a4" target="o3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="o1" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="o2" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="o3" target="p1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_业务逻辑图_16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" parent="1" source="p1" target="p2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="技术逻辑图" id="page-technical">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="t" value="Lab-04 — 技术逻辑图（GitHub Actions + gh-aw 智能工作流 + Copilot Agent）" style="rounded=0;fillColor=#0f6e5d;strokeColor=none;fontColor=#ffffff;fontSize=18;fontStyle=1;align=center;verticalAlign=middle;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="20" y="20" width="1140" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="trig" value="触发&#xa;• schedule  cron 0 21 * * * (UTC) = 北京 05:00&#xa;• workflow_dispatch（手动）" style="rounded=1;fillColor=#ede7f6;strokeColor=#5e35b1;fontColor=#3b2566;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="86" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="job" value="GitHub Actions Job：agent（编译产物 overseas-insight.lock.yml）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="180" width="780" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="① Setup Python 3.11 + 安装依赖（httpx / feedparser / beautifulsoup4）" style="rounded=1;fillColor=#eef2f6;strokeColor=#5f6f80;fontColor=#27313a;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="48" y="220" width="724" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="② 前置抓取步骤  overseas_fetch_bestsellers.py（在 runner 上、防火墙之外）&#xa;· ScraperAPI 渲染抓取 5 大电商畅销榜 → output/signals/bestsellers/*.txt&#xa;· 解析 Amazon Top 产品 → 派生关键词 → Alibaba.com 搜供应商 → output/signals/sourcing/*.txt&#xa;· 密钥 SCRAPER_API_KEY：step 级 secret + 日志脱敏，绝不进入 agent / LLM" style="rounded=1;fillColor=#fde9d9;strokeColor=#cf7a3a;fontColor=#7a3f12;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="48" y="276" width="724" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="③ Copilot Agent 执行（engine: copilot · claude-sonnet-4.6 · 防火墙沙箱）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="48" y="410" width="724" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="ph" value="阶段流水线：0 规划 → 1 RSS基线抓取装载 → 1.5 深度研究 → 1.6 热销TOP5 + 1688/Alibaba供应链 → 2 聚类 → 3 洞察 → 4 渲染报告" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="74" y="448" width="672" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="art" value="中间产物落盘：raw_signals.json · clusters/hotspots.json · insights/insights.json · products/top_products.json · report.md" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="74" y="522" width="672" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="cn" value="全程经 MCP 工具调用（见右）。关键工程：工具一律传【文件路径】而非内联 JSON，结果写入 out_path，仅返回精简状态。" style="rounded=1;fillColor=#e3f2ec;strokeColor=#0f6e5d;fontColor=#0b4f43;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="74" y="588" width="672" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="④ safe-outputs → create-pull-request&#xa;提交 output/report.md + frontend/report.md（PR 留痕）" style="rounded=1;fillColor=#eef2f6;strokeColor=#5f6f80;fontColor=#27313a;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="48" y="696" width="724" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mcp" value="MCP 工具（mcp-scripts · Python · *_or_fallback 兜底）" style="rounded=1;fillColor=none;strokeColor=#9aa0a6;dashed=1;fontColor=#3c4043;fontSize=13;fontStyle=1;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=10;spacingTop=8;" vertex="1" parent="1">
+          <mxGeometry x="830" y="180" width="330" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="mcpl" value="• read_source_list — 读数据源清单&#xa;• fetch_all_to_disk — 抓 RSS 基线落盘&#xa;• load_articles_from_disk — 解析装载&#xa;• cluster_or_fallback — 聚类校验/兜底&#xa;• insight_or_fallback — 洞察校验/兜底&#xa;• products_or_fallback — TOP5校验/兜底&#xa;• render_report_or_fallback — 渲染报告&#xa;• write_text_file — 写文件&#xa;（参数走路径 + out_path 落盘，输出小）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="854" y="218" width="282" height="246" as="geometry" />
+        </mxCell>
+        <mxCell id="ext" value="外部数据源&#xa;• RSS Feeds：Glossy / WWD / Modern Retail / Beauty Independent&#xa;• ScraperAPI 代理 → Amazon / Sephora / Ulta / Target / TikTok Shop + Alibaba.com&#xa;• 1688.com：验证码拦截 → 仅附搜索链接（人工核价）" style="rounded=1;fillColor=#f6f5f2;strokeColor=#9aa0a6;fontColor=#3c4043;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="830" y="500" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="tok" value="关键工程 · Token 安全&#xa;运行环境 25M「有效 token」硬上限（≈ 实际 token × ~10 倍）。&#xa;传路径（网关单参 10KB 上限）+ 落盘 out_path + 精简返回 → 回合数↓、上下文重发↓ → 有效 token ≈ 5M。&#xa;反爬 / 解析失败 → *_or_fallback 兜底 + 缺口标注。" style="rounded=1;fillColor=#fbf6ea;strokeColor=#b08a3e;fontColor=#5a4a1f;fontSize=12;align=left;verticalAlign=top;html=1;whiteSpace=wrap;spacingLeft=8;spacingTop=6;" vertex="1" parent="1">
+          <mxGeometry x="830" y="660" width="330" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="dep" value="发布：deploy-pages.yml（push frontend/** 触发）→ 组装 _site → GitHub Pages" style="rounded=1;fillColor=#f3e8f7;strokeColor=#7a4f8a;fontColor=#4a2d57;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="20" y="824" width="520" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="fe" value="前端：index.html + main.js(marked + DOMPurify) + styles.css 渲染 report.md → /overseas/ 优雅网页（Hero·目录·表格·callout）" style="rounded=1;fillColor=#eaf1fb;strokeColor=#3b5b92;fontColor=#243b63;fontSize=12;align=left;verticalAlign=middle;html=1;whiteSpace=wrap;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="560" y="824" width="600" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="trig" target="s1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_5" value="ScraperAPI 抓取" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="s2" target="ext">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_6" value="调用" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="cn" target="mcpl">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_7" value="RSS 抓取" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;dashed=1;strokeColor=#9aa0a6;fontColor=#9aa0a6;" edge="1" parent="1" source="mcpl" target="ext">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_8" value="report.md 变更触发" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="s4" target="dep">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_技术逻辑图_9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=block;strokeColor=#5f6368;fontColor=#5f6368;fontSize=11;" edge="1" parent="1" source="dep" target="fe">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
