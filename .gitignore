@@ -36,6 +36,9 @@ pnpm-debug.log*
 Thumbs.db
 
 # Generated lab outputs
-Lab-01-Tech-Insights/output/
+# 忽略 output 下的中间产物（raw_signals.json / signals / clusters / insights），
+# 但放行 report.md，让其作为可版本化的权威报告与 frontend/report.md 保持同步。
+Lab-01-Tech-Insights/output/*
+!Lab-01-Tech-Insights/output/report.md
 Lab-03-GitHub-Copilot/output/
 Lab-04-Overseas-Insights/output/

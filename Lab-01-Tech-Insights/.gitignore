@@ -45,5 +45,6 @@ Thumbs.db
 *.log
 
 # Workflow outputs
-output/
-Lab-01-Tech-Insights/output/
+# 忽略 output 下的中间产物，但放行 report.md（与 frontend/report.md 同步的权威报告）
+output/*
+!output/report.md
