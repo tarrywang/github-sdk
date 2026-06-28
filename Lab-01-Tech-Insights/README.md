@@ -81,6 +81,24 @@ gh aw --version
 python3 --version  # 确认 3.10+
 ```
 
+> 💡 **试一试 · GitHub Copilot CLI（终端里的 AI 助手）**
+
+**练的能力**：新版独立 **Copilot CLI** —— 一个交互式终端 agent，能答疑、给命令、改文件、跑命令；可交互运行 `copilot`，也可 `copilot -p "..."` 非交互。
+
+**怎么做**：
+
+1. 安装（需 Node.js，只需一次）：`npm install -g @github/copilot`（或首次运行 `gh copilot`，gh 会自动下载并透传到它）。
+2. 在终端非交互地让它给/解释命令：
+
+```bash
+copilot -p "给我在 macOS 用 Homebrew 安装 GitHub CLI 的命令"
+copilot -p "解释 git push -f 的作用和风险"
+```
+
+**预期结果**：前者通常给出 `brew install gh`，后者逐段解释 `git push -f` 为何危险。想多轮对话、或让它直接帮你执行/改文件，就直接运行 `copilot` 进交互会话（默认每步操作都先征求你同意）。
+
+> 顺手练：装包或 `gh auth login` 报错时，把报错贴进 VS Code Copilot Chat 问「`@terminal` 这个报错怎么解决？」。
+
 ---
 
 ## Lab 1: 理解项目结构（10 分钟）
@@ -111,6 +129,23 @@ python3 --version  # 确认 3.10+
 | tech_render_report_or_fallback.py | 渲染 Markdown 报告 |
 | write_text_file.py | 文件写入工具 |
 
+> 💡 **试一试 · @workspace（让 Copilot 读懂整个 Lab）**
+
+**练的能力**：`@workspace` 参与者 —— Copilot 检索整个项目来回答，最适合快速看懂陌生代码的结构与数据流。
+
+**怎么做**：
+
+1. 在 VS Code 打开本目录，打开 Copilot Chat（Windows/Linux `Ctrl+Alt+I`，macOS `Ctrl+Cmd+I`）。
+2. 把下面这句粘贴进去、回车：
+
+```text
+@workspace 这个 Lab 的数据从 RSS 一路流到 report.md 经过哪些阶段？每个阶段分别由 mcp-scripts 里的哪个脚本/函数负责？
+```
+
+**预期结果**：Copilot 会列出抓取→聚类→洞察→渲染 4 个阶段，并点名 `tech_fetch_all_to_disk` / `tech_cluster_or_fallback` 等函数。
+
+> 顺手练 `/explain`：选中 `mcp-scripts/tech_insight_tools.py` 里 `tech_cluster_or_fallback` 的兜底聚类那段，按 Inline Chat（Win `Ctrl+I` / mac `Cmd+I`）输入 `/explain`，让它逐行讲解阈值与打分。
+
 3. 查看数据源：`Lab-01-Tech-Insights/input/api/rss_list.json`
    - 包含 10 个精选 EV 行业 RSS 源（以中国新能源车市为主，兼顾全球 EV 媒体）。
    - 每个源有 `signal_level`（S/A/B）字段，权重分别为 30/20/10，影响热点排序。
@@ -119,6 +154,71 @@ python3 --version  # 确认 3.10+
    - `index.html` + `main.js` 实现浏览器端 Markdown 渲染为 HTML。
 
 > 💡 **核心概念**：gh-aw 将「Markdown + YAML frontmatter」编译成标准 GitHub Actions 工作流。AI agent 在 Actions runner 中执行，调用你定义的工具（MCP Scripts），完成复杂任务。
+
+> 💡 **试一试 · /tests（让 Copilot 自动补测试）**
+
+**练的能力**：斜杠命令 `/tests` —— 为选中的函数生成单元测试。
+
+**怎么做**：
+
+1. 打开 `mcp-scripts/tech_insight_tools.py`，选中 `_derive_tracks` 整个函数。
+2. 按 Inline Chat（Windows/Linux `Ctrl+I`，macOS `Cmd+I`），把下面这句粘贴进去、回车：
+
+```text
+/tests 为这个函数生成 pytest 用例，覆盖 beauty / 3c / jewelry 三种品类与 market:* 市场标签的派生，并包含「无匹配」时的兜底分支。
+```
+
+**预期结果**：Copilot 生成一组 `pytest` 用例（不同 source 配置 → 期望的 tracks）。务必人工核对断言是否正确，别盲信。
+
+> 顺手练 Ghost Text：在文件里先敲一行函数签名 `def parse_feed(xml: str) -> list[dict]:` 停顿一下，让灰色建议自动补出实现，`Tab` 接受、`Esc` 忽略。完整 Copilot 用法（含 Windows/macOS 快捷键、功能覆盖地图）见仓库根目录《GitHub SDK Workshop 用户操作手册》。
+
+---
+
+## 可选：本地快速验证（不依赖 GitHub Actions / Copilot）
+
+不想先配置 Token、也不想等 Actions 跑完，就想在本地确认整条 Python 工具链能跑通、并立刻看到 `output/`？用仓库自带的本地诊断驱动 `run_local_pipeline.py` 即可。
+
+- **用途**：在零配置（无需 `COPILOT_GITHUB_TOKEN`、无需 Actions）的情况下，本地验证阶段 1–4 的工具链并产出完整 `output/`。
+- **原理**：`run_local_pipeline.py` 复用工作流同款的阶段 1–4 工具；阶段 2/3/4 给 LLM 草稿传**空串**，从而触发各工具内置的 `*_or_fallback` 确定性兜底逻辑——因此无需任何 LLM 即可跑通。
+
+**命令（从仓库根目录运行）：**
+```bash
+# 推荐用虚拟环境（macOS 上 Homebrew Python 默认是 externally-managed，
+# 直接 pip install 会报 PEP 668 错误，用 venv 最稳妥；.venv/ 已在 .gitignore 中）
+python3 -m venv .venv
+.venv/bin/pip install -r Lab-01-Tech-Insights/requirements.txt
+.venv/bin/python Lab-01-Tech-Insights/run_local_pipeline.py
+```
+
+> 💡 **试一试 · #file / #selection（给 Copilot 精确上下文）**
+
+**练的能力**：上下文变量 `#file`（指定某个文件）、`#selection`（当前选中代码）—— 把对的内容喂给 Copilot，答案才准。
+
+**怎么做**：
+
+1. 本地脚本报错时（如装了依赖但抓取的文章解析为空），打开 Copilot Chat。
+2. 把下面这句粘贴进去、回车（`#file:` 会把该文件内容带进上下文）：
+
+```text
+#file:Lab-01-Tech-Insights/requirements.txt 依赖都装了，但 run_local_pipeline.py 抓到的文章解析不出来、报告为空，可能是什么原因？怎么排查？
+```
+
+**预期结果**：Copilot 会结合 `requirements.txt` 的实际内容定位（如 `feedparser` 缺失/版本、编码问题），而不是泛泛而谈。
+
+> 顺手练 `#selection`：选中报错的那几行代码，问「`#selection` 这段为什么会抛异常？」。
+
+> 若你的环境允许全局安装，也可省略 venv，直接 `pip install -r Lab-01-Tech-Insights/requirements.txt && python Lab-01-Tech-Insights/run_local_pipeline.py`。**关键是必须先装好 `feedparser` 等依赖**——否则脚本能跑通但抓取的文章无法解析，最终只会得到一份空的兜底报告。
+
+**产物（落盘到本地）：**
+- `Lab-01-Tech-Insights/output/raw_signals.json`
+- `Lab-01-Tech-Insights/output/clusters/hotspots.json`
+- `Lab-01-Tech-Insights/output/insights/insights.json`
+- `Lab-01-Tech-Insights/output/report.md`
+- `Lab-01-Tech-Insights/frontend/report.md`
+
+> ⚠️ **与 Actions 版的区别**：本地走的是 fallback 路径，**没有 LLM 参与**，报告是确定性/启发式版本，**质量不等于** Lab 2 中 Copilot 真实生成的报告。本地运行用于快速验证工具链与查看数据流；要拿到真实 AI 洞察报告，仍需走下面 Lab 2 的 Actions 路径。
+
+> 💡 **顺带解答一个常见困惑**：`output/` 在 [.gitignore](../.gitignore) 中被忽略（属运行时产物），所以直接 `git pull` **不会**拉到它。它只会在两种情况下出现在本地——① 你在本地跑上面的脚本；② Actions 工作流跑完后通过 safe-outputs 创建 PR、你合并该 PR 后再 `git pull`。
 
 ---
 
@@ -148,12 +248,45 @@ python3 --version  # 确认 3.10+
 
 > ⚠️ **注意**：需要你的 GitHub 账号有 Copilot 订阅才能使用 Copilot 引擎。
 
+> 💡 **试一试 · Ask 模式（把 Copilot 当文档助手）**
+
+**练的能力**：Ask 模式 —— 只问不改代码，适合查规范、查用法、扫清概念。
+
+**怎么做**：
+
+1. 打开 Copilot Chat（默认就是 Ask 模式）。
+2. 把下面这句粘贴进去、回车：
+
+```text
+我要在 GitHub Actions 里用 gh-aw 调 GitHub Copilot。fine-grained PAT 需要配哪些权限？Copilot Requests 是在 Account permissions 还是 Repository permissions 下，要设成什么级别？
+```
+
+**预期结果**：Copilot 会答 **Account permissions → Copilot Requests = Read**，帮你避开最常见的 `Authentication failed (HTTP 401)`。
+
 ### 步骤 3: 编译 gh-aw 工作流
 ```bash
 cd github-sdk
 gh aw compile .github/workflows/tech-insight.md
 ```
 - 这会在同目录生成 `tech-insight.lock.yml`，即编译后的 GitHub Actions YAML 文件。
+
+> 💡 **试一试 · /fix（让 Copilot 修报错）**
+
+**练的能力**：斜杠命令 `/fix` —— 针对报错或问题代码给出修复建议。
+
+**怎么做**：
+
+1. `gh aw compile` 报错后，复制终端里那整段报错。
+2. 打开 Copilot Chat，把下面这句粘贴进去，再把报错贴在它下面、回车：
+
+```text
+/fix 我执行 gh aw compile 时报了下面的错，帮我定位原因并给出修订（多半是 frontmatter 的缩进或缺字段）：
+（把上一步复制的报错粘到这一行下面）
+```
+
+**预期结果**：Copilot 会指出 YAML frontmatter 的具体问题（缩进、`---` 不成对、字段缺失）并给修订。
+
+> 顺手练：在终端 `copilot -p "解释 gh aw compile 这条命令做了什么"` 先看懂它的作用。
 
 ### 步骤 4: 推送编译结果
 ```bash
@@ -190,6 +323,21 @@ git pull origin main
   - `Lab-01-Tech-Insights/output/insights/insights.json`
   - `Lab-01-Tech-Insights/output/report.md`
 
+> 💡 **试一试 · @github（让 Copilot 帮你看 PR）**
+
+**练的能力**：`@github` 参与者 —— 回答仓库 / PR / issue 相关问题，可检索 GitHub。
+
+**怎么做**：
+
+1. 工作流跑完会出现一个 `[tech-insight]` 开头的 PR。
+2. 在 Copilot Chat 把下面这句粘贴进去、回车：
+
+```text
+@github 总结最新这个 [tech-insight] PR 改了哪些文件、核心变更是什么、有没有需要注意的风险点？
+```
+
+**预期结果**：Copilot 概括该 PR 的 diff 要点（新增/更新了哪些报告与产物），帮你更快决定是否 **Merge**。
+
 ---
 
 ## Lab 3: 查看报告与本地预览（10 分钟）
@@ -213,6 +361,21 @@ python3 -m http.server 8000 --directory Lab-01-Tech-Insights/frontend
 
 > 💡 **思考题**：如果你想更改报告的显示样式，应该修改哪个文件？（答案：`styles.css`）
 
+> 💡 **试一试 · Inline Chat（在编辑器里就地改代码）**
+
+**练的能力**：Inline Chat —— 在光标/选区处直接对话改代码，不用切到侧栏，改完就地给 diff。
+
+**怎么做**：
+
+1. 打开 `frontend/styles.css`，选中配色相关的 CSS 变量那几行。
+2. 按 Inline Chat（Windows/Linux `Ctrl+I`，macOS `Cmd+I`），把下面这句粘贴进去、回车，然后点 **Accept** 应用：
+
+```text
+把主色调改成深蓝（#1F3A5F），正文字号略增、行距加大一点，让报告更易读。只改这几个变量，别动其它样式。
+```
+
+**预期结果**：Copilot 直接在原处给出 CSS 改动；Accept 后刷新 `http://localhost:8000` 即见新配色——省去你自己查 CSS 属性名。
+
 ---
 
 ## Lab 4: 实验 — 定时触发与 GitHub Pages（10 分钟）
@@ -228,6 +391,18 @@ on:
 ```
 
 3. 重新编译并推送。
+
+> 💡 **试一试 · 用 Chat 生成配置（cron 表达式）**
+
+**练的能力**：用 Copilot Chat 生成你不熟的配置/语法 —— 这里是 GitHub Actions 的 cron。
+
+**怎么做**：打开 Copilot Chat，把下面这句粘贴进去、回车：
+
+```text
+我要让 GitHub Actions 工作流每天「北京时间早上 5 点」运行，对应的 cron 表达式（UTC）是什么？请解释时区换算过程。
+```
+
+**预期结果**：Copilot 给出 `0 21 * * *` 并解释「北京 = UTC+8，5:00 − 8h = 前一天 21:00 UTC」。把它给的 cron 填进 `tech-insight.md` frontmatter 的 `schedule:` 下，再 `gh aw compile` 并推送即可。
 
 ### 实验 B: 开启 GitHub Pages
 
@@ -270,6 +445,7 @@ github-sdk/
 │   ├── mcp-scripts/              # MCP Script 工具
 │   ├── input/api/rss_list.json   # 数据源（10 个 EV 精选 RSS）
 │   ├── frontend/                 # 展示前端
+│   ├── run_local_pipeline.py     # 本地诊断驱动（fallback，无需 Actions）
 │   └── output/                   # 运行时输出
 ```
 

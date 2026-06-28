@@ -33,3 +33,10 @@ node --version         # >= 24
 code --version         # 已安装即可
 az --version           # >= 2.x（仅 Lab-02）
 ```
+
+## 用 GitHub Copilot 加速搭建
+
+> 💡 装好 Node.js 后，可装上**新版 GitHub Copilot CLI**（终端里的 AI 助手）：`npm install -g @github/copilot`
+> （首次运行 `gh copilot` 也会自动下载并透传到它）。忘了某个工具的安装命令，就 `copilot -p "给我在 Windows 用 winget 安装 GitHub CLI 的命令"`；
+> 想多轮对话就直接运行 `copilot` 进交互会话。安装或认证报错时，也可把输出贴进 VS Code Copilot Chat 问「@terminal 这个报错怎么解决？」。
+> 注意 VS Code 的 Copilot 快捷键在 Windows/Linux 与 macOS 上不同（如 Inline Chat：Windows/Linux `Ctrl+I`、macOS `Cmd+I`）。完整用法见仓库根目录《GitHub SDK Workshop 用户操作手册》第 3 章。
