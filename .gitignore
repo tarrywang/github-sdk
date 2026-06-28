@@ -35,6 +35,10 @@ pnpm-debug.log*
 .DS_Store
 Thumbs.db
 
+# draw.io 自动保存/备份产物（编辑时生成的临时文件，不入库）
+*.bkp
+.$*
+
 # Generated lab outputs
 # 忽略 output 下的中间产物（raw_signals.json / signals / clusters / insights），
 # 但放行 report.md，让其作为可版本化的权威报告与 frontend/report.md 保持同步。
