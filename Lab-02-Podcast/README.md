@@ -61,12 +61,31 @@ git clone <你的仓库地址>
 cd github-sdk/Lab-02-Podcast
 ```
 
-2. 安装依赖：
+2. 创建并激活虚拟环境（**本地 Python 版本过低、又不便全局升级时必看**）。本项目需 Python **3.11+**；若你的 `python3` 低于 3.11、又因其他项目依赖不便全局升级，**不要动全局 Python**，改用「另装新版 + 单独建虚拟环境」，两者互不影响：
+```bash
+# ① 另装一个新版 Python（与旧版共存，不覆盖）
+#    macOS：       brew install python@3.11
+#    Windows：     到 python.org 下载 3.11 安装包，安装时勾选「Add python.exe to PATH」
+#    跨平台多版本： pyenv install 3.11.9
+
+# ② 用新版创建虚拟环境（关键：显式写 python3.11 而非默认 python3；
+#    venv 会继承创建它的那个解释器的版本）
+# macOS / Linux：
+python3.11 -m venv .venv && source .venv/bin/activate
+# Windows（PowerShell）：
+#   py -3.11 -m venv .venv; .venv\Scripts\Activate.ps1
+
+# ③ 确认已是新版；退出环境用 deactivate（.venv/ 已在仓库 .gitignore 中）
+python --version   # 应显示 3.11.x
+```
+> 若你的 `python3` 本就 ≥ 3.11，可直接 `python3 -m venv .venv` 省去第 ① 步。
+
+3. 安装依赖（在已激活的虚拟环境中）：
 ```bash
 pip install -r requirements.txt --pre
 ```
 
-3. 配置环境变量（可选）：
+4. 配置环境变量（可选）：
 ```bash
 cp .env.example .env
 # 编辑 .env 文件，配置 GitHub Copilot 相关变量
@@ -103,7 +122,7 @@ copilot -p "给我在 Windows 上创建并激活一个 python 虚拟环境的命
 
 使用默认主题运行工作流：
 ```bash
-python podcast_workflow.py
+python Lab-02-Podcast/podcast_workflow.py
 ```
 
 > 💡 **试一试 · Copilot Edits（Edit 模式）**

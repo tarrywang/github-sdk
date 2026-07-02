@@ -81,6 +81,25 @@ gh aw --version
 python3 --version  # 确认 3.10+
 ```
 
+#### 🐍 本地 Python 版本过低怎么办？（不升级全局 Python 也能跑）
+
+本项目需 Python **3.10+**。若上面 `python3 --version` 低于 3.10，而你又因其他项目依赖、不方便全局升级——**不要动全局 Python**，改用「另装一个新版 + 单独建虚拟环境」，两者互不影响：
+
+1. 另装一个新版 Python（与旧版共存，不覆盖）：
+   - macOS（Homebrew）：`brew install python@3.11`
+   - Windows：从 <https://www.python.org/downloads/> 下载 3.11 安装包，安装时勾选「Add python.exe to PATH」
+   - 跨平台多版本管理：`pyenv install 3.11.9`
+2. **用新版**创建虚拟环境（关键：显式写 `python3.11`，而不是默认的 `python3`——`venv` 会继承创建它的那个解释器的版本）：
+
+   ```bash
+   # macOS / Linux
+   python3.11 -m venv .venv && source .venv/bin/activate
+   # Windows（PowerShell）
+   py -3.11 -m venv .venv; .venv\Scripts\Activate.ps1
+   ```
+
+3. 激活后 `python --version` 应显示 3.11.x，此后 `pip` / `python` 都指向该环境；退出用 `deactivate`（`.venv/` 已在 `.gitignore`，不会提交）。
+
 > 💡 **试一试 · GitHub Copilot CLI（终端里的 AI 助手）**
 
 **练的能力**：新版独立 **Copilot CLI** —— 一个交互式终端 agent，能答疑、给命令、改文件、跑命令；可交互运行 `copilot`，也可 `copilot -p "..."` 非交互。
@@ -193,6 +212,7 @@ copilot -p "解释 git push -f 的作用和风险"
 ```bash
 # 推荐用虚拟环境（macOS 上 Homebrew Python 默认是 externally-managed，
 # 直接 pip install 会报 PEP 668 错误，用 venv 最稳妥；.venv/ 已在 .gitignore 中）
+# 若默认 python3 版本 < 3.10，改用新版解释器创建，如 python3.11 -m venv .venv（见「前置条件」的 🐍 说明）
 python3 -m venv .venv
 .venv/bin/pip install -r Lab-01-Tech-Insights/requirements.txt
 .venv/bin/python Lab-01-Tech-Insights/run_local_pipeline.py
