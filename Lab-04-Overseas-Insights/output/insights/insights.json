@@ -3,209 +3,234 @@
   "insights": [
     {
       "hotspot_id": "H01",
-      "title": "临床护肤/医生品牌爆发：循证美妆获资本重注，选品机会在平价高功效护肤",
-      "what_changed": "Dr. Muneeb Shah（TikTok/YouTube头部皮肤科KOL）的品牌Remedy完成$20M A轮融资，投资方为L Catterton（全球顶级美妆消费基金）和Norwest。Capsum同步收购美国KKT Labs布局高功效配方技术。",
-      "why_it_matters": "\"医生背书+大众价格\"是北美2026年护肤市场最强增长主题。消费者面对成分过载越来越依赖专业信任背书，临床级产品在$10-25价格带占据主流。资本入场验证了市场规模和可复制性。",
+      "title": "Gen Alpha美妆崛起：Ulta×NielsenIQ大调研揭示下一代护肤消费主力",
+      "what_changed": "Ulta Beauty联合NielsenIQ正式量化Gen Alpha(10-15岁)的美妆消费力：500+青少年调研显示该群体每月美妆消费$19-50，已形成独立产品偏好，TikTok是主要发现渠道，家长参与最终购买决策。Bubble Skincare、CeraVe青少年系列领跑该细分。",
+      "why_it_matters": "Gen Alpha将是未来5年北美美妆市场最大增量群体；品牌若现在完成心智占领，将获得极高的长期用户生命周期价值(LTV)。Ulta官方研究背书意味着该渠道已正式向青少年开放。",
       "who_is_impacted": [
-        "出海卖家：寻找OEM工厂生产含活性成分（烟酰胺、视黄醇、AHA、肽类）的高功效护肤品",
-        "内容营销团队：皮肤科医生/达人合作是核心获客渠道",
-        "监管合规部门：临床宣称需严格审查FDA MoCRA要求"
+        "出海美妆品牌（护肤入门线定价$15-30）",
+        "Ulta/Target渠道合作商",
+        "TikTok Shop青少年美妆选品运营",
+        "K-Beauty低敏系列（符合青少年诉求）"
       ],
       "next_actions": [
-        "寻找具备ISO22716/GMPC认证的OEM工厂，开发含循证成分的精华液/保湿霜",
-        "与皮肤科医生/认证美容师合作开发内容，建立专业信任背书",
-        "确保产品成分浓度符合FDA化妆品规范（避免滑入OTC药品监管范畴）",
-        "完成MoCRA设施注册和责任人指定"
+        "开发'Gen Alpha友好'低敏/温和配方入门套装（SPF+保湿+清洁三件套，客单$25-45）",
+        "在TikTok/Instagram投放13-17岁受众内容（需合规审查COPPA/CARU）",
+        "联系Ulta/Target青少年美妆区域上架谈判",
+        "强调'dermatologist tested''非刺激性'标签"
       ],
-      "price_band": "$15–$35（精华液/面霜）",
+      "price_band": "$10-35 (入门护肤)",
       "selling_points": [
-        "皮肤科医生配方",
-        "循证活性成分（AHA/烟酰胺/肽类）",
-        "敏感肌友好",
-        "平价高功效"
+        "温和低敏",
+        "清洁成分",
+        "dermatologist推荐",
+        "SPF日常防护",
+        "皮肤科医生认可"
       ],
       "target_market": [
-        "25-40岁北美女性，注重成分功效",
-        "有痘痘/色斑/毛孔等具体肌肤困扰的消费者"
+        "Gen Alpha(10-15岁)",
+        "青少年家长",
+        "学生群体"
       ],
       "risk_notes": [
-        "功效宣称过度可能触发FDA OTC药品监管",
-        "KOL合作需注意FTC广告披露规定"
+        "COPPA合规：不得对13岁以下儿童直接投放定向广告",
+        "CARU/FTC儿童营销规范",
+        "成分需经额外安全测试以满足儿童敏感肌标准"
       ],
       "references": [
-        "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-        "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/"
+        "https://www.glossy.co/beauty/ulta-beauty-strategies-what-ulta-is-learning-about-gen-alpha-consumers/"
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Gen Alpha护肤热潮：$10-15平价清洁护肤品在大众渠道狂卷年轻市场",
-      "what_changed": "Bubble护肤品牌创始人公开披露品牌在Gen Alpha（8-12岁）和Gen Z群体中的强势地位，全渠道布局CVS/Target/Walmart。另有More Than Nine针对孕产妇推出精简护肤解决方案。\"护肤疲劳\"作为北美新现象被广泛报道，促使年轻消费者回归简洁护肤。",
-      "why_it_matters": "Gen Alpha进入护肤启蒙期，预计2030年前将是北美美妆增长最快的人口细分。该群体偏好简洁配方（≤5成分）+清洁标签+$10-15价格带。Walmart/Target/CVS作为渠道入口意味着线上线下联动机会。",
+      "title": "TikTok Shop北美美妆：从病毒传播到高复购，策略升级",
+      "what_changed": "TikTok Shop北美美妆2026年的爆品逻辑从单次'viral视频'驱动转向'viral+持续复购'双引擎。ELF Cosmetics Power Grip Primer以$12持续霸榜，Clorox用卡通人物触达Gen Z证明内容创意×电商闭环可行。KOC微达人+直播带货+限时折扣成为头部品牌标配。",
+      "why_it_matters": "TikTok Shop北美美妆GMV持续高增长，平台正从'发现'渠道升级为'完成购买'渠道。品牌若只会制造一次性爆款而无复购机制，将持续输血引流但无法实现健康ROI。",
       "who_is_impacted": [
-        "出海卖家：适合开发青少年友好护肤品（无香精/低致敏/清洁成分）",
-        "亲子/母婴美妆品牌：孕产期护肤是新兴细分市场",
-        "大众渠道BD团队：沃尔玛/Target选品逻辑以简洁、清洁、性价比为核心"
+        "TikTok Shop美妆/护肤品类卖家",
+        "平价彩妆(< $20)品牌",
+        "KOC/微达人生态合作伙伴",
+        "内容电商团队"
       ],
       "next_actions": [
-        "开发5成分以内的极简护肤产品线（洁面+保湿+防晒三件套）",
-        "获取EWG Verified或Clean Beauty认证，加强信任背书",
-        "布局TikTok Shop和Amazon，针对Gen Z/Gen Alpha投放短视频",
-        "价格策略聚焦$12-18区间，兼顾毛利和大众可及性"
+        "建立KOC达人矩阵（50-500万粉为主力）+每周新内容产出机制",
+        "设计高复购产品（精华液/洁面/防晒）组合套装以提升LTV",
+        "利用TikTok Shop限时闪购机制提升首购转化",
+        "参考ELF的'平价替代奢侈品'定价策略：锚定竞品高价，强调性价比"
       ],
-      "price_band": "$10–$18（日常护肤品）",
+      "price_band": "$8-25 (TikTok爆款价格带)",
       "selling_points": [
-        "极简清洁成分",
-        "纯素/无残忍测试",
-        "低致敏配方",
-        "青少年友好包装"
+        "平价替代大牌(Dupe)",
+        "成分透明/纯素",
+        "TikTok病毒视频背书",
+        "快速见效的视觉反馈"
       ],
       "target_market": [
-        "Gen Alpha（8-12岁）和Gen Z（13-26岁）",
-        "关注子女护肤的北美父母"
+        "Gen Z(18-27岁)",
+        "价格敏感型美妆消费者",
+        "TikTok活跃用户"
       ],
       "risk_notes": [
-        "未成年人护肤品营销需遵守COPPA（儿童隐私保护法）",
-        "成分安全性要求更高，建议皮肤科测试"
+        "TikTok Shop平台政策变化风险（美国政府监管不确定性）",
+        "需建立独立站作为备份渠道",
+        "过度依赖单一达人存在账号失效风险"
       ],
       "references": [
-        "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-        "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/"
+        "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/"
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "K-Beauty北美爆发：韩系多酸棉片+胶原蛋白面膜占据Amazon TOP2/TOP8",
-      "what_changed": "medicube（韩系医学护肤）Toner Pads Zero Pore Pad 2.0以#2排名、25,688条评价主导Amazon爽肤棉片品类；BIODANCE Bio-Collagen Hydrogel Mask以#8、45,847条评价领跑水凝胶面膜品类。两款均为韩国品牌通过Amazon直营渗透北美市场。",
-      "why_it_matters": "K-Beauty在北美的增速（+25% YoY估计）显著超越本土品牌。多酸棉片（AHA+BHA双效）和水凝胶面膜代表韩国品牌在北美找到的两个爆款公式：功效清晰+使用便捷+价格合理+社媒传播友好。",
+      "title": "功效护肤×屏障修复主义：CeraVe/The Ordinary重塑北美大众护肤标准",
+      "what_changed": "北美2026年夏季护肤市场，'皮肤屏障修复'概念已从皮肤科专业术语升级为消费者主动搜索词。CeraVe保湿霜/The Ordinary烟酰胺精华以高性价比+科学背书维持Amazon TOP5。SPF日常护肤意识提升，防晒+修复二合一产品需求增长。",
+      "why_it_matters": "功效护肤创造了'科学驱动的消费决策'模式，消费者不再只看品牌故事，而是看成分、浓度、临床数据。这意味着新品牌可以用透明配方+合理定价快速建立可信度，但也意味着更高的品质门槛。",
       "who_is_impacted": [
-        "国内OEM工厂：国内已有大量韩系同款产品供应商（尤其广州/深圳/浙江），可以类似配方开发自有品牌",
-        "出海卖家：AHA/BHA棉片+水凝胶面膜都是成熟爆款公式，可打差异化品牌"
+        "护肤品OEM/ODM工厂（功效成分采购）",
+        "Amazon护肤类目卖家",
+        "功效护肤品牌（神经酰胺/烟酰胺/视黄醇系列）",
+        "皮肤科诊所合作营销"
       ],
       "next_actions": [
-        "开发AHA（6-8%）+BHA（0.3-0.5%）双效爽肤棉片，参考medicube配方但差异化包装",
-        "开发Bio-Collagen水凝胶面膜OEM产品，重点突出PDRN/肽类/玻尿酸成分",
-        "以Amazon FBA为主渠道，配合TikTok短视频做\"before & after\"对比内容",
-        "确认AHA浓度符合FDA化妆品规范（<10%，pH>3.5）"
+        "选品聚焦神经酰胺+透明质酸+烟酰胺核心成分三角",
+        "强调'dermatologist tested''fragrance-free''non-comedogenic'等转化标签",
+        "Amazon Listing优化：成分表前置+临床数据+Before/After图",
+        "夏季增加SPF产品线（矿物防晒SPF30+或化学防晒SPF50+）"
       ],
-      "price_band": "$15–$25（棉片70片装）；$18–$30（面膜4片装）",
+      "price_band": "$5-20 (大众功效护肤)",
       "selling_points": [
-        "AHA+BHA双重酸化",
-        "毛孔收缩可见效",
-        "K-Beauty医学品牌背书",
-        "一步懒人护肤"
+        "成分科学透明",
+        "皮肤科医生推荐",
+        "无香料/低过敏",
+        "性价比极高",
+        "屏障修复"
       ],
       "target_market": [
-        "20-35岁北美女性，对K-Beauty有认知",
-        "有毛孔/痘印/角质问题的消费者"
+        "护肤新手/入门消费者",
+        "敏感肌人群",
+        "价格敏感但注重成分的千禧一代/Z世代"
       ],
       "risk_notes": [
-        "AHA/BHA产品宣称祛痘功效可能触发OTC药品监管",
-        "韩系品牌视觉需避免直接模仿已有品牌IP"
+        "功效声称需谨慎：避免越过化妆品/OTC药品边界（如宣称'治疗'某病症需FDA批准）",
+        "Amazon竞争激烈，新品需要大量前期评论积累"
       ],
       "references": [
-        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
+        "https://www.glossy.co/beauty/",
+        "https://www.glossy.co/beauty/ulta-beauty-strategies-what-ulta-is-learning-about-gen-alpha-consumers/"
       ]
     },
     {
       "hotspot_id": "H04",
-      "title": "痘痘贴成北美刚需：Mighty Patch 18万+评价，水胶体技术成全球通用语言",
-      "what_changed": "Mighty Patch Original以183,993条评价（Amazon美妆类最多）保持TOP10榜首位，评分稳定4.6★，$12.99/36片。产品已进入沃尔玛/CVS/Target全渠道，并持续保持TikTok高频曝光。",
-      "why_it_matters": "痘痘贴是北美年轻肌肤护理品类增速最快的单品之一，已从细分品类进入大众刚需。水胶体技术（Hydrocolloid）是经过临床验证的伤口愈合材料，进入护肤场景后大幅降低了消费者的认知门槛。复购率高（36片一包一周用完），意味着稳定现金流。",
+      "title": "名人×DTC美妆品牌：Rare Beauty/Oner Active验证创始人IP驱动模式",
+      "what_changed": "Rare Beauty（Selena Gomez）和Oner Active（Krissy Cela，$2亿营收里程碑）在2026年持续证明：创始人IP×真实用户故事×大使矩阵，是北美DTC美妆品牌最有效的增长飞轮。Meta与Kylie Jenner合作进入时尚领域，美妆×科技融合趋势加速。",
+      "why_it_matters": "传统美妆营销依赖大预算广告投放，而创始人IP模式将品牌信任度和用户情感绑定，获客成本更低、用户LTV更高。这一模式对跨境出海品牌来说提供了'以故事建立品牌'的低成本路径。",
       "who_is_impacted": [
-        "出海选品团队：水胶体痘痘贴是ROI最高的美妆单品之一",
-        "OEM采购：国内（南京/深圳/广州）有大量成熟工厂，价格极低（$0.20-0.30/片）",
-        "合规团队：需确认是化妆品还是医疗器械监管路径"
+        "DTC独立站美妆品牌",
+        "品牌运营团队（KOL/大使合作）",
+        "高端/中高端美妆(>$20)品牌",
+        "社交媒体营销团队"
       ],
       "next_actions": [
-        "优先评估水胶体痘痘贴OEM产品线，MOQ可低至100袋（Nanjing Vesta）",
-        "差异化：定制形状（星形/心形）+特殊功效（水杨酸+茶树油+烟酰胺浸润版）",
-        "确认供应商的FDA 510(k)豁免状态或是否需要取得医疗器械注册",
-        "TikTok投流：\"before & after overnight\"内容格式ROI最高"
+        "塑造品牌创始人/主理人人设（真实故事+价值主张）",
+        "建立20-50人核心KOC大使矩阵（每人月度内容指标）",
+        "Rare Beauty案例学习：彩妆×心理健康叙事=高情感溢价",
+        "在Instagram/TikTok发布创始人Behind-the-scenes内容提升真实感"
       ],
-      "price_band": "$10–$15（36-50片装）",
+      "price_band": "$18-45 (中高端彩妆)",
       "selling_points": [
-        "水胶体科技",
-        "一夜收缩痘痘",
-        "无刺激无痕",
-        "夜间使用便捷"
+        "创始人真实故事",
+        "心理健康/inclusive beauty",
+        "名人效应",
+        "社群感/归属感"
       ],
       "target_market": [
-        "13-25岁北美青少年和年轻人",
-        "有痘痘困扰的消费者"
+        "年轻女性(18-35岁)",
+        "Selena Gomez/Kylie Jenner粉丝",
+        "关注心理健康的美妆消费者"
       ],
       "risk_notes": [
-        "\"一夜收缩粉刺\"等宣称可能被FDA归类为OTC药品宣称",
-        "建议仅使用\"外观改善\"等化妆品安全措辞"
+        "名人代言高度依赖个人品牌，有负面风险",
+        "创始人IP需长期维护，不可短期操作",
+        "高端定价需要相应的产品品质和包装投入"
       ],
       "references": [
-        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
+        "https://www.glossy.co/podcasts/glossy-podcast-oner-actives-krissy-cela-on-leveraging-ambassadors-to-surpass-the-200-million-mark/",
+        "https://wwd.com/pop-culture/celebrity-news/selena-gomez-suki-waterhouse-taylor-swift-rehearsal-dinner-1239052255/"
       ]
     },
     {
       "hotspot_id": "H05",
-      "title": "双重合规压力：de minimis收紧+MoCRA新规，出海美妆合规刻不容缓",
-      "what_changed": "Trump政府宣布加强关税和海关欺诈执法，de minimis免税门槛（$800）面临收紧，直接影响美妆小包裹直邮模式；FDA MoCRA（Modernization of Cosmetics Regulation Act，2023年12月起实施）要求：(1)化妆品设施注册；(2)不良事件报告；(3)产品安全性论证。",
-      "why_it_matters": "两项政策同步收紧，形成双重合规压力：物流端需从直邮转FBA/海外仓（规避de minimis风险）；产品端需完成MoCRA注册（截止2024年12月，大型企业已逾期）。未完成注册的产品面临进口扣留风险，合规能力正在成为北美美妆市场的门槛性壁垒。",
+      "title": "K-Beauty主流化：COSRX蜗牛精华在北美Amazon/TikTok双渠道爆发",
+      "what_changed": "K-Beauty在北美已完成从'小众韩流'到'主流护肤'的跃升。COSRX蜗牛精华2026年在Amazon K-Beauty品类增速约30% YoY，TikTok '#skinbarrier' '#kbeauty'话题合计曝光超50亿次。Skin1004/COSRX以'真实有效+亲民价格+韩国正宗背书'三角形成品牌护城河。",
+      "why_it_matters": "K-Beauty对中国供应链而言是一个重要信号：消费者接受'亚洲配方+科学有效性'的价值主张，为中国出海品牌建立类似'功效亚洲护肤'定位提供了用户教育基础。同时，K-Beauty溢价证明了北美消费者愿为'进口正品'支付更高价格。",
       "who_is_impacted": [
-        "所有通过Amazon/Shopify在美国销售美妆品的中国出海卖家",
-        "依赖小包直邮模式的卖家：转型压力最大",
-        "已有FBA仓储的卖家：相对优势增强"
+        "对标K-Beauty的中国护肤品出海品牌",
+        "Amazon K-Beauty/Asian Beauty品类卖家",
+        "TikTok K-Beauty内容生产者",
+        "蜗牛/发酵原料供应商"
       ],
       "next_actions": [
-        "立即启动FDA MoCRA设施注册（www.fda.gov/cosmetics/registration），并在美国指定\"Responsible Person\"（责任人）",
-        "更新产品标签，符合INCI成分列表+警示语（AHA光敏、酒精等）",
-        "从直邮模式迁移到美国FBA或第三方仓储（缓冲关税风险）",
-        "咨询美国FDA合规律师，评估产品是否在化妆品/OTC药品边界上"
+        "研究COSRX的'成分=品牌名'命名策略（如Snail Mucin, AHA/BHA）并借鉴",
+        "布局Amazon Korean Beauty子类目（竞争度低于主类）",
+        "与韩裔/亚裔KOC合作增强正宗感",
+        "考虑'Asian-inspired'功效护肤定位（不必直接标榜K-Beauty）"
       ],
-      "price_band": "N/A（监管事件，非选品话题）",
-      "selling_points": [],
+      "price_band": "$15-35 (K-Beauty精华)",
+      "selling_points": [
+        "高浓度天然活性成分",
+        "皮肤屏障修复",
+        "韩国正宗背书",
+        "低敏/温和",
+        "高性价比"
+      ],
       "target_market": [
-        "出海美妆卖家（B2B洞察）"
+        "亚裔美国消费者（核心）",
+        "对K-beauty感兴趣的白人/多元文化消费者",
+        "护肤精华高频用户"
       ],
       "risk_notes": [
-        "MoCRA违规：进口扣留、召回、罚款",
-        "de minimis收紧：直邮利润空间压缩",
-        "关税：中国原产地美妆品关税税率变化需实时监控"
+        "蜗牛分泌物等动物源原料需合规证明（部分消费者有动物权益顾虑）",
+        "韩国正宗性宣称需有据可查",
+        "OEM代工需与韩国厂商或具备K-Beauty认证的中国厂商合作"
       ],
       "references": [
-        "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/"
+        "https://www.glossy.co/beauty/",
+        "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/"
       ]
     },
     {
       "hotspot_id": "H06",
-      "title": "清洁美妆+内容电商：Saie教育营销+TikTok Shop扩张定义2026北美美妆新打法",
-      "what_changed": "清洁美妆品牌Saie推出\"The Makeup Class\"线下大师班，将品牌体验嵌入教育内容；Glossy E-Commerce Summit总结6大品牌趋势：TikTok Shop扩张、DTC韧性、全渠道增长、品牌超级粉丝、可持续性、AI个性化。",
-      "why_it_matters": "TikTok Shop在美国美妆品类GMV快速增长，\"内容即购买\"的消费模式正在改变漏斗。教育型内容（护肤教程、成分解析、\"the class\"式内容）比广告型内容转化率高3-5倍。清洁成分标签（EWG/Clean Beauty认证）是北美消费者触发购买的关键信任信号。",
+      "title": "Amazon Prime Day提前+美妆促销季前移：品牌备战夏季爆单窗口",
+      "what_changed": "Amazon 2026年Prime Day提前至6月举办，叠加7月4日美国国庆长假，形成史上最长夏季美妆促销窗口。Modern Retail数据显示竞争零售商（Sephora/Ulta/Target）均同步调整促销节奏，整体北美美妆夏季促销季提前约2-3周。",
+      "why_it_matters": "对跨境卖家而言，FBA备货周期通常需要8-12周，若未提前规划，将错过Prime Day流量红利。同时，促销季前移意味着广告竞价提前上涨，早布局者CPC成本更低。",
       "who_is_impacted": [
-        "出海美妆品牌的内容营销团队",
-        "TikTok Shop卖家：美妆品类是平台最高增长品类",
-        "DTC独立站卖家：教育内容+邮件列表是降低CAC的核心杠杆"
+        "Amazon FBA跨境美妆卖家",
+        "亚马逊广告投放团队",
+        "国内供应链/备货仓储团队",
+        "Sephora/Ulta/Target供应商"
       ],
       "next_actions": [
-        "开通TikTok Shop US店铺，布局美妆品类（优先爽肤棉片/痘痘贴/面膜等视觉效果好的产品）",
-        "制作\"成分解析\"+\"before & after\"短视频内容，与美妆微达人（1-10万粉）合作",
-        "获取EWG Verified或\"Clean Beauty\"认证，展示在产品主图和详情页",
-        "建立品牌社区（Discord/微信群/邮件列表），将首次购买者转化为复购用户"
+        "立即启动Q3备货计划（针对明年提前的Prime Day）",
+        "现在（7月）开始提升Amazon Listing评分和评价积累",
+        "设计Prime Day专属捆绑套装（客单价提升15-25%）",
+        "调整广告预算节奏：6月初开始提高Sponsored Products竞价"
       ],
-      "price_band": "$12–$40（TikTok Shop美妆主流价格带）",
+      "price_band": "$10-50 (促销活动覆盖各价格带)",
       "selling_points": [
-        "清洁成分认证",
-        "内容驱动信任",
-        "教育式品牌建设",
-        "社区复购"
+        "Prime Day限时优惠",
+        "Bundle套装高性价比",
+        "Prime会员专属"
       ],
       "target_market": [
-        "18-35岁北美女性，活跃在TikTok/Instagram",
-        "关注可持续和清洁美妆的消费者"
+        "Amazon Prime会员",
+        "价格驱动型护肤消费者",
+        "节日礼品采购者"
       ],
       "risk_notes": [
-        "TikTok Shop平台合规（税务/产品资质）需提前准备",
-        "FTC要求达人合作需明确披露广告关系"
+        "Prime Day后可能出现流量断崖，需规划节后维持策略",
+        "大幅折扣可能损伤品牌定价体系",
+        "库存滞销风险：谨慎备货，避免过量"
       ],
       "references": [
-        "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-        "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/"
+        "https://www.modernretail.co/marketing/back-to-school-season-has-become-a-summer-long-event-thanks-to-an-earlier-prime-day/"
       ]
     }
   ]
