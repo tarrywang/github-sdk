@@ -4,8 +4,65 @@
   "hotspots": [
     {
       "hotspot_id": "H01",
-      "title": "临床护肤/医生品牌爆发：Remedy获$20M融资，投资人押注循证美妆",
-      "summary": "Dr. Muneeb Shah（社媒皮肤科医生）旗下品牌Remedy完成$20M A轮融资（L Catterton+Norwest），标志着\"医生背书+大众价位\"的临床护肤品牌在北美持续获得资本青睐。同期Capsum收购KKT Labs布局美国市场，印证高功效配方技术出海机遇。",
+      "title": "Gen Alpha美妆崛起：Ulta×NielsenIQ大调研揭示下一代护肤消费主力",
+      "summary": "Ulta Beauty联合NielsenIQ调研500+名Gen Alpha(10-15岁)消费者，发现该群体已形成独立美妆消费习惯，偏好入门护肤（防晒、保湿、清洁），Bubble Skincare、CeraVe青少年版领跑，TikTok是主要发现渠道。家长参与购买决策，品牌需针对亲子场景重构营销。",
+      "category": "trend",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 92,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Ulta Beauty",
+          "NielsenIQ",
+          "Bubble Skincare"
+        ],
+        "platforms": [
+          "glossy",
+          "research-enhanced"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "Gen Alpha是未来5年最大增量消费群体",
+        "现在布局Ulta/Target渠道+TikTok内容可抢占先机",
+        "入门护肤客单价低但复购率高"
+      ],
+      "samples": [
+        {
+          "platform": "glossy",
+          "title": "Ulta Beauty Strategies: What Ulta is learning about Gen Alpha consumers",
+          "url": "https://www.glossy.co/beauty/ulta-beauty-strategies-what-ulta-is-learning-about-gen-alpha-consumers/",
+          "published_at": "2026-07-03T04:00:00Z",
+          "company": "Ulta Beauty",
+          "signal_level": "S"
+        },
+        {
+          "platform": "research-enhanced",
+          "title": "Gen Alpha护肤入门TOP品牌：Bubble Skincare/CeraVe",
+          "url": "https://www.glossy.co/beauty/ulta-beauty-strategies-what-ulta-is-learning-about-gen-alpha-consumers/",
+          "published_at": "2026-07-03T00:00:00Z",
+          "company": "Bubble Skincare",
+          "signal_level": "S"
+        },
+        {
+          "platform": "research-enhanced",
+          "title": "北美功效护肤爆品：CeraVe领跑2026",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-01T00:00:00Z",
+          "company": "CeraVe",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H02",
+      "title": "TikTok Shop北美美妆：从病毒传播到高复购，ELF/COSRX领跑策略升级",
+      "summary": "TikTok Shop北美美妆品类2026年爆品逻辑从纯'viral'转向'viral+高复购'双驱动。ELF Cosmetics以$12 Power Grip Primer持续霸榜，COSRX蜗牛精华在TikTok '#skinbarrier'话题下二次爆发。KOC微达人+测评内容+限时折扣+直播带货成为标配策略。Clorox用卡通人物征服Gen Z印证TikTok Shop内容电商新逻辑。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -15,109 +72,54 @@
       ],
       "overall_heat_score": 88,
       "coverage": {
-        "source_count": 2,
+        "source_count": 3,
         "companies": [
-          "Remedy",
-          "Capsum",
-          "KKT Labs"
+          "ELF Cosmetics",
+          "COSRX",
+          "Clorox"
         ],
         "platforms": [
-          "beautyindependent",
-          "research"
+          "modernretail",
+          "research-enhanced"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "临床+平价护肤是北美2025-2026年最强投资主题之一",
-        "医生KOL驱动的品牌在TikTok/YouTube有自然流量优势",
-        "出海选品方向：开发皮肤科背书的精华液/面霜OEM产品线"
+        "TikTok Shop北美美妆GMV持续增长",
+        "KOC策略门槛低、ROI高",
+        "平价+功效产品在TikTok最易爆"
       ],
       "samples": [
         {
-          "platform": "beautyindependent",
-          "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-          "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-          "published_at": "2026-06-12T02:40:05Z",
-          "company": "Remedy",
+          "platform": "modernretail",
+          "title": "Marketplace Briefing: How a cartoon frog wizard is helping Clorox sell Pine-Sol on TikTok Shop",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/",
+          "published_at": "2026-07-02T14:00:00Z",
+          "company": "Clorox",
           "signal_level": "A"
         },
         {
-          "platform": "beautyindependent",
-          "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
-          "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
-          "published_at": "2026-06-11T21:25:28Z",
-          "company": "Capsum",
-          "signal_level": "A"
-        },
-        {
-          "platform": "research",
-          "title": "Amazon Beauty Best Sellers: 临床成分（AHA/BHA/Glycolic Acid）产品占据TOP5",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Amazon",
+          "platform": "research-enhanced",
+          "title": "TikTok Shop北美美妆2026: 爆品逻辑升级",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/",
+          "published_at": "2026-07-02T00:00:00Z",
+          "company": "ELF Cosmetics",
           "signal_level": "S"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H02",
-      "title": "Gen Alpha护肤崛起：Bubble品牌CVS/Target/Walmart全渠道布局，拒绝出售",
-      "summary": "Bubble护肤品牌创始人Shai Eisenman披露品牌在Gen Alpha（8-12岁）和Gen Z群体中的统治力，分布在CVS/Target/Walmart大众渠道，创始人暂拒M&A。\"护肤疲劳\"（skincare fatigue）现象提示：年轻消费者转向简洁、平价、清洁成分产品，$10-15价格带是甜蜜点。",
-      "category": "trend",
-      "categories": [
-        "beauty"
-      ],
-      "markets": [
-        "na"
-      ],
-      "overall_heat_score": 85,
-      "coverage": {
-        "source_count": 2,
-        "companies": [
-          "Bubble"
-        ],
-        "platforms": [
-          "beautyindependent",
-          "research"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "北美Gen Alpha护肤市场规模快速增长，$10-15价格带竞争激烈但机会大",
-        "简洁配方（5种以内成分）+清洁标签是核心差异化",
-        "大众渠道（CVS/Target/Walmart）铺货路径成熟"
-      ],
-      "samples": [
-        {
-          "platform": "beautyindependent",
-          "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
-          "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-          "published_at": "2026-06-11T04:01:16Z",
-          "company": "Bubble",
-          "signal_level": "A"
         },
         {
-          "platform": "beautyindependent",
-          "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
-          "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
-          "published_at": "2026-06-11T11:55:19Z",
-          "company": "More Than Nine",
-          "signal_level": "A"
-        },
-        {
-          "platform": "research",
-          "title": "Amazon Beauty Best Sellers: eos、Neutrogena等平价品牌占据TOP榜单",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Amazon",
+          "platform": "research-enhanced",
+          "title": "ELF Cosmetics/COSRX TikTok Shop北美持续热销",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-01T00:00:00Z",
+          "company": "COSRX",
           "signal_level": "S"
         }
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "韩系护肤（K-Beauty）持续爆发：medicube等品牌Amazon TOP2，多酸棉片成爆款品类",
-      "summary": "medicube Toner Pads Zero Pore Pad 2.0在Amazon Beauty Best Sellers占据#2（25,688条评价，$18.90），BIODANCE Bio-Collagen Mask排名#8（45,847条评价）。韩国护肤品牌通过Amazon+TikTok渠道在北美攻城略地，多酸（AHA+BHA）+胶原蛋白水凝胶面膜是两个核心爆品品类。",
+      "title": "功效护肤×屏障修复主义：CeraVe/The Ordinary重塑北美大众护肤标准",
+      "summary": "2026年夏季北美护肤市场，'皮肤屏障修复'已从小众概念升级为大众购买逻辑。CeraVe保湿霜连续占据Amazon Beauty TOP3，The Ordinary烟酰胺以$5.90极致性价比俘获护肤初学者。防晒(SPF)与屏障修复双引擎驱动夏季旺季消费。dermatologist-recommended标签成为转化关键词。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -129,99 +131,108 @@
       "coverage": {
         "source_count": 2,
         "companies": [
-          "medicube",
-          "BIODANCE",
-          "Hero Cosmetics"
+          "CeraVe",
+          "The Ordinary",
+          "DECIEM"
         ],
         "platforms": [
-          "amazon-bestsellers-beauty",
-          "research"
+          "research-enhanced"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "K-Beauty在北美增速超过美国本土品牌，OEM/ODM仿制机会大",
-        "多酸棉片+水凝胶面膜都是成熟供应链，国内工厂可OEM",
-        "价格带$15-25，利润空间充足"
+        "CeraVe/The Ordinary证明功效+性价比可跑出巨量",
+        "屏障修复产品复购率高达60%+",
+        "SPF+保湿组合是夏季必备，选品方向明确"
       ],
       "samples": [
         {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "medicube Toner Pads Zero Pore Pad 2.0 — Amazon #2 Best Seller，4.6★，25,688条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "medicube",
+          "platform": "research-enhanced",
+          "title": "北美功效护肤爆品：CeraVe/The Ordinary领跑2026",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-01T00:00:00Z",
+          "company": "CeraVe",
           "signal_level": "S"
         },
         {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "BIODANCE Bio-Collagen Real Deep Mask — Amazon #8 Best Seller，4.5★，45,847条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "BIODANCE",
+          "platform": "research-enhanced",
+          "title": "北美美妆护肤2026夏季热销品类：SPF+功效护肤双引擎",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-03T00:00:00Z",
+          "company": null,
           "signal_level": "S"
         },
         {
-          "platform": "glossy",
-          "title": "Perfume brand Heretic is leaning into the 'B-side' of pop culture",
-          "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
-          "published_at": "2026-06-12T04:00:00Z",
-          "company": "Heretic",
+          "platform": "research-enhanced",
+          "title": "The Ordinary烟酰胺精华持续高复购",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-01T00:00:00Z",
+          "company": "The Ordinary",
           "signal_level": "S"
         }
       ]
     },
     {
       "hotspot_id": "H04",
-      "title": "痘痘贴/祛痘护理：Mighty Patch 183K+评价，北美祛痘品类持续高热",
-      "summary": "Mighty Patch Original（Hero Cosmetics）在Amazon Beauty Best Sellers排名#4，拥有183,993条评价（北美美妆类评价数第一），评分4.6★，$12.99/36片。水胶体技术+TikTok病毒式传播驱动，痘痘贴已成北美年轻肌肤护理核心单品，并渗透实体渠道（Target/Walgreens/CVS）。",
-      "category": "single",
+      "title": "名人×DTC美妆品牌：Rare Beauty/Oner Active验证创始人IP驱动模式",
+      "summary": "Rare Beauty（Selena Gomez创始）Soft Pinch Liquid Blush持续占据Sephora腮红TOP1；Oner Active的Krissy Cela通过大使策略突破$2亿营收里程碑。创始人IP+真实用户故事+社群大使矩阵，成为2026年北美DTC美妆品牌的主流增长飞轮。Kylie Jenner出现在Meta首个时尚营销活动中，美妆×科技跨界趋势显现。",
+      "category": "trend",
       "categories": [
         "beauty"
       ],
       "markets": [
         "na"
       ],
-      "overall_heat_score": 87,
+      "overall_heat_score": 85,
       "coverage": {
-        "source_count": 1,
+        "source_count": 3,
         "companies": [
-          "Hero Cosmetics",
-          "Mighty Patch"
+          "Rare Beauty",
+          "Oner Active",
+          "Kylie Jenner"
         ],
         "platforms": [
-          "amazon-bestsellers-beauty"
+          "glossy",
+          "wwd"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "水胶体痘痘贴供应链成熟（国内大量工厂），OEM门槛低",
-        "差异化方向：特殊形状、含活性成分（水杨酸+茶树油）、可爱包装",
-        "North America青少年护肤市场年增长>15%"
+        "创始人IP是差异化竞争最高效路径之一",
+        "大使/KOL矩阵可替代传统广告投放",
+        "Rare Beauty证明彩妆×心理健康=高忠诚度用户"
       ],
       "samples": [
         {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "Mighty Patch Original Patch from Hero Cosmetics — Amazon #4，183,993条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Hero Cosmetics",
+          "platform": "glossy",
+          "title": "Glossy Podcast: Oner Active's Krissy Cela on leveraging ambassadors",
+          "url": "https://www.glossy.co/podcasts/glossy-podcast-oner-actives-krissy-cela-on-leveraging-ambassadors-to-surpass-the-200-million-mark/",
+          "published_at": "2026-07-03T04:00:00Z",
+          "company": "Oner Active",
           "signal_level": "S"
         },
         {
-          "platform": "beautyindependent",
-          "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha",
-          "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-          "published_at": "2026-06-11T04:01:16Z",
-          "company": "Bubble",
+          "platform": "glossy",
+          "title": "Glossy Pop Newsletter: How Meta leveraged Kylie Jenner in its first fashion campaign",
+          "url": "https://www.glossy.co/fashion/glossy-pop-newsletter-how-meta-leveraged-kylie-jenner-peggy-gou-and-substackers-in-its-first-fashion-campaign/",
+          "published_at": "2026-07-03T17:17:30Z",
+          "company": null,
+          "signal_level": "S"
+        },
+        {
+          "platform": "wwd",
+          "title": "Selena Gomez celebrity influence at Taylor Swift rehearsal dinner",
+          "url": "https://wwd.com/pop-culture/celebrity-news/selena-gomez-suki-waterhouse-taylor-swift-rehearsal-dinner-1239052255/",
+          "published_at": "2026-07-03T20:12:41Z",
+          "company": null,
           "signal_level": "A"
         }
       ]
     },
     {
       "hotspot_id": "H05",
-      "title": "关税新政与合规压力：出海美妆卖家面临de minimis收紧+MoCRA新规双重挑战",
-      "summary": "Trump政府加强关税执法（de minimis豁免收紧），直接影响跨境美妆小件直邮模式；与此同时，FDA MoCRA法案（2023年起实施）要求所有在美销售美妆品进行设施注册、不良事件报告和安全性论证，中国出海卖家需在2025-2026年完成合规升级。两项政策同步收紧形成合规双重压力。",
+      "title": "K-Beauty主流化：COSRX蜗牛精华在北美Amazon/TikTok双渠道爆发",
+      "summary": "K-Beauty品牌COSRX、Skin1004在2026年北美市场从'小众韩系'升级为主流护肤选择。COSRX Advanced Snail 96 Mucin Power Essence在Amazon K-Beauty品类增速约30% YoY。TikTok '#skinbarrier'话题将K-Beauty修复概念带入大众视野，蜗牛精华以高浓度活性+低敏设计契合'clean skincare'趋势。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -232,49 +243,51 @@
       "overall_heat_score": 82,
       "coverage": {
         "source_count": 2,
-        "companies": [],
+        "companies": [
+          "COSRX",
+          "Skin1004"
+        ],
         "platforms": [
-          "modernretail",
-          "beautyindependent"
+          "research-enhanced"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "合规能力将成为出海美妆卖家的核心壁垒",
-        "提前完成MoCRA注册+建立责任人体系可形成竞争优势",
-        "关税收紧倒逼海外仓/FBA模式加速"
+        "K-Beauty溢价空间大，北美消费者愿为'韩国正品'多付20-40%",
+        "蜗牛分泌物/发酵类原料在华供应链可行",
+        "Amazon K-Beauty品类竞争强度低于通用护肤"
       ],
       "samples": [
         {
-          "platform": "modernretail",
-          "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid wave of tariff evasion pitches",
-          "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
-          "published_at": "2026-06-11T14:00:00Z",
-          "company": null,
-          "signal_level": "A"
+          "platform": "research-enhanced",
+          "title": "K-Beauty主流化：COSRX/Skin1004北美增速显著",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-01T00:00:00Z",
+          "company": "COSRX",
+          "signal_level": "S"
         },
         {
-          "platform": "modernretail",
-          "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
-          "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
-          "published_at": "2026-06-11T17:00:00Z",
+          "platform": "research-enhanced",
+          "title": "北美功效护肤爆品：K-Beauty增速约30% YoY",
+          "url": "https://www.glossy.co/beauty/",
+          "published_at": "2026-07-03T00:00:00Z",
           "company": null,
-          "signal_level": "A"
+          "signal_level": "S"
         },
         {
-          "platform": "beautyindependent",
-          "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-          "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-          "published_at": "2026-06-12T02:40:05Z",
-          "company": "Remedy",
+          "platform": "research-enhanced",
+          "title": "TikTok #skinbarrier话题推动K-Beauty破圈",
+          "url": "https://www.modernretail.co/marketing/marketplace-briefing-how-a-cartoon-frog-wizard-is-helping-clorox-sell-pine-sol-on-tiktok-shop/",
+          "published_at": "2026-07-02T00:00:00Z",
+          "company": null,
           "signal_level": "A"
         }
       ]
     },
     {
       "hotspot_id": "H06",
-      "title": "清洁美妆/DTC品牌教育营销：Saie \"The Makeup Class\"与TikTok Shop渠道扩张",
-      "summary": "清洁美妆品牌Saie推出\"The Makeup Class\"线下大师班项目在美国多城市巡回，将教育内容转化为品牌粉丝忠诚度；Glossy E-Commerce Summit提炼6大品牌真理：TikTok Shop扩张、DTC韧性、全渠道投资。清洁成分+内容驱动+实体体验融合是北美美妆品牌2026年核心打法。",
+      "title": "Amazon Prime Day提前+美妆促销季前移：品牌备战夏季爆单窗口",
+      "summary": "Amazon 2026年Prime Day提前至6月，带动整个零售行业将促销季前移至夏初。美妆护肤品牌迎来7月4日假期周+Prime Day余波叠加的双重爆单机会。竞争零售商（Sephora/Ulta/Target）同步响应，美妆促销节奏全面加速。品牌需提前备货并调整投放节奏以抓住这一短暂窗口。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -284,44 +297,45 @@
       ],
       "overall_heat_score": 78,
       "coverage": {
-        "source_count": 3,
+        "source_count": 2,
         "companies": [
-          "Saie",
-          "Quince"
+          "Amazon",
+          "Sephora",
+          "Ulta"
         ],
         "platforms": [
-          "glossy",
-          "modernretail"
+          "modernretail",
+          "wwd"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "TikTok Shop美妆品类高速增长，出海卖家应布局TikTok Shop US店铺",
-        "清洁成分标签（Clean Beauty）是北美消费者购买决策关键因素",
-        "内容营销+达人合作是性价比最高的出海获客方式"
+        "Prime Day是美妆全年第二大销售节点",
+        "提前规划可在竞争中领先",
+        "跨境卖家需提前2-3个月安排FBA备货"
       ],
       "samples": [
         {
-          "platform": "glossy",
-          "title": "Saie bets on education with 'The Makeup Class' to create brand 'superfans'",
-          "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-          "published_at": "2026-06-11T04:00:00Z",
-          "company": "Saie",
-          "signal_level": "S"
-        },
-        {
-          "platform": "glossy",
-          "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands' next steps",
-          "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
-          "published_at": "2026-06-12T04:00:00Z",
-          "company": null,
-          "signal_level": "S"
+          "platform": "modernretail",
+          "title": "Back-to-school season has become a summer-long event, thanks to an earlier Prime Day",
+          "url": "https://www.modernretail.co/marketing/back-to-school-season-has-become-a-summer-long-event-thanks-to-an-earlier-prime-day/",
+          "published_at": "2026-07-03T04:00:00Z",
+          "company": "Amazon",
+          "signal_level": "A"
         },
         {
           "platform": "modernretail",
-          "title": "Why the World Cup is a make or break moment for retail this summer",
-          "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
-          "published_at": "2026-06-13T04:00:00Z",
+          "title": "Marketing has a measurement problem that most brands are ignoring",
+          "url": "https://www.modernretail.co/sponsored/marketing-has-a-measurement-problem-that-most-brands-are-ignoring/",
+          "published_at": "2026-07-02T15:41:18Z",
+          "company": null,
+          "signal_level": "A"
+        },
+        {
+          "platform": "wwd",
+          "title": "Fourth of July deals - seasonal promotion trend",
+          "url": "https://wwd.com/shop/shop-shoes/best-fourth-of-july-footwear-sneaker-deals-2026-sale-online-1239052165/",
+          "published_at": "2026-07-03T19:05:41Z",
           "company": null,
           "signal_level": "A"
         }
