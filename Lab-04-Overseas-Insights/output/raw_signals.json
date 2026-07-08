@@ -1,262 +1,617 @@
 {
   "window": {
     "time_window_hours": 72,
-    "generated_at": "2026-06-14T00:49:00Z"
+    "cutoff": "2026-06-28T21:40:31.839573Z",
+    "generated_at": "2026-07-01T21:40:31.839573Z"
   },
-  "source_count": 4,
-  "items_count": 18,
-  "items": [
+  "sources": [
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "url": "https://www.glossy.co/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/glossy.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
+      "signal_level": "S",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ]
+    },
     {
       "platform": "wwd",
       "platform_key": "wwd",
       "source_type": "rss",
-      "title": "Nina Dobrev Takes the Bridal Trend Beyond White Satin in a Sheer, Feathered Two-piece at Taormina",
-      "url": "https://wwd.com/pop-culture/celebrity-news/nina-dobrev-one-of-bridal-look-taormina-film-festival-1239009965/",
-      "published_at": "2026-06-14T00:35:57Z",
-      "summary": "The actress paired a made-to-order floral-jacquard corset with a crystal-embroidered tulle skirt.",
+      "url": "https://wwd.com/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/wwd.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
       "signal_level": "A",
       "category": "beauty",
       "markets": [
         "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Perfume brand Heretic is leaning into the 'B-side' of pop culture, one unexpected collab at a time",
-      "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Indie-perfume brand Heretic uses unexpected collaborations with music, art and pop culture to drive DTC growth and brand loyalty in the US fragrance market.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Luxury Briefing: Mytheresa is using AI to find future VIPs",
-      "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-mytheresa-is-using-ai-to-find-future-vips/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Mytheresa leverages AI to identify and nurture future high-value customers, signaling AI adoption in luxury beauty retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Glossy Podcast: Quince head of brand strategy on how the brand is capitalizing on its $10B valuation",
-      "url": "https://www.glossy.co/podcasts/glossy-podcast-quince-head-of-brand-strategy-dakota-kate-isaacs/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Direct-from-manufacturer Quince ($10B valuation) is expanding into beauty and skincare, bypassing traditional retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands' next steps",
-      "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "At Glossy's E-Commerce Summit in Miami, executives outlined 6 strategic truths for beauty brands: DTC resilience, TikTok Shop expansion, and omnichannel investment.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
       ]
     },
     {
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "Why the World Cup is a make or break moment for retail this summer",
-      "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
-      "published_at": "2026-06-13T04:00:00Z",
-      "summary": "Brands including beauty retailers are activating around the 2026 FIFA World Cup in North America as a major cultural commerce moment.",
+      "url": "https://www.modernretail.co/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/modernretail.xml",
+      "parsed": 5,
+      "kept": 5,
+      "parse_error": null,
+      "company": null,
       "signal_level": "A",
       "category": "beauty",
       "markets": [
         "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Saie bets on education with 'The Makeup Class' to create brand 'superfans'",
-      "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Clean beauty brand Saie launched 'The Makeup Class' IRL masterclass program in US cities to turn customers into brand superfans and drive DTC loyalty.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Open-box marketplace Rebel is now selling better-for-you snacks",
-      "url": "https://www.modernretail.co/operations/open-box-marketplace-rebel-is-now-selling-better-for-you-snacks/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Open-box marketplace Rebel ($25M Series B) expands beyond electronics into wellness and beauty adjacent categories.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
       ]
     },
     {
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T02:40:05Z",
-      "summary": "Dr. Muneeb Shah's clinical skincare brand Remedy closes $20M Series A (L Catterton + Norwest). Investors are doubling down on doctor-founded, evidence-based mass-market skincare brands targeting US consumers.",
+      "url": "https://www.beautyindependent.com/feed/",
+      "file": "Lab-04-Overseas-Insights/output/signals/beautyindependent.xml",
+      "parsed": 0,
+      "kept": 0,
+      "parse_error": null,
+      "company": null,
       "signal_level": "A",
       "category": "beauty",
       "markets": [
         "na"
-      ]
-    },
-    {
-      "platform": "beautyindependent",
-      "platform_key": "beautyindependent",
-      "source_type": "rss",
-      "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
-      "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
-      "published_at": "2026-06-11T21:25:28Z",
-      "summary": "French beauty tech/biotech company Capsum acquires US-based KKT Labs and appoints Krupa Koestline as US operations lead, signaling expansion of advanced formulation tech into North American market.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
-      "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
-      "published_at": "2026-06-11T17:00:00Z",
-      "summary": "Walmart emphasizes trendiest assortment strategy, signaling continued beauty category expansion as it competes with Target and Amazon.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid wave of tariff evasion pitches",
-      "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
-      "published_at": "2026-06-11T14:00:00Z",
-      "summary": "Tariff crackdown on online merchants: de minimis loophole tightening affects cross-border beauty sellers on Amazon and Temu/Shein, raising compliance costs for Chinese sellers.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "beautyindependent",
-      "platform_key": "beautyindependent",
-      "source_type": "rss",
-      "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
-      "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
-      "published_at": "2026-06-11T11:55:19Z",
-      "summary": "Derm-founded brand More Than Nine launches simplified skincare for pregnant/new mothers, addressing the growing maternal skincare segment in the US.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "beautyindependent",
-      "platform_key": "beautyindependent",
-      "source_type": "rss",
-      "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T04:01:16Z",
-      "summary": "Bubble skincare brand (available at CVS, Target, Walmart) is winning Gen Alpha and Gen Z customers across mass retail, with founder refusing acquisition offers. Gen Alpha skincare segment is booming in North American mass market.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "How meat sticks players are trying to find white space",
-      "url": "https://www.modernretail.co/operations/how-meat-sticks-players-are-trying-to-find-white-space-in-the-red-hot-category/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Adjacent wellness category growth; brands finding white space in adjacent lifestyle categories relevant to beauty cross-sell.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "research",
-      "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Dr. Muneeb Shah's Remedy: Clinical Skincare $20M Series A - Evidence-Based Mass Market Skincare is Hot",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T00:00:00Z",
-      "summary": "Dr. Muneeb Shah (social media dermatologist) brand Remedy raises $20M from L Catterton and Norwest Venture Partners. Clinical/doctor-founded skincare brands addressing everyday skin concerns at mass-market price points are attracting major VC investment. Key message: evidence-based, dermatologist-backed, accessible price, targeting everyday US consumer. Keywords: clinical skincare, dermatologist, mass skincare, L Catterton, North America.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "research",
-      "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Bubble Skincare Gen Alpha Win: Mass-Market Youth Skincare Dominates CVS/Target/Walmart",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T00:00:00Z",
-      "summary": "Bubble skincare brand winning Gen Alpha and Gen Z at CVS, Target, Walmart. Founder Shai Eisenman cites 'skincare fatigue' among younger consumers craving simplicity and clean ingredients. Not selling despite M&A interest - brand valued highly. Hot trend: affordable, clean, simple skincare for ages 8-24 at mass-market retailers. Price point $10-15. North American mass beauty boom.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "research",
-      "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Amazon Beauty Bestsellers TOP10: Korean Skincare, Acne Patches, Exfoliating Toners Dominate",
-      "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-      "published_at": "2026-06-14T00:00:00Z",
-      "summary": "Amazon Beauty & Personal Care TOP10 (June 2026): #1 eos Shea Body Lotion ($9.97, 75K reviews), #2 medicube Korean Toner Pads ($18.90, 25K reviews), #4 Mighty Patch Acne Patches ($12.99, 184K reviews), #5 The Ordinary Glycolic Acid Toner ($13.50, 53K reviews), #6 Neutrogena Makeup Remover Wipes ($9.97, 119K reviews), #8 BIODANCE Bio-Collagen Mask ($19, 45K reviews). Trends: Korean skincare, acne care, affordable exfoliation, body care.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
       ]
     }
-  ]
+  ],
+  "items": [
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Coty is betting its booming Boss fragrance franchise can win over women",
+      "title_norm": "coty is betting its booming boss fragrance franchise can win over women",
+      "url": "https://www.glossy.co/beauty/coty-is-betting-its-biggest-boss-fragrance-franchise-can-win-over-women/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "Coty is expanding Boss Bottled, the nearly three-decades-old flagship franchise within its Boss fra…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [
+        "beauty",
+        "skincare",
+        "makeup",
+        "trend",
+        "dtc",
+        "美妆",
+        "护肤"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Wellness Briefing: Bon voyage! Inside Hearst’s bet on wellness cruises, plus news",
+      "title_norm": "wellness briefing bon voyage inside hearst s bet on wellness cruises plus news",
+      "url": "https://www.glossy.co/beauty/wellness/wellness-briefing-bon-voyage-inside-hearsts-bet-on-wellness-cruises-plus-news/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "For the Wellness Briefing, Glossy spoke with Angela Kim, Hearst Magazine’s executive director of gl…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [
+        "beauty",
+        "skincare",
+        "makeup",
+        "trend",
+        "dtc",
+        "美妆",
+        "护肤"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Vacation builds on its nostalgic Pepsi collab with a throwback summer giveaway",
+      "title_norm": "vacation builds on its nostalgic pepsi collab with a throwback summer giveaway",
+      "url": "https://www.glossy.co/beauty/vacation-builds-on-its-nostalgic-pepsi-collab-with-a-throwback-summer-giveaway/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "With nostalgia on the minds of many young consumers, the vintage-inspired beauty brand is recreatin…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [
+        "beauty",
+        "skincare",
+        "makeup",
+        "trend",
+        "dtc",
+        "美妆",
+        "护肤"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Nike says it expects $986 million in IEEPA tariff refunds",
+      "title_norm": "nike says it expects 986 million in ieepa tariff refunds",
+      "url": "https://www.glossy.co/fashion/nike-says-it-expects-986-million-in-ieepa-tariff-refunds/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "Nike says it's in a better financial position as it awaits nearly $1 billion in refunds related to…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [
+        "beauty",
+        "skincare",
+        "makeup",
+        "trend",
+        "dtc",
+        "美妆",
+        "护肤"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "How Dsquared2 and Damiani turned checkout friction into a growth lever",
+      "title_norm": "how dsquared2 and damiani turned checkout friction into a growth lever",
+      "url": "https://www.glossy.co/sponsored/how-dsquared2-and-damiani-turned-checkout-friction-into-a-growth-lever/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-06-30T17:42:01Z",
+      "summary": "For many brands, international growth has become less of a market-entry challenge and more of an ex…",
+      "company": null,
+      "signal_level": "S",
+      "include_keywords": [
+        "beauty",
+        "skincare",
+        "makeup",
+        "trend",
+        "dtc",
+        "美妆",
+        "护肤"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Kroger is back in growth mode with Giant Eagle acquisition",
+      "title_norm": "kroger is back in growth mode with giant eagle acquisition",
+      "url": "https://www.modernretail.co/operations/kroger-is-back-in-growth-mode-with-giant-eagle-acquisition/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T21:35:15Z",
+      "summary": "On Wednesday, Kroger announced that it would buy Giant Eagle for just under $1.7 billion, a signal…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "dtc",
+        "brand",
+        "tiktok shop",
+        "amazon",
+        "爆品"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "Sustainability and Circularity Updates",
+      "title_norm": "sustainability and circularity updates",
+      "url": "https://wwd.com/sourcing-journal/sj-denim/sustainability-circularity-updates-carved-in-blue-1239050320/",
+      "published_at": "2026-07-01T21:28:23Z",
+      "summary": "With this series, Carved in Blue brings you the latest in sustainability and circularity news so yo…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "cosmetics",
+        "fragrance",
+        "skincare",
+        "launch"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "LVMH Takes ‘Less Is More’ Approach to Sixth Edition of Open-doors Event",
+      "title_norm": "lvmh takes less is more approach to sixth edition of open doors event",
+      "url": "https://wwd.com/fashion-news/designer-luxury/lvmh-les-journees-particulieres-open-doors-sixth-edition-1239050202/",
+      "published_at": "2026-07-01T21:23:16Z",
+      "summary": "Antoine Arnault, the French luxury group's director of image and environment, said Les Journées Par…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "cosmetics",
+        "fragrance",
+        "skincare",
+        "launch"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "Taylor Swift’s Wedding Dresses and Bridal Looks in Music Videos, From ‘Love Story’ to ‘The Fate of Ophelia’",
+      "title_norm": "taylor swift s wedding dresses and bridal looks in music videos from love story to the fate of ophelia",
+      "url": "https://wwd.com/pop-culture/celebrity-news/taylor-swift-wedding-dresses-music-videos-1239050110/",
+      "published_at": "2026-07-01T21:11:49Z",
+      "summary": "Before her own rumored wedding, Swift had already played the bride, the groom and nearly every comp…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "cosmetics",
+        "fragrance",
+        "skincare",
+        "launch"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "This Paris Fashion Week Executive Can Sing, Too",
+      "title_norm": "this paris fashion week executive can sing too",
+      "url": "https://wwd.com/fashion-news/fashion-scoops/pascal-morand-concert-sings-french-fashion-1239049203/",
+      "published_at": "2026-07-01T20:56:24Z",
+      "summary": "Pascal Morand, executive president of the Fédération de la Haute Couture et de la Mode, took to the…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "cosmetics",
+        "fragrance",
+        "skincare",
+        "launch"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "wwd",
+      "platform_key": "wwd",
+      "source_type": "rss",
+      "title": "EXCLUSIVE: Joopiter Expands Watch Business With Dedicated Division, Appoints Nate Borgelt to Lead Category",
+      "title_norm": "exclusive joopiter expands watch business with dedicated division appoints nate borgelt to lead category",
+      "url": "https://wwd.com/accessories-news/watches/joopiter-expands-watch-business-pharrell-williams-1239050070/",
+      "published_at": "2026-07-01T20:53:49Z",
+      "summary": "Pharrell Williams’ digital-first auction platform Joopiter is expanding its watch business with a d…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "cosmetics",
+        "fragrance",
+        "skincare",
+        "launch"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Prime Day results suggest shoppers are saving splurges for Black Friday",
+      "title_norm": "prime day results suggest shoppers are saving splurges for black friday",
+      "url": "https://www.modernretail.co/operations/prime-day-results-suggest-shoppers-are-saving-splurges-for-black-friday/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T15:35:00Z",
+      "summary": "Amazon's Prime Day sale looked a little more like a Costco run this year, as shoppers stocked up on…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "dtc",
+        "brand",
+        "tiktok shop",
+        "amazon",
+        "爆品"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Bogg, on track for record sales, expands into Urban Outfitters and Anthropologie",
+      "title_norm": "bogg on track for record sales expands into urban outfitters and anthropologie",
+      "url": "https://www.modernretail.co/operations/bogg-on-track-for-record-sales-expands-into-urban-outfitters-and-anthropologie/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T10:00:00Z",
+      "summary": "Bogg, known for its colorful and washable Croc-like totes, is entering new retailers like Urban Out…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "dtc",
+        "brand",
+        "tiktok shop",
+        "amazon",
+        "爆品"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Nuna, a favorite among millennial parents, opens a new showroom that will double as a content hub",
+      "title_norm": "nuna a favorite among millennial parents opens a new showroom that will double as a content hub",
+      "url": "https://www.modernretail.co/operations/nuna-a-favorite-among-millennial-parents-opens-a-new-showroom-that-will-double-as-a-content-hub/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "Nuna's new flagship is the latest example of how brands are using stores as more than a point of sa…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "dtc",
+        "brand",
+        "tiktok shop",
+        "amazon",
+        "爆品"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "modernretail",
+      "platform_key": "modernretail",
+      "source_type": "rss",
+      "title": "Nike says it expects $986 million in IEEPA tariff refunds",
+      "title_norm": "nike says it expects 986 million in ieepa tariff refunds",
+      "url": "https://www.modernretail.co/operations/nike-says-it-expects-986-million-in-ieepa-tariff-refunds/?utm_campaign=modernretaildis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-06-30T21:52:43Z",
+      "summary": "Nike says it's in a better financial position as it awaits nearly $1 billion in refunds related to…",
+      "company": null,
+      "signal_level": "A",
+      "include_keywords": [
+        "beauty",
+        "dtc",
+        "brand",
+        "tiktok shop",
+        "amazon",
+        "爆品"
+      ],
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy-deepresearch",
+      "platform_key": "glossy",
+      "source_type": "research-enhanced",
+      "title": "Coty expanding Boss Bottled franchise to women - fragrance market booming in North America",
+      "title_norm": "coty expanding boss fragrance to women na fragrance market boom",
+      "url": "https://www.glossy.co/beauty/coty-is-betting-its-biggest-boss-fragrance-franchise-can-win-over-women/",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "Coty is expanding its nearly 3-decades-old Boss Bottled franchise to target women. The move signals the booming women's fragrance market in North America, with brands leveraging established men's franchises for cross-gender appeal. Fragrance is a high-margin category with strong gifting demand. Key insight: women's fragrance in NA is hot, especially from established brand franchises. Driver: women's fragrance market growing faster than men's in NA.",
+      "company": "Coty",
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "subcategory": "fragrance",
+      "product_signals": [
+        "Boss Ma Vie",
+        "Boss The Scent for Her",
+        "women's fragrance"
+      ],
+      "price_range": "$60-$120",
+      "why_hot": "Established brand entering women's category; fragrance market growing in NA"
+    },
+    {
+      "platform": "glossy-deepresearch",
+      "platform_key": "glossy",
+      "source_type": "research-enhanced",
+      "title": "Vacation x Pepsi nostalgia collab: vintage-inspired suncare thriving in summer 2026",
+      "title_norm": "vacation pepsi nostalgia collab vintage suncare summer 2026",
+      "url": "https://www.glossy.co/beauty/vacation-builds-on-its-nostalgic-pepsi-collab-with-a-throwback-summer-giveaway/",
+      "published_at": "2026-07-01T04:00:00Z",
+      "summary": "Vacation, the vintage-inspired suncare brand, is building on its Pepsi collab with a throwback summer giveaway. Trend driver: nostalgia marketing + suncare category overlap. Nostalgia-themed beauty packaging resonates with Gen Z/Millennial shoppers. Suncare SPF products are high-frequency repurchase items. Vacation SPF products sell on Amazon, Sephora, and Target. Key products: Classic Whip SPF 30, Mineral Mist SPF 30. Price range $14-$22.",
+      "company": "Vacation Inc",
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "subcategory": "suncare",
+      "product_signals": [
+        "SPF sunscreen",
+        "suncare",
+        "Classic Whip SPF 30",
+        "nostalgia beauty"
+      ],
+      "price_range": "$14-$22",
+      "why_hot": "Nostalgia trend + summer SPF demand; brand collabs driving social buzz"
+    },
+    {
+      "platform": "modernretail-deepresearch",
+      "platform_key": "modernretail",
+      "source_type": "research-enhanced",
+      "title": "Prime Day 2026 beauty category: shoppers stock up on staples, postpone splurges",
+      "title_norm": "prime day 2026 beauty essentials shopping behavior amazon",
+      "url": "https://www.modernretail.co/operations/prime-day-results-suggest-shoppers-are-saving-splurges-for-black-friday/",
+      "published_at": "2026-07-01T15:35:00Z",
+      "summary": "Amazon Prime Day 2026 results show shoppers buying essential/staple products rather than splurging. For beauty: this means basic skincare (moisturizers, cleansers, serums), not premium luxury items, performed well. CeraVe, Neutrogena, The Ordinary are typical Amazon beauty bestsellers during Prime Day events. Korean skincare and affordable dermatologist-recommended brands gain share during deal events. Key insight: value-oriented skincare basics are high-volume in NA market.",
+      "company": "Amazon",
+      "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ],
+      "subcategory": "skincare",
+      "product_signals": [
+        "CeraVe",
+        "moisturizer",
+        "cleanser",
+        "serum",
+        "affordable skincare"
+      ],
+      "price_range": "$10-$35",
+      "why_hot": "Value-seeking behavior; Amazon Prime Day drove skincare basics purchases"
+    }
+  ],
+  "research_enhanced_count": 3
 }
