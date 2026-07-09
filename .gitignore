@@ -45,4 +45,5 @@ Thumbs.db
 Lab-01-Tech-Insights/output/*
 !Lab-01-Tech-Insights/output/report.md
 Lab-03-GitHub-Copilot/output/
-Lab-04-Overseas-Insights/output/
+Lab-04-Overseas-Insights/output/*
+!Lab-04-Overseas-Insights/output/report.md
