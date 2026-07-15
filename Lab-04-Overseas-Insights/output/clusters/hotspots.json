@@ -4,8 +4,8 @@
   "hotspots": [
     {
       "hotspot_id": "H01",
-      "title": "临床护肤/医生品牌爆发：Remedy获$20M融资，投资人押注循证美妆",
-      "summary": "Dr. Muneeb Shah（社媒皮肤科医生）旗下品牌Remedy完成$20M A轮融资（L Catterton+Norwest），标志着\"医生背书+大众价位\"的临床护肤品牌在北美持续获得资本青睐。同期Capsum收购KKT Labs布局美国市场，印证高功效配方技术出海机遇。",
+      "title": "成分党主权：The Ordinary、CeraVe、La Roche-Posay主导AI美容搜索引用",
+      "summary": "5W AI Communications报告显示，成分导向护肤品牌（The Ordinary、CeraVe、La Roche-Posay、Charlotte Tilbury）在ChatGPT/Perplexity/Gemini等AI搜索中美妆引用量遥遥领先。AI搜索正在重塑北美消费者美妆发现路径，科学配方+皮肤科背书成为入场必要条件。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -13,111 +13,56 @@
       "markets": [
         "na"
       ],
-      "overall_heat_score": 88,
+      "overall_heat_score": 95,
       "coverage": {
         "source_count": 2,
         "companies": [
-          "Remedy",
-          "Capsum",
-          "KKT Labs"
+          "The Ordinary",
+          "CeraVe",
+          "La Roche-Posay",
+          "Charlotte Tilbury"
         ],
         "platforms": [
-          "beautyindependent",
-          "research"
+          "glossy"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "临床+平价护肤是北美2025-2026年最强投资主题之一",
-        "医生KOL驱动的品牌在TikTok/YouTube有自然流量优势",
-        "出海选品方向：开发皮肤科背书的精华液/面霜OEM产品线"
+        "AI搜索引用量直接影响品牌发现与转化",
+        "成分党消费者增长趋势确定",
+        "出海品牌需优化AI可见度"
       ],
       "samples": [
         {
-          "platform": "beautyindependent",
-          "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-          "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-          "published_at": "2026-06-12T02:40:05Z",
-          "company": "Remedy",
-          "signal_level": "A"
+          "platform": "glossy",
+          "title": "Ingredient-led brands are dominating AI beauty citations",
+          "url": "https://www.glossy.co/beauty/ingredient-led-brands-are-dominating-ai-beauty-citations/",
+          "published_at": "2026-07-15T04:00:00Z",
+          "company": "The Ordinary / CeraVe",
+          "signal_level": "S"
         },
         {
           "platform": "beautyindependent",
-          "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
-          "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
-          "published_at": "2026-06-11T21:25:28Z",
-          "company": "Capsum",
+          "title": "Why This Investor Is Passing On Prestige Skincare",
+          "url": "https://www.beautyindependent.com/cutting-horse-investor-prestige-skincare-paying-attention-instead/",
+          "published_at": "2026-07-14T22:51:39Z",
+          "company": "Cutting Horse Capital",
           "signal_level": "A"
         },
         {
-          "platform": "research",
-          "title": "Amazon Beauty Best Sellers: 临床成分（AHA/BHA/Glycolic Acid）产品占据TOP5",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Amazon",
+          "platform": "glossy",
+          "title": "Beauty Briefing: Urban Outfitters doubles down on Gen Zalpha beauty",
+          "url": "https://www.glossy.co/beauty/beauty-briefing-urban-outfitters-doubles-down-on-gen-zalpha-beauty-with-yes-day-and-coty-offloads-gucci-ahead-of-schedule/",
+          "published_at": "2026-07-14T04:00:00Z",
+          "company": "Urban Outfitters",
           "signal_level": "S"
         }
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Gen Alpha护肤崛起：Bubble品牌CVS/Target/Walmart全渠道布局，拒绝出售",
-      "summary": "Bubble护肤品牌创始人Shai Eisenman披露品牌在Gen Alpha（8-12岁）和Gen Z群体中的统治力，分布在CVS/Target/Walmart大众渠道，创始人暂拒M&A。\"护肤疲劳\"（skincare fatigue）现象提示：年轻消费者转向简洁、平价、清洁成分产品，$10-15价格带是甜蜜点。",
-      "category": "trend",
-      "categories": [
-        "beauty"
-      ],
-      "markets": [
-        "na"
-      ],
-      "overall_heat_score": 85,
-      "coverage": {
-        "source_count": 2,
-        "companies": [
-          "Bubble"
-        ],
-        "platforms": [
-          "beautyindependent",
-          "research"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "北美Gen Alpha护肤市场规模快速增长，$10-15价格带竞争激烈但机会大",
-        "简洁配方（5种以内成分）+清洁标签是核心差异化",
-        "大众渠道（CVS/Target/Walmart）铺货路径成熟"
-      ],
-      "samples": [
-        {
-          "platform": "beautyindependent",
-          "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
-          "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-          "published_at": "2026-06-11T04:01:16Z",
-          "company": "Bubble",
-          "signal_level": "A"
-        },
-        {
-          "platform": "beautyindependent",
-          "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
-          "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
-          "published_at": "2026-06-11T11:55:19Z",
-          "company": "More Than Nine",
-          "signal_level": "A"
-        },
-        {
-          "platform": "research",
-          "title": "Amazon Beauty Best Sellers: eos、Neutrogena等平价品牌占据TOP榜单",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Amazon",
-          "signal_level": "S"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H03",
-      "title": "韩系护肤（K-Beauty）持续爆发：medicube等品牌Amazon TOP2，多酸棉片成爆款品类",
-      "summary": "medicube Toner Pads Zero Pore Pad 2.0在Amazon Beauty Best Sellers占据#2（25,688条评价，$18.90），BIODANCE Bio-Collagen Mask排名#8（45,847条评价）。韩国护肤品牌通过Amazon+TikTok渠道在北美攻城略地，多酸（AHA+BHA）+胶原蛋白水凝胶面膜是两个核心爆品品类。",
+      "title": "TikTok Shop连续两季度逼近$1B美妆销售：K-beauty医美级爆品驱动",
+      "summary": "TikTok Shop美妆销售连续第二季度逼近$10亿，Medicube、Dr. Melaxin等K-beauty医美级品牌是主要驱动力。社交电商已成北美美妆发现与冲动购买的主战场，品牌需深度融入TikTok内容生态。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -129,99 +74,53 @@
       "coverage": {
         "source_count": 2,
         "companies": [
-          "medicube",
-          "BIODANCE",
-          "Hero Cosmetics"
+          "Medicube",
+          "Dr. Melaxin",
+          "TikTok Shop",
+          "Ulta Beauty"
         ],
         "platforms": [
-          "amazon-bestsellers-beauty",
-          "research"
+          "beautyindependent",
+          "modernretail"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "K-Beauty在北美增速超过美国本土品牌，OEM/ODM仿制机会大",
-        "多酸棉片+水凝胶面膜都是成熟供应链，国内工厂可OEM",
-        "价格带$15-25，利润空间充足"
+        "平台销售体量达到$1B级别验证渠道价值",
+        "K-beauty爆品逻辑可复用",
+        "社交电商渗透率持续提升"
       ],
       "samples": [
         {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "medicube Toner Pads Zero Pore Pad 2.0 — Amazon #2 Best Seller，4.6★，25,688条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "medicube",
-          "signal_level": "S"
-        },
-        {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "BIODANCE Bio-Collagen Real Deep Mask — Amazon #8 Best Seller，4.5★，45,847条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "BIODANCE",
-          "signal_level": "S"
-        },
-        {
-          "platform": "glossy",
-          "title": "Perfume brand Heretic is leaning into the 'B-side' of pop culture",
-          "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
-          "published_at": "2026-06-12T04:00:00Z",
-          "company": "Heretic",
-          "signal_level": "S"
-        }
-      ]
-    },
-    {
-      "hotspot_id": "H04",
-      "title": "痘痘贴/祛痘护理：Mighty Patch 183K+评价，北美祛痘品类持续高热",
-      "summary": "Mighty Patch Original（Hero Cosmetics）在Amazon Beauty Best Sellers排名#4，拥有183,993条评价（北美美妆类评价数第一），评分4.6★，$12.99/36片。水胶体技术+TikTok病毒式传播驱动，痘痘贴已成北美年轻肌肤护理核心单品，并渗透实体渠道（Target/Walgreens/CVS）。",
-      "category": "single",
-      "categories": [
-        "beauty"
-      ],
-      "markets": [
-        "na"
-      ],
-      "overall_heat_score": 87,
-      "coverage": {
-        "source_count": 1,
-        "companies": [
-          "Hero Cosmetics",
-          "Mighty Patch"
-        ],
-        "platforms": [
-          "amazon-bestsellers-beauty"
-        ]
-      },
-      "should_chase": "yes",
-      "chase_rationale": [
-        "水胶体痘痘贴供应链成熟（国内大量工厂），OEM门槛低",
-        "差异化方向：特殊形状、含活性成分（水杨酸+茶树油）、可爱包装",
-        "North America青少年护肤市场年增长>15%"
-      ],
-      "samples": [
-        {
-          "platform": "amazon-bestsellers-beauty",
-          "title": "Mighty Patch Original Patch from Hero Cosmetics — Amazon #4，183,993条评价",
-          "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-          "published_at": "2026-06-14T00:00:00Z",
-          "company": "Hero Cosmetics",
-          "signal_level": "S"
+          "platform": "beautyindependent",
+          "title": "TikTok Shop Nears $1B In Beauty Sales For A Second Straight Quarter",
+          "url": "https://www.beautyindependent.com/tiktok-shop-nears-1b-beauty-sales-second-straight-quarter/",
+          "published_at": "2026-07-14T04:01:33Z",
+          "company": "TikTok Shop",
+          "signal_level": "A"
         },
         {
           "platform": "beautyindependent",
-          "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha",
-          "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-          "published_at": "2026-06-11T04:01:16Z",
-          "company": "Bubble",
+          "title": "TikTok Shop $1B K-beauty Medicube Dr. Melaxin trending",
+          "url": "https://www.beautyindependent.com/tiktok-shop-nears-1b-beauty-sales-second-straight-quarter/",
+          "published_at": "2026-07-14T04:01:33Z",
+          "company": "Medicube",
+          "signal_level": "A"
+        },
+        {
+          "platform": "modernretail",
+          "title": "The state of agentic storefronts: AI-guided shopping",
+          "url": "https://www.modernretail.co/sponsored/the-state-of-agentic-storefronts-how-ai-agents-guide-shoppers-on-frictionless-full-funnel-journeys/",
+          "published_at": "2026-07-15T20:22:52Z",
+          "company": "Swap",
           "signal_level": "A"
         }
       ]
     },
     {
-      "hotspot_id": "H05",
-      "title": "关税新政与合规压力：出海美妆卖家面临de minimis收紧+MoCRA新规双重挑战",
-      "summary": "Trump政府加强关税执法（de minimis豁免收紧），直接影响跨境美妆小件直邮模式；与此同时，FDA MoCRA法案（2023年起实施）要求所有在美销售美妆品进行设施注册、不良事件报告和安全性论证，中国出海卖家需在2025-2026年完成合规升级。两项政策同步收紧形成合规双重压力。",
+      "hotspot_id": "H03",
+      "title": "香水品类持续跑赢：gourmand香调、香氛分层、wellness定位高增长",
+      "summary": "Givaudan等大型香精巨头加码独立香水屋，gourmand（甜食）香调、香氛分层（scent layering）、wellness定位香水成为北美市场高增长细分。香水品类增速持续超越整体美妆。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -229,52 +128,54 @@
       "markets": [
         "na"
       ],
-      "overall_heat_score": 82,
+      "overall_heat_score": 80,
       "coverage": {
-        "source_count": 2,
-        "companies": [],
+        "source_count": 1,
+        "companies": [
+          "Givaudan",
+          "Custom Essence"
+        ],
         "platforms": [
-          "modernretail",
           "beautyindependent"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "合规能力将成为出海美妆卖家的核心壁垒",
-        "提前完成MoCRA注册+建立责任人体系可形成竞争优势",
-        "关税收紧倒逼海外仓/FBA模式加速"
+        "香水品类增速超越整体美妆行业",
+        "独立香水屋吸引资本背书",
+        "gourmand/wellness香调为可出口细分"
       ],
       "samples": [
         {
-          "platform": "modernretail",
-          "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid wave of tariff evasion pitches",
-          "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
-          "published_at": "2026-06-11T14:00:00Z",
-          "company": null,
-          "signal_level": "A"
-        },
-        {
-          "platform": "modernretail",
-          "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
-          "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
-          "published_at": "2026-06-11T17:00:00Z",
-          "company": null,
+          "platform": "beautyindependent",
+          "title": "Inside The Givaudan-Backed Expansion Of Fragrance House Custom Essence",
+          "url": "https://www.beautyindependent.com/inside-givaudan-backed-expansion-fragrance-house-custom-essence/",
+          "published_at": "2026-07-14T22:49:46Z",
+          "company": "Custom Essence / Givaudan",
           "signal_level": "A"
         },
         {
           "platform": "beautyindependent",
-          "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-          "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-          "published_at": "2026-06-12T02:40:05Z",
-          "company": "Remedy",
+          "title": "Fragrance outperforming other beauty segments",
+          "url": "https://www.beautyindependent.com/inside-givaudan-backed-expansion-fragrance-house-custom-essence/",
+          "published_at": "2026-07-14T22:49:46Z",
+          "company": "Givaudan",
           "signal_level": "A"
+        },
+        {
+          "platform": "glossy",
+          "title": "Beauty Briefing: Coty offloads Gucci fragrance ahead of schedule",
+          "url": "https://www.glossy.co/beauty/beauty-briefing-urban-outfitters-doubles-down-on-gen-zalpha-beauty-with-yes-day-and-coty-offloads-gucci-ahead-of-schedule/",
+          "published_at": "2026-07-14T04:00:00Z",
+          "company": "Coty",
+          "signal_level": "S"
         }
       ]
     },
     {
-      "hotspot_id": "H06",
-      "title": "清洁美妆/DTC品牌教育营销：Saie \"The Makeup Class\"与TikTok Shop渠道扩张",
-      "summary": "清洁美妆品牌Saie推出\"The Makeup Class\"线下大师班项目在美国多城市巡回，将教育内容转化为品牌粉丝忠诚度；Glossy E-Commerce Summit提炼6大品牌真理：TikTok Shop扩张、DTC韧性、全渠道投资。清洁成分+内容驱动+实体体验融合是北美美妆品牌2026年核心打法。",
+      "hotspot_id": "H04",
+      "title": "Gen Zalpha美妆：Youth-oriented品牌崛起，Reality TV成营销引擎",
+      "summary": "Urban Outfitters以Yes Day品牌深耕Gen Z/Alpha美妆消费者，Love Island USA成为品牌营销重要媒介。年轻美妆消费者（1995-2012年出生）带动平价、趣味、个性化美妆产品需求大涨。",
       "category": "trend",
       "categories": [
         "beauty"
@@ -284,45 +185,153 @@
       ],
       "overall_heat_score": 78,
       "coverage": {
-        "source_count": 3,
+        "source_count": 2,
         "companies": [
-          "Saie",
-          "Quince"
+          "Urban Outfitters",
+          "Coty"
         ],
         "platforms": [
-          "glossy",
-          "modernretail"
+          "glossy"
         ]
       },
       "should_chase": "yes",
       "chase_rationale": [
-        "TikTok Shop美妆品类高速增长，出海卖家应布局TikTok Shop US店铺",
-        "清洁成分标签（Clean Beauty）是北美消费者购买决策关键因素",
-        "内容营销+达人合作是性价比最高的出海获客方式"
+        "Gen Z/Alpha拥有强大消费影响力",
+        "Reality TV/社媒联动放大品牌声量",
+        "平价美妆渗透率快速提升"
       ],
       "samples": [
         {
           "platform": "glossy",
-          "title": "Saie bets on education with 'The Makeup Class' to create brand 'superfans'",
-          "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-          "published_at": "2026-06-11T04:00:00Z",
-          "company": "Saie",
+          "title": "Urban Outfitters doubles down on Gen Zalpha beauty with Yes Day",
+          "url": "https://www.glossy.co/beauty/beauty-briefing-urban-outfitters-doubles-down-on-gen-zalpha-beauty-with-yes-day-and-coty-offloads-gucci-ahead-of-schedule/",
+          "published_at": "2026-07-14T04:00:00Z",
+          "company": "Urban Outfitters",
           "signal_level": "S"
         },
         {
           "platform": "glossy",
-          "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands' next steps",
-          "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
-          "published_at": "2026-06-12T04:00:00Z",
-          "company": null,
+          "title": "Brands won this season of Love Island USA",
+          "url": "https://www.glossy.co/beauty/brands-won-this-season-of-love-island-usa/",
+          "published_at": "2026-07-14T04:00:00Z",
+          "company": "Love Island USA Brands",
+          "signal_level": "S"
+        },
+        {
+          "platform": "glossy",
+          "title": "Wellness Briefing: hormone tracking wearables for women",
+          "url": "https://www.glossy.co/beauty/wellness/wellness-briefing-is-hormone-tracking-the-future-of-womens-wearables-plus-news/",
+          "published_at": "2026-07-15T04:00:00Z",
+          "company": "Femtech startup",
+          "signal_level": "S"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H05",
+      "title": "美妆并购重组：雅诗兰黛-Puig失败，独立品牌估值承压",
+      "summary": "雅诗兰黛与Puig的并购在5月破裂，市场对美妆大型并购持审慎态度。同时Covey（名人护肤品牌）关闭，独立美妆品牌在高融资成本下估值承压，投资人转向成分导向型价值品牌。",
+      "category": "single",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 72,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Estee Lauder",
+          "Puig",
+          "Covey"
+        ],
+        "platforms": [
+          "beautyindependent"
+        ]
+      },
+      "should_chase": "no",
+      "chase_rationale": [
+        "并购失败对出海选品影响有限",
+        "关注独立品牌估值逻辑对自有品牌规划有参考价值"
+      ],
+      "samples": [
+        {
+          "platform": "beautyindependent",
+          "title": "After The Estée Lauder-Puig Collapse, Which Beauty Mergers Would Actually Work?",
+          "url": "https://www.beautyindependent.com/estee-lauder-puig-collapse-which-beauty-mergers-actually-work/",
+          "published_at": "2026-07-14T22:52:03Z",
+          "company": "Estee Lauder / Puig",
+          "signal_level": "A"
+        },
+        {
+          "platform": "beautyindependent",
+          "title": "Emily DiDonato Skincare Brand Covey Shutters",
+          "url": "https://www.beautyindependent.com/emily-didonato-skincare-brand-covey-shutters/",
+          "published_at": "2026-07-13T23:00:05Z",
+          "company": "Covey",
+          "signal_level": "A"
+        },
+        {
+          "platform": "beautyindependent",
+          "title": "Why This Investor Is Passing On Prestige Skincare",
+          "url": "https://www.beautyindependent.com/cutting-horse-investor-prestige-skincare-paying-attention-instead/",
+          "published_at": "2026-07-14T22:51:39Z",
+          "company": "Cutting Horse Capital",
+          "signal_level": "A"
+        }
+      ]
+    },
+    {
+      "hotspot_id": "H06",
+      "title": "进口激增+女性健康可穿戴：供应链紧张与femtech新兴赛道",
+      "summary": "美国港口7月进口量预计创历史新高，零售商提前备货应对关税不确定性。与此同时，22岁创始人Jenny Duan获超$1M融资开发激素追踪女性可穿戴，femtech与美妆健康融合趋势值得关注。",
+      "category": "single",
+      "categories": [
+        "beauty"
+      ],
+      "markets": [
+        "na"
+      ],
+      "overall_heat_score": 65,
+      "coverage": {
+        "source_count": 2,
+        "companies": [
+          "Jenny Duan/Femtech"
+        ],
+        "platforms": [
+          "modernretail",
+          "glossy"
+        ]
+      },
+      "should_chase": "yes",
+      "chase_rationale": [
+        "进口激增信号表明备货窗口缩短，出海卖家需提前规划",
+        "femtech可穿戴是美妆健康交叉新兴赛道"
+      ],
+      "samples": [
+        {
+          "platform": "modernretail",
+          "title": "Ports brace for record-high imports in July",
+          "url": "https://www.modernretail.co/operations/ports-brace-for-record-high-imports-in-july/",
+          "published_at": "2026-07-13T14:00:00Z",
+          "company": "US Ports",
+          "signal_level": "A"
+        },
+        {
+          "platform": "glossy",
+          "title": "Wellness Briefing: Is hormone tracking the future of women's wearables?",
+          "url": "https://www.glossy.co/beauty/wellness/wellness-briefing-is-hormone-tracking-the-future-of-womens-wearables-plus-news/",
+          "published_at": "2026-07-15T04:00:00Z",
+          "company": "Jenny Duan",
           "signal_level": "S"
         },
         {
           "platform": "modernretail",
-          "title": "Why the World Cup is a make or break moment for retail this summer",
-          "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
-          "published_at": "2026-06-13T04:00:00Z",
-          "company": null,
+          "title": "Rising gas prices threaten impulse purchases",
+          "url": "https://www.modernretail.co/operations/how-rising-gas-prices-could-reshape-impulse-purchases-at-convenience-stores/",
+          "published_at": "2026-07-14T04:00:00Z",
+          "company": "convenience stores",
           "signal_level": "A"
         }
       ]
