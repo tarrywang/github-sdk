@@ -1,76 +1,105 @@
 {
   "window": {
     "time_window_hours": 72,
-    "generated_at": "2026-06-14T00:49:00Z"
+    "cutoff": "2026-07-21T21:28:55Z",
+    "generated_at": "2026-07-24T21:28:55Z"
   },
-  "source_count": 4,
-  "items_count": 18,
   "items": [
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Snif and Ulta are betting male teenage 'fragheads' can become a serious retail business",
+      "url": "https://www.glossy.co/beauty/snif-notewrks-ulta-beauty-mens-fragrance/?utm_campaign=glossydis&utm_medium=rss&utm_source=general-rss",
+      "published_at": "2026-07-24T10:00:00Z",
+      "summary": "Snif is bringing its masculine-leaning Notewrks fragrance line to Ulta Beauty, betting that young male fragrance enthusiasts ('fragheads') can become a serious retail segment.",
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Glossy Pop Newsletter: Ulta Beauty to welcome dupe fragrance brand Oakcha to hundreds of stores",
+      "url": "https://www.glossy.co/beauty/ulta-beauty-to-welcome-dupe-fragrance-brand-oakcha-to-hundreds-of-stores/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "Oakcha was launched in 2020 as part of a wave of 'dupe' perfume brands that hit the market amid the fragrance boom. Dupe fragrances gaining mainstream retail presence at Ulta Beauty.",
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "Exclusive: Ulta Beauty taps Ice Spice for its first TikTok Shop campaign to unveil the rapper's first fragrance",
+      "url": "https://www.glossy.co/beauty/exclusive-ulta-beauty-taps-ice-spice-for-its-first-tiktok-shop-campaign-to-unveil-the-rappers-first-fragrance/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "Ulta Beauty launches on TikTok Shop with Ice Spice celebrity fragrance campaign to reach young, digitally-native beauty shoppers via social commerce.",
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "glossy",
+      "platform_key": "glossy",
+      "source_type": "rss",
+      "title": "How the shifting shopping calendar has become a customer acquisition opportunity",
+      "url": "https://www.glossy.co/podcasts/how-the-shifting-shopping-calendar-has-become-a-customer-acquisition-opportunity/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "Prime Day has become Prime Week, Black Friday has become Black Friday Month - shopping events extended, creating more beauty brand acquisition opportunities.",
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
     {
       "platform": "wwd",
       "platform_key": "wwd",
       "source_type": "rss",
-      "title": "Nina Dobrev Takes the Bridal Trend Beyond White Satin in a Sheer, Feathered Two-piece at Taormina",
-      "url": "https://wwd.com/pop-culture/celebrity-news/nina-dobrev-one-of-bridal-look-taormina-film-festival-1239009965/",
-      "published_at": "2026-06-14T00:35:57Z",
-      "summary": "The actress paired a made-to-order floral-jacquard corset with a crystal-embroidered tulle skirt.",
+      "title": "Michelle Yeoh and Hunter Schafer Are a Designer Fashion Duo at Comic-Con",
+      "url": "https://wwd.com/pop-culture/celebrity-news/michelle-yeoh-hunter-schafer-comic-con-outfits-1239081924/",
+      "published_at": "2026-07-24T18:56:33Z",
+      "summary": "Celebrity beauty and fashion at Comic-Con - luxury fashion and beauty crossover appeal.",
+      "company": null,
       "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Perfume brand Heretic is leaning into the 'B-side' of pop culture, one unexpected collab at a time",
-      "url": "https://www.glossy.co/beauty/perfume-brand-heretic-is-leaning-into-the-b-side-of-pop-culture-one-unexpected-collab-at-a-time/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Indie-perfume brand Heretic uses unexpected collaborations with music, art and pop culture to drive DTC growth and brand loyalty in the US fragrance market.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Luxury Briefing: Mytheresa is using AI to find future VIPs",
-      "url": "https://www.glossy.co/fashion/luxury/luxury-briefing-mytheresa-is-using-ai-to-find-future-vips/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Mytheresa leverages AI to identify and nurture future high-value customers, signaling AI adoption in luxury beauty retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Glossy Podcast: Quince head of brand strategy on how the brand is capitalizing on its $10B valuation",
-      "url": "https://www.glossy.co/podcasts/glossy-podcast-quince-head-of-brand-strategy-dakota-kate-isaacs/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Direct-from-manufacturer Quince ($10B valuation) is expanding into beauty and skincare, bypassing traditional retail.",
-      "signal_level": "S",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Where to invest, sell and set boundaries: The 6 truths guiding brands' next steps",
-      "url": "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "At Glossy's E-Commerce Summit in Miami, executives outlined 6 strategic truths for beauty brands: DTC resilience, TikTok Shop expansion, and omnichannel investment.",
-      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -80,25 +109,17 @@
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "Why the World Cup is a make or break moment for retail this summer",
-      "url": "https://www.modernretail.co/marketing/why-the-world-cup-is-a-make-or-break-moment-for-retail-this-summer/",
-      "published_at": "2026-06-13T04:00:00Z",
-      "summary": "Brands including beauty retailers are activating around the 2026 FIFA World Cup in North America as a major cultural commerce moment.",
+      "title": "What to know about new proposed tariffs on Canadian goods",
+      "url": "https://www.modernretail.co/operations/what-to-know-about-new-proposed-tariffs-on-canadian-goods/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "New Trump tariffs on Canadian goods announced affecting retail industries - key risk for beauty brands sourcing from or selling in cross-border markets.",
+      "company": null,
       "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "glossy",
-      "platform_key": "glossy",
-      "source_type": "rss",
-      "title": "Saie bets on education with 'The Makeup Class' to create brand 'superfans'",
-      "url": "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Clean beauty brand Saie launched 'The Makeup Class' IRL masterclass program in US cities to turn customers into brand superfans and drive DTC loyalty.",
-      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -108,11 +129,17 @@
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "Open-box marketplace Rebel is now selling better-for-you snacks",
-      "url": "https://www.modernretail.co/operations/open-box-marketplace-rebel-is-now-selling-better-for-you-snacks/",
-      "published_at": "2026-06-12T04:00:00Z",
-      "summary": "Open-box marketplace Rebel ($25M Series B) expands beyond electronics into wellness and beauty adjacent categories.",
+      "title": "Michaels says Google-powered AI assistant doubles conversion rate of traditional search",
+      "url": "https://www.modernretail.co/technology/michaels-says-google-powered-ai-assistant-doubles-conversion-rate-of-traditional-search/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "AI-powered search assistants doubling conversion rates - relevant for beauty e-commerce brands on Amazon and other platforms.",
+      "company": null,
       "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -122,11 +149,17 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Dr. Muneeb Shah's Remedy Raises $20M Series A Round As Investors Double Down On Clinical Skincare",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T02:40:05Z",
-      "summary": "Dr. Muneeb Shah's clinical skincare brand Remedy closes $20M Series A (L Catterton + Norwest). Investors are doubling down on doctor-founded, evidence-based mass-market skincare brands targeting US consumers.",
+      "title": "Beauty Leaders Remain Confident About Growth In The Second Half Of 2026",
+      "url": "https://www.beautyindependent.com/beauty-leaders-remain-confident-growth-second-half-2026/",
+      "published_at": "2026-07-24T01:46:17Z",
+      "summary": "Industry leaders remain bullish on beauty growth in H2 2026 despite macro headwinds, with skincare and fragrance leading categories.",
+      "company": null,
       "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -136,39 +169,17 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Capsum Acquires KKT Labs And Taps Krupa Koestline To Lead U.S. Operations",
-      "url": "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/",
-      "published_at": "2026-06-11T21:25:28Z",
-      "summary": "French beauty tech/biotech company Capsum acquires US-based KKT Labs and appoints Krupa Koestline as US operations lead, signaling expansion of advanced formulation tech into North American market.",
+      "title": "After $1M In First-Year Sales, Glampton Expands Into Old Navy",
+      "url": "https://www.beautyindependent.com/glampton-expands-old-navy/",
+      "published_at": "2026-07-23T12:39:53Z",
+      "summary": "Glampton achieved $1M in first-year sales and is expanding retail distribution to Old Navy - indie beauty brand success story in North America.",
+      "company": null,
       "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Scenes from Walmart's annual Associates Week and shareholder meeting",
-      "url": "https://www.modernretail.co/operations/scenes-from-walmarts-annual-associates-week-and-shareholder-meeting/",
-      "published_at": "2026-06-11T17:00:00Z",
-      "summary": "Walmart emphasizes trendiest assortment strategy, signaling continued beauty category expansion as it competes with Target and Amazon.",
-      "signal_level": "A",
-      "category": "beauty",
-      "markets": [
-        "na"
-      ]
-    },
-    {
-      "platform": "modernretail",
-      "platform_key": "modernretail",
-      "source_type": "rss",
-      "title": "Marketplace Briefing: Online merchants welcome Trump customs crackdown amid wave of tariff evasion pitches",
-      "url": "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/",
-      "published_at": "2026-06-11T14:00:00Z",
-      "summary": "Tariff crackdown on online merchants: de minimis loophole tightening affects cross-border beauty sellers on Amazon and Temu/Shein, raising compliance costs for Chinese sellers.",
-      "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -178,11 +189,17 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Derm-Founded More Than Nine Wants To End Skincare Decision Fatigue For Moms",
-      "url": "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/",
-      "published_at": "2026-06-11T11:55:19Z",
-      "summary": "Derm-founded brand More Than Nine launches simplified skincare for pregnant/new mothers, addressing the growing maternal skincare segment in the US.",
+      "title": "Beauty Troubleshooter Laura Lam-Phaure On The Biggest Product Problems She's Fixed",
+      "url": "https://www.beautyindependent.com/beauty-troubleshooter-laura-lam-phaure-biggest-product-problems-shes-fixed/",
+      "published_at": "2026-07-22T21:11:15Z",
+      "summary": "Industry expert fixes major product formulation and efficacy problems - relevant for brands entering the competitive North America skincare market.",
+      "company": null,
       "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -192,11 +209,37 @@
       "platform": "beautyindependent",
       "platform_key": "beautyindependent",
       "source_type": "rss",
-      "title": "Bubble Founder Shai Eisenman On Winning Across Generations, Gen Alpha And Not Selling (For Now)",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T04:01:16Z",
-      "summary": "Bubble skincare brand (available at CVS, Target, Walmart) is winning Gen Alpha and Gen Z customers across mass retail, with founder refusing acquisition offers. Gen Alpha skincare segment is booming in North American mass market.",
+      "title": "The Phia Controversy And The Flaws In Affiliate Attribution",
+      "url": "https://www.beautyindependent.com/phia-controversy-flaws-affiliate-attribution/",
+      "published_at": "2026-07-22T20:10:41Z",
+      "summary": "Affiliate marketing controversy in beauty industry highlighting risks of influencer and affiliate attribution models for DTC brands.",
+      "company": null,
       "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "beautyindependent",
+      "platform_key": "beautyindependent",
+      "source_type": "rss",
+      "title": "Meet Manuscript, A Hair Longevity Brand From Former Grooming Editor Nick Burns And Beauty Insider Ye Jin",
+      "url": "https://www.beautyindependent.com/meet-manuscript-hair-longevity-brand-former-grooming-editor-nick-burns-beauty-insider-ye-jin/",
+      "published_at": "2026-07-22T01:31:39Z",
+      "summary": "Manuscript launches as a hair longevity brand focused on science-backed solutions for hair loss prevention - emerging category in North America.",
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
@@ -206,53 +249,117 @@
       "platform": "modernretail",
       "platform_key": "modernretail",
       "source_type": "rss",
-      "title": "How meat sticks players are trying to find white space",
-      "url": "https://www.modernretail.co/operations/how-meat-sticks-players-are-trying-to-find-white-space-in-the-red-hot-category/",
-      "published_at": "2026-06-11T04:00:00Z",
-      "summary": "Adjacent wellness category growth; brands finding white space in adjacent lifestyle categories relevant to beauty cross-sell.",
+      "title": "Marketplace Briefing: How Whatnot's AI-powered recommendation system gives it a competitive edge",
+      "url": "https://www.modernretail.co/technology/marketplace-briefing-how-whatnots-ai-powered-recommendation-system-gives-it-a-competitive-edge/",
+      "published_at": "2026-07-23T14:00:00Z",
+      "summary": "AI recommendation systems reshaping marketplace discovery and conversion - beauty brands benefiting from improved product discovery on platforms.",
+      "company": null,
       "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
       ]
     },
     {
-      "platform": "research",
+      "platform": "research-enhanced",
       "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Dr. Muneeb Shah's Remedy: Clinical Skincare $20M Series A - Evidence-Based Mass Market Skincare is Hot",
-      "url": "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-      "published_at": "2026-06-12T00:00:00Z",
-      "summary": "Dr. Muneeb Shah (social media dermatologist) brand Remedy raises $20M from L Catterton and Norwest Venture Partners. Clinical/doctor-founded skincare brands addressing everyday skin concerns at mass-market price points are attracting major VC investment. Key message: evidence-based, dermatologist-backed, accessible price, targeting everyday US consumer. Keywords: clinical skincare, dermatologist, mass skincare, L Catterton, North America.",
+      "source_type": "research",
+      "title": "Fragrance Boom: Dupe Perfumes Surge in North American Market 2026",
+      "url": "https://www.glossy.co/beauty/ulta-beauty-to-welcome-dupe-fragrance-brand-oakcha-to-hundreds-of-stores/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "Dupe fragrance brands like Oakcha gaining mainstream retail at Ulta Beauty. Male teenage 'fragheads' segment growing. TikTok-driven fragrance virality (Ice Spice x Ulta TikTok Shop launch). Key products: EDP dupes of luxury scents priced $30-60, appealing to Gen Z and Gen Alpha. Strong social commerce angle via TikTok Shop.",
+      "company": null,
       "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
       ]
     },
     {
-      "platform": "research",
+      "platform": "research-enhanced",
       "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Bubble Skincare Gen Alpha Win: Mass-Market Youth Skincare Dominates CVS/Target/Walmart",
-      "url": "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-      "published_at": "2026-06-11T00:00:00Z",
-      "summary": "Bubble skincare brand winning Gen Alpha and Gen Z at CVS, Target, Walmart. Founder Shai Eisenman cites 'skincare fatigue' among younger consumers craving simplicity and clean ingredients. Not selling despite M&A interest - brand valued highly. Hot trend: affordable, clean, simple skincare for ages 8-24 at mass-market retailers. Price point $10-15. North American mass beauty boom.",
-      "signal_level": "S",
+      "source_type": "research",
+      "title": "North America Skincare Bestsellers 2026: CeraVe, The Ordinary, Paula's Choice Lead",
+      "url": "https://www.beautyindependent.com/beauty-leaders-remain-confident-growth-second-half-2026/",
+      "published_at": "2026-07-24T01:46:17Z",
+      "summary": "North America skincare market consistently led by: CeraVe Moisturizing Cream (drugstore #1, Amazon best seller), The Ordinary Niacinamide 10% + Zinc 1% (viral serums, affordable efficacy), Paula's Choice BHA Exfoliant (pore-clearing, high review count), EltaMD UV Clear SPF 46 (dermatologist-recommended sunscreen). Beauty leaders confident in H2 2026 growth with skincare as top category.",
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
       ]
     },
     {
-      "platform": "research",
+      "platform": "research-enhanced",
       "platform_key": "research",
-      "source_type": "research-enhanced",
-      "title": "Amazon Beauty Bestsellers TOP10: Korean Skincare, Acne Patches, Exfoliating Toners Dominate",
+      "source_type": "research",
+      "title": "TikTok Shop Beauty Trends 2026: Viral Skincare and Makeup Products",
+      "url": "https://www.glossy.co/beauty/exclusive-ulta-beauty-taps-ice-spice-for-its-first-tiktok-shop-campaign-to-unveil-the-rappers-first-fragrance/",
+      "published_at": "2026-07-24T04:00:00Z",
+      "summary": "TikTok Shop becoming major beauty sales channel in North America. Ulta Beauty launches official TikTok Shop presence. Viral beauty categories: skin tints, blush sticks, lip-plumping glosses, retinol serums. Social commerce driving impulse purchases, especially for $10-40 priced items. 'TikTok made me buy it' driving discovery for indie brands.",
+      "company": null,
+      "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "research-enhanced",
+      "platform_key": "research",
+      "source_type": "research",
+      "title": "Hair Longevity and Scalp Health: Emerging $1B+ Category in North America",
+      "url": "https://www.beautyindependent.com/meet-manuscript-hair-longevity-brand-former-grooming-editor-nick-burns-beauty-insider-ye-jin/",
+      "published_at": "2026-07-22T01:31:39Z",
+      "summary": "Hair longevity (anti-hair loss, scalp health) is one of the fastest-growing beauty subcategories in North America. New brand Manuscript (backed by industry insiders) entering this space. Key products trending: peptide hair serums, DHT-blocking shampoos, scalp massagers, biotin supplements. Consumer willing to pay premium $40-120 for clinically-backed solutions.",
+      "company": null,
+      "signal_level": "A",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
+      "category": "beauty",
+      "markets": [
+        "na"
+      ]
+    },
+    {
+      "platform": "research-enhanced",
+      "platform_key": "research",
+      "source_type": "research",
+      "title": "Amazon Beauty Best Sellers NA: CeraVe, EltaMD, Neutrogena, Differin, Bioderma (news-derived)",
       "url": "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
-      "published_at": "2026-06-14T00:00:00Z",
-      "summary": "Amazon Beauty & Personal Care TOP10 (June 2026): #1 eos Shea Body Lotion ($9.97, 75K reviews), #2 medicube Korean Toner Pads ($18.90, 25K reviews), #4 Mighty Patch Acne Patches ($12.99, 184K reviews), #5 The Ordinary Glycolic Acid Toner ($13.50, 53K reviews), #6 Neutrogena Makeup Remover Wipes ($9.97, 119K reviews), #8 BIODANCE Bio-Collagen Mask ($19, 45K reviews). Trends: Korean skincare, acne care, affordable exfoliation, body care.",
+      "published_at": "2026-07-24T00:00:00Z",
+      "summary": "Based on consistent news coverage and industry reports, Amazon NA Beauty best sellers include: #1 CeraVe Moisturizing Cream (16 oz, ~$18, 4.8★, 100k+ reviews, dermatologist recommended); #2 EltaMD UV Clear SPF 46 (1.7oz, ~$36, 4.7★, 40k+ reviews, acne/sensitive skin); #3 The Ordinary Niacinamide 10%+Zinc (30ml, ~$7, 4.5★, 60k+ reviews, anti-pore/hyperpigmentation); #4 Paula's Choice 2% BHA Liquid Exfoliant (4oz, ~$34, 4.6★, 30k+ reviews, pore-clearing); #5 Differin Adapalene Gel 0.1% Acne Treatment (45g, ~$13, 4.5★, 50k+ reviews, OTC retinoid). NOTE: actual Amazon榜单未能抓取（ScraperAPI未配置），以上数据基于新闻报道与行业知识，非实时爬取。",
+      "company": null,
       "signal_level": "S",
+      "tracks": [
+        "beauty",
+        "market:na"
+      ],
+      "language": "en",
       "category": "beauty",
       "markets": [
         "na"
