@@ -3,105 +3,110 @@
   "insights": [
     {
       "hotspot_id": "H01",
-      "title": "临床护肤/医生品牌爆发：循证美妆获资本重注，选品机会在平价高功效护肤",
-      "what_changed": "Dr. Muneeb Shah（TikTok/YouTube头部皮肤科KOL）的品牌Remedy完成$20M A轮融资，投资方为L Catterton（全球顶级美妆消费基金）和Norwest。Capsum同步收购美国KKT Labs布局高功效配方技术。",
-      "why_it_matters": "\"医生背书+大众价格\"是北美2026年护肤市场最强增长主题。消费者面对成分过载越来越依赖专业信任背书，临床级产品在$10-25价格带占据主流。资本入场验证了市场规模和可复制性。",
+      "title": "K-beauty 强势占据北美 Amazon 美妆 TOP，Korean 成分护肤系统性崛起",
+      "what_changed": "Amazon 美妆个护类目 #1 和 #8 均为韩国品牌（medicube、BIODANCE），K-beauty 已从小众到主流；Kiuda Group 收购 CGETC 标志韩美物流/通关/仓储基础设施整合进入新阶段，出海链路摩擦降低。",
+      "why_it_matters": "K-beauty 在北美不再只是趋势词，而是 Amazon 头部畅销赛道——AHA/BHA 棉片、水凝胶面膜已成品类标准。基础设施整合意味着更多韩国中小品牌/ODM 工厂将加速入美，竞争烈度将进一步上升，先发优势窗口缩窄。",
       "who_is_impacted": [
-        "出海卖家：寻找OEM工厂生产含活性成分（烟酰胺、视黄醇、AHA、肽类）的高功效护肤品",
-        "内容营销团队：皮肤科医生/达人合作是核心获客渠道",
-        "监管合规部门：临床宣称需严格审查FDA MoCRA要求"
+        "拟入局 Amazon 护肤品卖家",
+        "韩妆 ODM/OEM 工厂",
+        "国内美妆出海品牌（需应对 K-beauty 竞争）",
+        "Kiuda Group/CGETC 等物流服务商"
       ],
       "next_actions": [
-        "寻找具备ISO22716/GMPC认证的OEM工厂，开发含循证成分的精华液/保湿霜",
-        "与皮肤科医生/认证美容师合作开发内容，建立专业信任背书",
-        "确保产品成分浓度符合FDA化妆品规范（避免滑入OTC药品监管范畴）",
-        "完成MoCRA设施注册和责任人指定"
+        "研究 medicube/BIODANCE 的 Listing 策略（成分描述/关键词/A+内容），提炼可复用的文案框架",
+        "联系韩国 ODM 工厂（含 KGMP/ISO22716 认证）洽谈双酸棉片/水凝胶面膜 OEM",
+        "Kiuda Group 物流合作可降低韩品入美仓储成本，但中国 ODM 同类产品需做差异化定位"
       ],
-      "price_band": "$15–$35（精华液/面霜）",
+      "price_band": "$10–$25（Amazon 大众美妆价格带，客单价适中，复购驱动）",
       "selling_points": [
-        "皮肤科医生配方",
-        "循证活性成分（AHA/烟酰胺/肽类）",
-        "敏感肌友好",
-        "平价高功效"
+        "AHA/BHA 双酸成分功效明确",
+        "水凝胶/胶原蛋白面膜高感知价值",
+        "K-beauty 品牌溢价与成分专业度"
       ],
       "target_market": [
-        "25-40岁北美女性，注重成分功效",
-        "有痘痘/色斑/毛孔等具体肌肤困扰的消费者"
+        "北美 20-35 岁功效护肤消费者",
+        "Amazon 美妆购物者",
+        "TikTok/Instagram 成分党社区"
       ],
       "risk_notes": [
-        "功效宣称过度可能触发FDA OTC药品监管",
-        "KOL合作需注意FTC广告披露规定"
+        "K-beauty 品类竞争已饱和，白标产品难以突围，需强差异化",
+        "品牌宣称需合规（FDA + MoCRA），AHA/BHA 需注明光敏感提示"
       ],
       "references": [
-        "https://www.beautyindependent.com/dr-muneeb-shah-remedy-20m-series-a-round-investors-clinical-skincare/",
-        "https://www.beautyindependent.com/capsum-acquires-kkt-labs-taps-krupa-koestline-lead-u-s-operations/"
+        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+        "https://www.beautyindependent.com/kiuda-group-cgetc-build-one-stop-infrastructure-platform-k-beauty/"
       ]
     },
     {
       "hotspot_id": "H02",
-      "title": "Gen Alpha护肤热潮：$10-15平价清洁护肤品在大众渠道狂卷年轻市场",
-      "what_changed": "Bubble护肤品牌创始人公开披露品牌在Gen Alpha（8-12岁）和Gen Z群体中的强势地位，全渠道布局CVS/Target/Walmart。另有More Than Nine针对孕产妇推出精简护肤解决方案。\"护肤疲劳\"作为北美新现象被广泛报道，促使年轻消费者回归简洁护肤。",
-      "why_it_matters": "Gen Alpha进入护肤启蒙期，预计2030年前将是北美美妆增长最快的人口细分。该群体偏好简洁配方（≤5成分）+清洁标签+$10-15价格带。Walmart/Target/CVS作为渠道入口意味着线上线下联动机会。",
+      "title": "Mighty Patch 痘贴稳居 Amazon #3，亲水胶体/痘痘护理成北美美妆长青品类",
+      "what_changed": "Mighty Patch 以 184,084 条评价位列 Amazon 美妆 #3，是全榜评价数最高的产品，显示极高的市场验证度与复购；Clear Health 推出外用 Isotretinoin 标志功效痘痘护理向处方级渗透。",
+      "why_it_matters": "亲水胶体痘贴已是北美美妆'基础品'级别，消费者教育成本趋零，但 FDA 合规要求（II 类医疗器械/510(k) 或 OTC 药品）构成门槛。品类虽有竞争，但社媒 UGC 内容（#pimplepatch）持续降低获客成本，差异化（尺寸、成分、联名）仍有空间。",
       "who_is_impacted": [
-        "出海卖家：适合开发青少年友好护肤品（无香精/低致敏/清洁成分）",
-        "亲子/母婴美妆品牌：孕产期护肤是新兴细分市场",
-        "大众渠道BD团队：沃尔玛/Target选品逻辑以简洁、清洁、性价比为核心"
+        "拟切入痘痘护理赛道的出海卖家",
+        "亲水胶体 OEM 工厂",
+        "Hero Cosmetics 竞争者",
+        "FDA 合规服务商"
       ],
       "next_actions": [
-        "开发5成分以内的极简护肤产品线（洁面+保湿+防晒三件套）",
-        "获取EWG Verified或Clean Beauty认证，加强信任背书",
-        "布局TikTok Shop和Amazon，针对Gen Z/Gen Alpha投放短视频",
-        "价格策略聚焦$12-18区间，兼顾毛利和大众可及性"
+        "确认目标产品是否需 FDA 510(k)（II 类医疗器械）或可按豁免产品（21 CFR 880.5900）销售",
+        "OEM 工厂需提供 biocompatibility 测试报告（ISO10993）",
+        "差异化切入点：更大尺寸（下巴/背部）、透明超薄、草药/成分添加（茶树油等）、可持续材质"
       ],
-      "price_band": "$10–$18（日常护肤品）",
+      "price_band": "$10–$18（36-60片/包，$12.99 是市场定价锚点）",
       "selling_points": [
-        "极简清洁成分",
-        "纯素/无残忍测试",
-        "低致敏配方",
-        "青少年友好包装"
+        "亲水胶体快速吸附",
+        "素食/无残忍认证",
+        "社媒展示友好",
+        "日夜可用"
       ],
       "target_market": [
-        "Gen Alpha（8-12岁）和Gen Z（13-26岁）",
-        "关注子女护肤的北美父母"
+        "Z 世代（16-25岁）痘痘困扰人群",
+        "TikTok/Instagram 活跃用户",
+        "Amazon 美妆消费者"
       ],
       "risk_notes": [
-        "未成年人护肤品营销需遵守COPPA（儿童隐私保护法）",
-        "成分安全性要求更高，建议皮肤科测试"
+        "痘贴可能归类为 FDA II 类医疗器械，需确认合规路径",
+        "宣称'治疗/消灭粉刺'则为 OTC 药品监管，需药品注册",
+        "市场拥挤，需强 Listing 优化与社媒内容策略"
       ],
       "references": [
-        "https://www.beautyindependent.com/bubble-founder-shai-eisenman-gen-alpha-beauty-fatigue-not-selling/",
-        "https://www.beautyindependent.com/derm-founded-more-than-nine-wants-end-skincare-decision-fatigue-moms/"
+        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/",
+        "https://www.beautyindependent.com/clear-health-topical-isotretinoin-accutane/"
       ]
     },
     {
       "hotspot_id": "H03",
-      "title": "K-Beauty北美爆发：韩系多酸棉片+胶原蛋白面膜占据Amazon TOP2/TOP8",
-      "what_changed": "medicube（韩系医学护肤）Toner Pads Zero Pore Pad 2.0以#2排名、25,688条评价主导Amazon爽肤棉片品类；BIODANCE Bio-Collagen Hydrogel Mask以#8、45,847条评价领跑水凝胶面膜品类。两款均为韩国品牌通过Amazon直营渗透北美市场。",
-      "why_it_matters": "K-Beauty在北美的增速（+25% YoY估计）显著超越本土品牌。多酸棉片（AHA+BHA双效）和水凝胶面膜代表韩国品牌在北美找到的两个爆款公式：功效清晰+使用便捷+价格合理+社媒传播友好。",
+      "title": "平价功效护肤：The Ordinary Glycolic Acid 北美 Amazon #5，成分党经济持续升温",
+      "what_changed": "The Ordinary Glycolic Acid 7% Toner 稳居 Amazon 美妆 #5（52,835评，$13.50），与同类 AHA/BHA 产品共同验证：北美功效护肤中价带（$10-$20）是最具规模的市场。",
+      "why_it_matters": "成分党经济已主流化，消费者熟悉 AHA/BHA/Retinol 等成分；平价+功效是最大公约数，但同质化竞争压力大。新进入者需要明确的成分/配方差异化，或通过精准 KOL 科普内容建立认知。",
       "who_is_impacted": [
-        "国内OEM工厂：国内已有大量韩系同款产品供应商（尤其广州/深圳/浙江），可以类似配方开发自有品牌",
-        "出海卖家：AHA/BHA棉片+水凝胶面膜都是成熟爆款公式，可打差异化品牌"
+        "平价功效护肤品牌/卖家",
+        "AHA/BHA OEM 工厂",
+        "The Ordinary 潜在竞争者",
+        "皮肤科医生/成分 KOL"
       ],
       "next_actions": [
-        "开发AHA（6-8%）+BHA（0.3-0.5%）双效爽肤棉片，参考medicube配方但差异化包装",
-        "开发Bio-Collagen水凝胶面膜OEM产品，重点突出PDRN/肽类/玻尿酸成分",
-        "以Amazon FBA为主渠道，配合TikTok短视频做\"before & after\"对比内容",
-        "确认AHA浓度符合FDA化妆品规范（<10%，pH>3.5）"
+        "差异化方向：更高浓度（≤10% AHA，需安全评估）、缓释配方降低刺激感、复合酸（AHA+BHA+PHA）",
+        "内容营销：皮肤科医生/护肤 KOL 背书，成分科普视频 + 使用前后对比",
+        "注意 FDA AHA Sun Alert 要求：标签必须注明使用后增加紫外线敏感性"
       ],
-      "price_band": "$15–$25（棉片70片装）；$18–$30（面膜4片装）",
+      "price_band": "$10–$18（$13.50 是标杆，新品可定价 $12–$16 测试）",
       "selling_points": [
-        "AHA+BHA双重酸化",
-        "毛孔收缩可见效",
-        "K-Beauty医学品牌背书",
-        "一步懒人护肤"
+        "高浓度 AHA 功效明确",
+        "提亮/均匀肤色",
+        "极简透明配方",
+        "大众价格可及"
       ],
       "target_market": [
-        "20-35岁北美女性，对K-Beauty有认知",
-        "有毛孔/痘印/角质问题的消费者"
+        "北美 18-35 岁功效护肤消费者",
+        "暗沉/不均肤色困扰人群",
+        "成分导向网购者"
       ],
       "risk_notes": [
-        "AHA/BHA产品宣称祛痘功效可能触发OTC药品监管",
-        "韩系品牌视觉需避免直接模仿已有品牌IP"
+        "AHA 浓度越高安全评估要求越严，需注意配方 pH 和浓度合规",
+        "标签必须包含 AHA Sun Alert 和防晒建议",
+        "竞争者（The Ordinary、Paula's Choice 等）品牌力强"
       ],
       "references": [
         "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
@@ -109,103 +114,107 @@
     },
     {
       "hotspot_id": "H04",
-      "title": "痘痘贴成北美刚需：Mighty Patch 18万+评价，水胶体技术成全球通用语言",
-      "what_changed": "Mighty Patch Original以183,993条评价（Amazon美妆类最多）保持TOP10榜首位，评分稳定4.6★，$12.99/36片。产品已进入沃尔玛/CVS/Target全渠道，并持续保持TikTok高频曝光。",
-      "why_it_matters": "痘痘贴是北美年轻肌肤护理品类增速最快的单品之一，已从细分品类进入大众刚需。水胶体技术（Hydrocolloid）是经过临床验证的伤口愈合材料，进入护肤场景后大幅降低了消费者的认知门槛。复购率高（36片一包一周用完），意味着稳定现金流。",
+      "title": "美妆零售 AI 化：Ulta、Sephora、Amazon 加码 AI 选品与个性化推荐",
+      "what_changed": "Ulta Beauty、Violet Grey、Printemps 在行业峰会讨论 AI 时代人工策展价值；ModernRetail 揭示品牌在重构产品页以适配 AI 搜索算法；Walmart、Revolve 等零售商加码 AI 个性化推荐。",
+      "why_it_matters": "AI 搜索（ChatGPT/Perplexity/Google AI Overviews）已开始影响美妆消费者发现产品的路径，Amazon A10 算法也越来越依赖结构化内容。不适配 AI 搜索的产品 Listing 将损失自然流量。",
       "who_is_impacted": [
-        "出海选品团队：水胶体痘痘贴是ROI最高的美妆单品之一",
-        "OEM采购：国内（南京/深圳/广州）有大量成熟工厂，价格极低（$0.20-0.30/片）",
-        "合规团队：需确认是化妆品还是医疗器械监管路径"
+        "所有在 Amazon/Sephora/Ulta 上架的美妆卖家",
+        "品牌内容运营团队",
+        "Listing 优化服务商",
+        "Amazon AMS/DSP 广告主"
       ],
       "next_actions": [
-        "优先评估水胶体痘痘贴OEM产品线，MOQ可低至100袋（Nanjing Vesta）",
-        "差异化：定制形状（星形/心形）+特殊功效（水杨酸+茶树油+烟酰胺浸润版）",
-        "确认供应商的FDA 510(k)豁免状态或是否需要取得医疗器械注册",
-        "TikTok投流：\"before & after overnight\"内容格式ROI最高"
+        "审查所有产品 Listing：确保成分以 INCI 名称+功效描述双重呈现，关键词结构清晰",
+        "增加 Product FAQs / A+ Enhanced Content，针对 AI 搜索的问答格式优化",
+        "Ulta.com / Sephora.com 上架时按零售商策展逻辑配合 AI 分类标签（Skin Type / Concern / Ingredient）"
       ],
-      "price_band": "$10–$15（36-50片装）",
-      "selling_points": [
-        "水胶体科技",
-        "一夜收缩痘痘",
-        "无刺激无痕",
-        "夜间使用便捷"
-      ],
+      "price_band": "不适用（行业趋势信号）",
+      "selling_points": [],
       "target_market": [
-        "13-25岁北美青少年和年轻人",
-        "有痘痘困扰的消费者"
+        "所有北美美妆出海卖家"
       ],
       "risk_notes": [
-        "\"一夜收缩粉刺\"等宣称可能被FDA归类为OTC药品宣称",
-        "建议仅使用\"外观改善\"等化妆品安全措辞"
+        "AI 推荐内容偏向已建立品牌，新卖家可能更难被 AI 推荐",
+        "AI 搜索可能减少评价数较少产品的曝光"
       ],
       "references": [
-        "https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/"
+        "https://www.beautyindependent.com/ulta-beauty-violet-grey-printemps-retail-human-advantage-age-ai/",
+        "https://www.modernretail.co/technology/ai-forces-retailers-brands-to-rethink-their-product-pages/"
       ]
     },
     {
       "hotspot_id": "H05",
-      "title": "双重合规压力：de minimis收紧+MoCRA新规，出海美妆合规刻不容缓",
-      "what_changed": "Trump政府宣布加强关税和海关欺诈执法，de minimis免税门槛（$800）面临收紧，直接影响美妆小包裹直邮模式；FDA MoCRA（Modernization of Cosmetics Regulation Act，2023年12月起实施）要求：(1)化妆品设施注册；(2)不良事件报告；(3)产品安全性论证。",
-      "why_it_matters": "两项政策同步收紧，形成双重合规压力：物流端需从直邮转FBA/海外仓（规避de minimis风险）；产品端需完成MoCRA注册（截止2024年12月，大型企业已逾期）。未完成注册的产品面临进口扣留风险，合规能力正在成为北美美妆市场的门槛性壁垒。",
+      "title": "益生菌/冻酸奶美容成夏季热潮：Kiehl's、Korres 等品牌跟进",
+      "what_changed": "Kiehl's 与 Go Greek 合作推出酸奶护肤联名，Korres 等品牌跟进推出益生菌/酸奶成分护肤和身体护理产品，蹭 2026 夏季冻酸奶文化热潮。",
+      "why_it_matters": "益生菌护肤（Probiotic Skincare）已从小众趋势走向大众市场，主流品牌入局验证了消费者接受度。'夏季护肤 + 趣味成分'是高传播度组合，有利于 TikTok/Instagram 内容营销；OEM 益生菌护肤品在中国供应链已成熟，适合快速跟进。",
       "who_is_impacted": [
-        "所有通过Amazon/Shopify在美国销售美妆品的中国出海卖家",
-        "依赖小包直邮模式的卖家：转型压力最大",
-        "已有FBA仓储的卖家：相对优势增强"
+        "功效护肤/美妆卖家",
+        "益生菌成分 OEM 工厂",
+        "Kiehl's/Korres 竞争者",
+        "护肤 KOL / 内容创作者"
       ],
       "next_actions": [
-        "立即启动FDA MoCRA设施注册（www.fda.gov/cosmetics/registration），并在美国指定\"Responsible Person\"（责任人）",
-        "更新产品标签，符合INCI成分列表+警示语（AHA光敏、酒精等）",
-        "从直邮模式迁移到美国FBA或第三方仓储（缓冲关税风险）",
-        "咨询美国FDA合规律师，评估产品是否在化妆品/OTC药品边界上"
+        "评估益生菌/乳酸杆菌发酵提取物（Lactobacillus ferment）爽肤水/面霜/身体乳 OEM 机会",
+        "夏季窗口有限：6月-8月是内容营销最佳时窗，需快速产出'益生菌护肤 vs 普通护肤'对比内容",
+        "Wellness 角度：强调肠-皮轴（gut-skin axis）科学，吸引健康生活方式消费者"
       ],
-      "price_band": "N/A（监管事件，非选品话题）",
-      "selling_points": [],
+      "price_band": "$15–$35（品牌溢价空间，比普通护肤品高 20-30%）",
+      "selling_points": [
+        "益生菌/酸奶成分概念新颖",
+        "Probiotic 科学背书",
+        "夏季护肤轻盈感",
+        "与时尚文化联动"
+      ],
       "target_market": [
-        "出海美妆卖家（B2B洞察）"
+        "北美 20-35 岁健康生活方式消费者",
+        "益生菌/健康食品跨界兴趣人群",
+        "TikTok Summer Beauty 爱好者"
       ],
       "risk_notes": [
-        "MoCRA违规：进口扣留、召回、罚款",
-        "de minimis收紧：直邮利润空间压缩",
-        "关税：中国原产地美妆品关税税率变化需实时监控"
+        "夏季趋势窗口短（约 3-4 个月），需快速执行",
+        "益生菌活菌护肤品稳定性挑战，建议选用发酵提取物（非活菌）",
+        "避免过度的益生菌健康功效宣称（FDA 监管敏感）"
       ],
       "references": [
-        "https://www.modernretail.co/operations/marketplace-briefing-online-merchants-welcome-trump-customs-crackdown-amid-wave-of-tariff-evasion-pitches/"
+        "https://www.glossy.co/beauty/beauty-brands-are-lining-up-for-the-frozen-yogurt-craze/"
       ]
     },
     {
       "hotspot_id": "H06",
-      "title": "清洁美妆+内容电商：Saie教育营销+TikTok Shop扩张定义2026北美美妆新打法",
-      "what_changed": "清洁美妆品牌Saie推出\"The Makeup Class\"线下大师班，将品牌体验嵌入教育内容；Glossy E-Commerce Summit总结6大品牌趋势：TikTok Shop扩张、DTC韧性、全渠道增长、品牌超级粉丝、可持续性、AI个性化。",
-      "why_it_matters": "TikTok Shop在美国美妆品类GMV快速增长，\"内容即购买\"的消费模式正在改变漏斗。教育型内容（护肤教程、成分解析、\"the class\"式内容）比广告型内容转化率高3-5倍。清洁成分标签（EWG/Clean Beauty认证）是北美消费者触发购买的关键信任信号。",
+      "title": "独立品牌爆发：Bur Bur 头皮护理$2000万、Unite Hair 进入 Sephora，细分赛道崛起",
+      "what_changed": "Bur Bur（头皮护理/生发）以无明星背书、纯 DTC+Revolve 模式预计 2026 年达 $2000 万销售额；Unite Hair 在 Ulta 铺货成功后进入 Sephora，专业护发品类零售化趋势明确。",
+      "why_it_matters": "头皮护理（Scalp Care）是继面部护肤之后北美美妆增长最快的细分品类之一，消费者对'头皮即皮肤'认知提升。供应链切入壁垒低于护肤，但品牌故事与社群运营决定差异化。Revolve 作为年轻女性时尚平台开始成为美妆入场跳板。",
       "who_is_impacted": [
-        "出海美妆品牌的内容营销团队",
-        "TikTok Shop卖家：美妆品类是平台最高增长品类",
-        "DTC独立站卖家：教育内容+邮件列表是降低CAC的核心杠杆"
+        "拟进入护发/头皮护理赛道的出海品牌",
+        "Revolve/Sephora/Ulta 美妆采购",
+        "头皮护理 OEM 工厂",
+        "头发健康 KOL/皮肤科医生"
       ],
       "next_actions": [
-        "开通TikTok Shop US店铺，布局美妆品类（优先爽肤棉片/痘痘贴/面膜等视觉效果好的产品）",
-        "制作\"成分解析\"+\"before & after\"短视频内容，与美妆微达人（1-10万粉）合作",
-        "获取EWG Verified或\"Clean Beauty\"认证，展示在产品主图和详情页",
-        "建立品牌社区（Discord/微信群/邮件列表），将首次购买者转化为复购用户"
+        "评估头皮精华/头皮磨砂/防脱生发精华 OEM 切入点（避免与 Bur Bur 直接竞争，可聚焦不同成分方向如咖啡因/生姜/积雪草）",
+        "Revolve 作为新渠道：适合通过 Instagram/TikTok 种草后申请 Revolve 入驻或合作",
+        "注意：防脱/生发类产品如宣称特定功效可能触发 OTC 药品监管（21 CFR Part 358）"
       ],
-      "price_band": "$12–$40（TikTok Shop美妆主流价格带）",
+      "price_band": "$20–$60（头皮护理高客单价，消费者愿为专业背书溢价）",
       "selling_points": [
-        "清洁成分认证",
-        "内容驱动信任",
-        "教育式品牌建设",
-        "社区复购"
+        "头皮健康即头发健康的科学认知",
+        "专业成分（咖啡因/生姜/积雪草）",
+        "DTC 品牌故事",
+        "无硅油/无硫酸盐等清洁成分诉求"
       ],
       "target_market": [
-        "18-35岁北美女性，活跃在TikTok/Instagram",
-        "关注可持续和清洁美妆的消费者"
+        "北美 25-45 岁女性（脱发/头皮健康关注者）",
+        "自然/清洁美容消费者",
+        "Revolve/Sephora 高端零售购物者"
       ],
       "risk_notes": [
-        "TikTok Shop平台合规（税务/产品资质）需提前准备",
-        "FTC要求达人合作需明确披露广告关系"
+        "生发/防脱宣称需要谨慎（可能为 OTC 药品）",
+        "头皮护理品类竞争加速（大品牌如 L'Oreal、Neutrogena 均有布局）",
+        "Revolve/Sephora 上架需要强品牌故事和 KOL 铺垫"
       ],
       "references": [
-        "https://www.glossy.co/beauty/saie-bets-on-education-with-the-makeup-class-to-create-new-brand-superfans/",
-        "https://www.glossy.co/fashion/where-to-invest-sell-and-set-boundaries-the-6-truths-guiding-brands-next-steps/"
+        "https://www.beautyindependent.com/two-best-friends-bootstrapping-bur-bur/",
+        "https://www.beautyindependent.com/unite-hair-ulta-retail-push-sephora-debut/"
       ]
     }
   ]
